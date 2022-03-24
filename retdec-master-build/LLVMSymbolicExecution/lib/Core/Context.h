@@ -10,6 +10,8 @@
 #ifndef KLEE_CONTEXT_H
 #define KLEE_CONTEXT_H
 
+#include <retdec/bin2llvmir/providers/abi/abi.h>
+
 #include "klee/Expr/Expr.h"
 
 namespace klee {
@@ -36,6 +38,13 @@ namespace klee {
     static const Context &get();
 
     bool isLittleEndian() const { return IsLittleEndian; }
+
+    bool is64Arch() const { return PointerWidth==64; }
+
+	static  llvm::Value* getRegisterRcx(retdec::bin2llvmir::Abi* _abi)
+    {
+		return _abi->getRegister(Context::get().is64Arch() ? x86_reg::X86_REG_RCX : x86_reg::X86_REG_ECX);
+    }
 
     /// Returns width of the pointer in bits
     Expr::Width getPointerWidth() const { return PointerWidth; }

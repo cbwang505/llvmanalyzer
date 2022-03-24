@@ -60,7 +60,7 @@ public:
                   SolverQueryMetaData &metaData);
 
   bool getValue(const ConstraintSet &, ref<Expr> expr,
-                ref<ConstantExpr> &result, SolverQueryMetaData &metaData);
+                ref<klee::ConstantExpr> &result, SolverQueryMetaData &metaData);
 
   bool getInitialValues(const ConstraintSet &,
                         const std::vector<const Array *> &objects,

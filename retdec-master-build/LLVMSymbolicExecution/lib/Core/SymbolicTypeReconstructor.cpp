@@ -75,7 +75,7 @@ namespace retdec {
 					std::string  ecxNameGlobal = "gl_ecx";
 					std::string StructTypeName = sct->getName();
 					llvm::Type* poitp = PointerType::getUnqual(sct);
-					llvm::Value* fakercx = _abi->getRegister(x86_reg::X86_REG_ECX);
+					llvm::Value* fakercx = Context::getRegisterRcx(_abi);
 					auto* stgv = _config->_module->getOrInsertGlobal(StructTypeName, sct);
 					if(!stgv)
 					{
@@ -175,7 +175,7 @@ namespace retdec {
 				interpreter->initSingleModule(M);
 				DataLayout TD = _module->getDataLayout();
 				Context::initialize(TD.isLittleEndian(),
-					reinterpret_cast<Expr::Width>(TD.getPointerSizeInBits()));
+				                    static_cast<Expr::Width>(TD.getPointerSizeInBits()));
 				Module::FunctionListType& fl = _module->getFunctionList();
 			}
 			if (!_abi)

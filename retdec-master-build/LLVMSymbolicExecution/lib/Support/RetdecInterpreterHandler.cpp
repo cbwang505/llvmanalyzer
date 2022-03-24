@@ -150,12 +150,11 @@ namespace klee {
 				{
 					return false;
 				}
-				if (minoffset > 32)
+				uint64_t ptrwidth = Context::get().getPointerWidth();
+				if (minoffset > ptrwidth)
 				{
-					uint64_t minpadlen = 32;
-					llvm::Type* tp = llvm::Type::getIntNTy(_module->getContext(), minoffset);
-
-
+					uint64_t minpadlen = ptrwidth;
+					llvm::Type* tp = llvm::Type::getIntNTy(_module->getContext(), minpadlen);
 					uint64_t arrCount = minoffset / minpadlen;
 					if (arrCount == 1)
 					{

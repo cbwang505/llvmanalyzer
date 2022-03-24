@@ -88,10 +88,10 @@ bool TimingSolver::mayBeFalse(const ConstraintSet &constraints, ref<Expr> expr,
 }
 
 bool TimingSolver::getValue(const ConstraintSet &constraints, ref<Expr> expr,
-                            ref<ConstantExpr> &result,
+                            ref<klee::ConstantExpr> &result,
                             SolverQueryMetaData &metaData) {
   // Fast path, to avoid timer and OS overhead.
-  if (ConstantExpr *CE = dyn_cast<ConstantExpr>(expr)) {
+  if (klee::ConstantExpr *CE = dyn_cast<klee::ConstantExpr>(expr)) {
     result = CE;
     return true;
   }

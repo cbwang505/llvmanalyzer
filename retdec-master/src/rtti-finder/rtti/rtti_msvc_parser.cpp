@@ -90,9 +90,13 @@ RTTIBaseClassDescriptor* parseMsvcBaseClassDescriptor(
 	size_t wordSize = img->getBytesPerWord();
 
 	std::uint64_t typeDescriptorAddr = 0;
-	if (!img->getWord(addr, typeDescriptorAddr))
+	if (!img->get4Byte(addr, typeDescriptorAddr))
 		return nullptr;
 	addr += wordSize;
+	if (img->getFileFormat()->isX86_64())
+	{
+		typeDescriptorAddr += img->getBaseAddress();
+	}
 
 	std::uint64_t numContainedBases = 0;
 	if (!img->get4Byte(addr, numContainedBases))
@@ -181,19 +185,31 @@ RTTIClassHierarchyDescriptor* parseMsvcClassDescriptor(
 	addr += 4;
 
 	std::uint64_t baseClassArrayAddr = 0;
-	if (!img->getWord(addr, baseClassArrayAddr))
+	if (!img->get4Byte(addr, baseClassArrayAddr))
 		return nullptr;
 	addr += wordSize;
+
+	if (img->getFileFormat()->isX86_64())
+	{
+		baseClassArrayAddr += img->getBaseAddress();
+	}
 
 	addr = baseClassArrayAddr;
 	std::vector<std::uint64_t> baseClassArray;
 	for (unsigned i=0; i<numBaseClasses; ++i)
 	{
 		std::uint64_t tmp = 0;
-		if (!img->getWord(addr, tmp))
+		if (!img->get4Byte(addr, tmp))
 			return nullptr;
-		addr += wordSize;
-
+		
+		if (img->getFileFormat()->isX86_64())
+		{
+			tmp += img->getBaseAddress();
+			addr += 4;
+		}else
+		{
+			addr += wordSize;
+		}
 		baseClassArray.push_back(tmp);
 	}
 
@@ -259,15 +275,21 @@ RTTICompleteObjectLocator* parseMsvcObjectLocator(
 	addr += 4;
 
 	std::uint64_t typeDescriptorAddr = 0;
-	if (!img->getWord(addr, typeDescriptorAddr))
+	if (!img->get4Byte(addr, typeDescriptorAddr))
 		return nullptr;
-	addr += wordSize;
-
+	addr += 4;
+	if(img->getFileFormat()->isX86_64())
+	{
+		typeDescriptorAddr += img->getBaseAddress();
+	}
 	std::uint64_t classDescriptorAddr = 0;
-	if (!img->getWord(addr, classDescriptorAddr))
+	if (!img->get4Byte(addr, classDescriptorAddr))
 		return nullptr;
-	addr += wordSize;
-
+	addr += 4;
+	if (img->getFileFormat()->isX86_64())
+	{
+		classDescriptorAddr += img->getBaseAddress();
+	}
 	LOG << "\nRTTI @ " << rttiAddr << "\n";
 	LOG << "\tsign    = " << signature1 << "\n";
 	LOG << "\toff     = " << offset << "\n";

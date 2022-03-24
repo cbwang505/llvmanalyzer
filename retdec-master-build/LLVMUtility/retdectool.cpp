@@ -129,7 +129,13 @@ namespace retdec {
 					if (fnit == cfunc->entry_ea)
 					{
 						qstring rawname;
+
+#ifdef __EA64__
+						rawname.sprnt("Class_vtable_%llx_type", vtaddrreal);
+#else // __EA64__
 						rawname.sprnt("Class_vtable_%x_type", vtaddrreal);
+#endif // __EA64__
+						
 						tid_t strucval = get_struc_id(rawname.c_str());
 						if (strucval)
 						{
