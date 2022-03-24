@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\patterngen\pattern_extractor\pattern_extractor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\patterngen\pattern_extractor\types\symbol_pattern.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\src\patterngen\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F11D572B-9E66-302C-A249-60DD62CE17D8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

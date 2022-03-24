@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3575160ddb18ec4a6f210444f5a045c2\ocaml_make_directory.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\ocaml_make_directory" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{26567867-2137-3340-AA8C-8CBCC0F5F017}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

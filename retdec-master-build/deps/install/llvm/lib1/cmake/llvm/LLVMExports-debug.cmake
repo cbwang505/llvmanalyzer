@@ -1,0 +1,507 @@
+#----------------------------------------------------------------
+# Generated CMake target import file for configuration "Debug".
+#----------------------------------------------------------------
+
+# Commands may need to know the format version.
+set(CMAKE_IMPORT_FILE_VERSION 1)
+
+# Import target "LLVMDemangle" for configuration "Debug"
+set_property(TARGET LLVMDemangle APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMDemangle PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMDemangle.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMDemangle )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMDemangle "${_IMPORT_PREFIX}/lib/LLVMDemangle.lib" )
+
+# Import target "LLVMSupport" for configuration "Debug"
+set_property(TARGET LLVMSupport APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMSupport PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "C;CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMSupport.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMSupport )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMSupport "${_IMPORT_PREFIX}/lib/LLVMSupport.lib" )
+
+# Import target "LLVMTableGen" for configuration "Debug"
+set_property(TARGET LLVMTableGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMTableGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMTableGen.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMTableGen )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMTableGen "${_IMPORT_PREFIX}/lib/LLVMTableGen.lib" )
+
+# Import target "llvm-tblgen" for configuration "Debug"
+set_property(TARGET llvm-tblgen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(llvm-tblgen PROPERTIES
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/bin/llvm-tblgen.exe"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS llvm-tblgen )
+list(APPEND _IMPORT_CHECK_FILES_FOR_llvm-tblgen "${_IMPORT_PREFIX}/bin/llvm-tblgen.exe" )
+
+# Import target "LLVMCore" for configuration "Debug"
+set_property(TARGET LLVMCore APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMCore PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMCore.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMCore )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMCore "${_IMPORT_PREFIX}/lib/LLVMCore.lib" )
+
+# Import target "LLVMIRReader" for configuration "Debug"
+set_property(TARGET LLVMIRReader APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMIRReader PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMIRReader.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMIRReader )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMIRReader "${_IMPORT_PREFIX}/lib/LLVMIRReader.lib" )
+
+# Import target "LLVMCodeGen" for configuration "Debug"
+set_property(TARGET LLVMCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMCodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMCodeGen.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMCodeGen )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMCodeGen "${_IMPORT_PREFIX}/lib/LLVMCodeGen.lib" )
+
+# Import target "LLVMSelectionDAG" for configuration "Debug"
+set_property(TARGET LLVMSelectionDAG APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMSelectionDAG PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMSelectionDAG.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMSelectionDAG )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMSelectionDAG "${_IMPORT_PREFIX}/lib/LLVMSelectionDAG.lib" )
+
+# Import target "LLVMAsmPrinter" for configuration "Debug"
+set_property(TARGET LLVMAsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAsmPrinter PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMAsmPrinter.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMAsmPrinter )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMAsmPrinter "${_IMPORT_PREFIX}/lib/LLVMAsmPrinter.lib" )
+
+# Import target "LLVMMIRParser" for configuration "Debug"
+set_property(TARGET LLVMMIRParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMMIRParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMMIRParser.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMMIRParser )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMMIRParser "${_IMPORT_PREFIX}/lib/LLVMMIRParser.lib" )
+
+# Import target "LLVMGlobalISel" for configuration "Debug"
+set_property(TARGET LLVMGlobalISel APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMGlobalISel PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMGlobalISel.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMGlobalISel )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMGlobalISel "${_IMPORT_PREFIX}/lib/LLVMGlobalISel.lib" )
+
+# Import target "LLVMBinaryFormat" for configuration "Debug"
+set_property(TARGET LLVMBinaryFormat APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMBinaryFormat PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMBinaryFormat.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMBinaryFormat )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMBinaryFormat "${_IMPORT_PREFIX}/lib/LLVMBinaryFormat.lib" )
+
+# Import target "LLVMBitReader" for configuration "Debug"
+set_property(TARGET LLVMBitReader APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMBitReader PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMBitReader.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMBitReader )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMBitReader "${_IMPORT_PREFIX}/lib/LLVMBitReader.lib" )
+
+# Import target "LLVMBitWriter" for configuration "Debug"
+set_property(TARGET LLVMBitWriter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMBitWriter PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMBitWriter.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMBitWriter )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMBitWriter "${_IMPORT_PREFIX}/lib/LLVMBitWriter.lib" )
+
+# Import target "LLVMTransformUtils" for configuration "Debug"
+set_property(TARGET LLVMTransformUtils APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMTransformUtils PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMTransformUtils.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMTransformUtils )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMTransformUtils "${_IMPORT_PREFIX}/lib/LLVMTransformUtils.lib" )
+
+# Import target "LLVMInstrumentation" for configuration "Debug"
+set_property(TARGET LLVMInstrumentation APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMInstrumentation PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMInstrumentation.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMInstrumentation )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMInstrumentation "${_IMPORT_PREFIX}/lib/LLVMInstrumentation.lib" )
+
+# Import target "LLVMAggressiveInstCombine" for configuration "Debug"
+set_property(TARGET LLVMAggressiveInstCombine APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAggressiveInstCombine PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMAggressiveInstCombine.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMAggressiveInstCombine )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMAggressiveInstCombine "${_IMPORT_PREFIX}/lib/LLVMAggressiveInstCombine.lib" )
+
+# Import target "LLVMInstCombine" for configuration "Debug"
+set_property(TARGET LLVMInstCombine APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMInstCombine PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMInstCombine.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMInstCombine )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMInstCombine "${_IMPORT_PREFIX}/lib/LLVMInstCombine.lib" )
+
+# Import target "LLVMScalarOpts" for configuration "Debug"
+set_property(TARGET LLVMScalarOpts APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMScalarOpts PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMScalarOpts.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMScalarOpts )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMScalarOpts "${_IMPORT_PREFIX}/lib/LLVMScalarOpts.lib" )
+
+# Import target "LLVMipo" for configuration "Debug"
+set_property(TARGET LLVMipo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMipo PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMipo.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMipo )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMipo "${_IMPORT_PREFIX}/lib/LLVMipo.lib" )
+
+# Import target "LLVMVectorize" for configuration "Debug"
+set_property(TARGET LLVMVectorize APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMVectorize PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMVectorize.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMVectorize )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMVectorize "${_IMPORT_PREFIX}/lib/LLVMVectorize.lib" )
+
+# Import target "LLVMObjCARCOpts" for configuration "Debug"
+set_property(TARGET LLVMObjCARCOpts APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMObjCARCOpts PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMObjCARCOpts.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMObjCARCOpts )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMObjCARCOpts "${_IMPORT_PREFIX}/lib/LLVMObjCARCOpts.lib" )
+
+# Import target "LLVMCoroutines" for configuration "Debug"
+set_property(TARGET LLVMCoroutines APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMCoroutines PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMCoroutines.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMCoroutines )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMCoroutines "${_IMPORT_PREFIX}/lib/LLVMCoroutines.lib" )
+
+# Import target "LLVMAnalysis" for configuration "Debug"
+set_property(TARGET LLVMAnalysis APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAnalysis PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMAnalysis.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMAnalysis )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMAnalysis "${_IMPORT_PREFIX}/lib/LLVMAnalysis.lib" )
+
+# Import target "LLVMMC" for configuration "Debug"
+set_property(TARGET LLVMMC APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMMC PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMMC.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMMC )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMMC "${_IMPORT_PREFIX}/lib/LLVMMC.lib" )
+
+# Import target "LLVMMCParser" for configuration "Debug"
+set_property(TARGET LLVMMCParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMMCParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMMCParser.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMMCParser )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMMCParser "${_IMPORT_PREFIX}/lib/LLVMMCParser.lib" )
+
+# Import target "LLVMMCDisassembler" for configuration "Debug"
+set_property(TARGET LLVMMCDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMMCDisassembler PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMMCDisassembler.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMMCDisassembler )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMMCDisassembler "${_IMPORT_PREFIX}/lib/LLVMMCDisassembler.lib" )
+
+# Import target "LLVMObject" for configuration "Debug"
+set_property(TARGET LLVMObject APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMObject PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMObject.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMObject )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMObject "${_IMPORT_PREFIX}/lib/LLVMObject.lib" )
+
+# Import target "LLVMOption" for configuration "Debug"
+set_property(TARGET LLVMOption APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMOption PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMOption.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMOption )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMOption "${_IMPORT_PREFIX}/lib/LLVMOption.lib" )
+
+# Import target "LLVMDebugInfoDWARF" for configuration "Debug"
+set_property(TARGET LLVMDebugInfoDWARF APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMDebugInfoDWARF PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMDebugInfoDWARF.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMDebugInfoDWARF )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMDebugInfoDWARF "${_IMPORT_PREFIX}/lib/LLVMDebugInfoDWARF.lib" )
+
+# Import target "LLVMDebugInfoMSF" for configuration "Debug"
+set_property(TARGET LLVMDebugInfoMSF APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMDebugInfoMSF PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMDebugInfoMSF.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMDebugInfoMSF )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMDebugInfoMSF "${_IMPORT_PREFIX}/lib/LLVMDebugInfoMSF.lib" )
+
+# Import target "LLVMDebugInfoCodeView" for configuration "Debug"
+set_property(TARGET LLVMDebugInfoCodeView APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMDebugInfoCodeView PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMDebugInfoCodeView.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMDebugInfoCodeView )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMDebugInfoCodeView "${_IMPORT_PREFIX}/lib/LLVMDebugInfoCodeView.lib" )
+
+# Import target "LLVMDebugInfoPDB" for configuration "Debug"
+set_property(TARGET LLVMDebugInfoPDB APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMDebugInfoPDB PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMDebugInfoPDB.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMDebugInfoPDB )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMDebugInfoPDB "${_IMPORT_PREFIX}/lib/LLVMDebugInfoPDB.lib" )
+
+# Import target "LLVMSymbolize" for configuration "Debug"
+set_property(TARGET LLVMSymbolize APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMSymbolize PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMSymbolize.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMSymbolize )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMSymbolize "${_IMPORT_PREFIX}/lib/LLVMSymbolize.lib" )
+
+# Import target "LLVMTarget" for configuration "Debug"
+set_property(TARGET LLVMTarget APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMTarget PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMTarget.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMTarget )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMTarget "${_IMPORT_PREFIX}/lib/LLVMTarget.lib" )
+
+# Import target "LLVMX86CodeGen" for configuration "Debug"
+set_property(TARGET LLVMX86CodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMX86CodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMX86CodeGen.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMX86CodeGen )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMX86CodeGen "${_IMPORT_PREFIX}/lib/LLVMX86CodeGen.lib" )
+
+# Import target "LLVMX86AsmParser" for configuration "Debug"
+set_property(TARGET LLVMX86AsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMX86AsmParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMX86AsmParser.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMX86AsmParser )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMX86AsmParser "${_IMPORT_PREFIX}/lib/LLVMX86AsmParser.lib" )
+
+# Import target "LLVMX86Disassembler" for configuration "Debug"
+set_property(TARGET LLVMX86Disassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMX86Disassembler PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMX86Disassembler.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMX86Disassembler )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMX86Disassembler "${_IMPORT_PREFIX}/lib/LLVMX86Disassembler.lib" )
+
+# Import target "LLVMX86AsmPrinter" for configuration "Debug"
+set_property(TARGET LLVMX86AsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMX86AsmPrinter PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMX86AsmPrinter.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMX86AsmPrinter )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMX86AsmPrinter "${_IMPORT_PREFIX}/lib/LLVMX86AsmPrinter.lib" )
+
+# Import target "LLVMX86Desc" for configuration "Debug"
+set_property(TARGET LLVMX86Desc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMX86Desc PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMX86Desc.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMX86Desc )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMX86Desc "${_IMPORT_PREFIX}/lib/LLVMX86Desc.lib" )
+
+# Import target "LLVMX86Info" for configuration "Debug"
+set_property(TARGET LLVMX86Info APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMX86Info PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMX86Info.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMX86Info )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMX86Info "${_IMPORT_PREFIX}/lib/LLVMX86Info.lib" )
+
+# Import target "LLVMX86Utils" for configuration "Debug"
+set_property(TARGET LLVMX86Utils APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMX86Utils PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMX86Utils.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMX86Utils )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMX86Utils "${_IMPORT_PREFIX}/lib/LLVMX86Utils.lib" )
+
+# Import target "LLVMAsmParser" for configuration "Debug"
+set_property(TARGET LLVMAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAsmParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMAsmParser.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMAsmParser )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMAsmParser "${_IMPORT_PREFIX}/lib/LLVMAsmParser.lib" )
+
+# Import target "LLVMProfileData" for configuration "Debug"
+set_property(TARGET LLVMProfileData APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMProfileData PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMProfileData.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMProfileData )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMProfileData "${_IMPORT_PREFIX}/lib/LLVMProfileData.lib" )
+
+# Import target "LLVMCoverage" for configuration "Debug"
+set_property(TARGET LLVMCoverage APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMCoverage PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMCoverage.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMCoverage )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMCoverage "${_IMPORT_PREFIX}/lib/LLVMCoverage.lib" )
+
+# Import target "LLVMPasses" for configuration "Debug"
+set_property(TARGET LLVMPasses APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMPasses PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMPasses.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMPasses )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMPasses "${_IMPORT_PREFIX}/lib/LLVMPasses.lib" )
+
+# Import target "LLVMDlltoolDriver" for configuration "Debug"
+set_property(TARGET LLVMDlltoolDriver APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMDlltoolDriver PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMDlltoolDriver.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMDlltoolDriver )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMDlltoolDriver "${_IMPORT_PREFIX}/lib/LLVMDlltoolDriver.lib" )
+
+# Import target "LLVMLibDriver" for configuration "Debug"
+set_property(TARGET LLVMLibDriver APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMLibDriver PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMLibDriver.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMLibDriver )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMLibDriver "${_IMPORT_PREFIX}/lib/LLVMLibDriver.lib" )
+
+# Import target "LLVMWindowsManifest" for configuration "Debug"
+set_property(TARGET LLVMWindowsManifest APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMWindowsManifest PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/LLVMWindowsManifest.lib"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS LLVMWindowsManifest )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMWindowsManifest "${_IMPORT_PREFIX}/lib/LLVMWindowsManifest.lib" )
+
+# Import target "llc" for configuration "Debug"
+set_property(TARGET llc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(llc PROPERTIES
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/bin/llc.exe"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS llc )
+list(APPEND _IMPORT_CHECK_FILES_FOR_llc "${_IMPORT_PREFIX}/bin/llc.exe" )
+
+# Commands beyond this point should not need to know the version.
+set(CMAKE_IMPORT_FILE_VERSION)

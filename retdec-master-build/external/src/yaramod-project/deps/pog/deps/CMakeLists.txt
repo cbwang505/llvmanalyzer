@@ -1,0 +1,6 @@
+if(POG_BUNDLED_RE2)
+	add_subdirectory(re2)
+endif()
+if(POG_BUNDLED_FMT)
+	add_subdirectory(fmt)
+endif()

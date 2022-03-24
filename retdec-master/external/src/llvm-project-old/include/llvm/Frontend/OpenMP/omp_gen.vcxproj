@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3F899D41-D85D-34CF-BA22-A0C401D0B688}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>omp_gen</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\cff304096bea9489d84da24ee5c1acb4\OMP.h.inc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building OMP.h.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+..\..\..\..\Debug\bin\llvm-tblgen.exe --gen-directive-decl -I E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP -IE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include -IE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include --long-string-literals=0 E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/OMP.td -o E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/OMP.h.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\Debug\bin\llvm-tblgen.exe;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\CodeGen\SDNodeProperties.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\CodeGen\ValueTypes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\Directive\DirectiveBase.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenACC\ACC.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\Attributes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\Intrinsics.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsAArch64.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsARM.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsBPF.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsHexagon.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsHexagonDep.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsMips.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsNVVM.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsPowerPC.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsRISCV.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsSystemZ.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsVE.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsVEVL.gen.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsX86.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsXCore.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Option\OptParser.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\TableGen\Automaton.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\TableGen\SearchableTable.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GenericOpcodes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\Combine.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\Target.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\Target.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetCallingConv.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetInstrPredicate.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetItinerary.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetPfmCounters.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetSchedule.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetSelectionDAG.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.h.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building OMP.h.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+..\..\..\..\Release\bin\llvm-tblgen.exe --gen-directive-decl -I E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP -IE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include -IE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include --long-string-literals=0 E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/OMP.td -o E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/OMP.h.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\Release\bin\llvm-tblgen.exe;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\CodeGen\SDNodeProperties.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\CodeGen\ValueTypes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\Directive\DirectiveBase.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenACC\ACC.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\Attributes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\Intrinsics.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsAArch64.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsARM.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsBPF.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsHexagon.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsHexagonDep.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsMips.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsNVVM.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsPowerPC.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsRISCV.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsSystemZ.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsVE.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsVEVL.gen.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsX86.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsXCore.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Option\OptParser.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\TableGen\Automaton.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\TableGen\SearchableTable.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GenericOpcodes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\Combine.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\Target.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\Target.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetCallingConv.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetInstrPredicate.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetItinerary.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetPfmCounters.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetSchedule.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetSelectionDAG.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.h.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building OMP.h.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+..\..\..\..\MinSizeRel\bin\llvm-tblgen.exe --gen-directive-decl -I E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP -IE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include -IE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include --long-string-literals=0 E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/OMP.td -o E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/OMP.h.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\MinSizeRel\bin\llvm-tblgen.exe;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\CodeGen\SDNodeProperties.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\CodeGen\ValueTypes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\Directive\DirectiveBase.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenACC\ACC.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\Attributes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\Intrinsics.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsAArch64.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsARM.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsBPF.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsHexagon.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsHexagonDep.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsMips.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsNVVM.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsPowerPC.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsRISCV.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsSystemZ.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsVE.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsVEVL.gen.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsX86.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsXCore.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Option\OptParser.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\TableGen\Automaton.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\TableGen\SearchableTable.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GenericOpcodes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\Combine.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\Target.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\Target.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetCallingConv.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetInstrPredicate.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetItinerary.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetPfmCounters.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetSchedule.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetSelectionDAG.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.h.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building OMP.h.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+..\..\..\..\RelWithDebInfo\bin\llvm-tblgen.exe --gen-directive-decl -I E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP -IE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include -IE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include --long-string-literals=0 E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/OMP.td -o E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/OMP.h.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\RelWithDebInfo\bin\llvm-tblgen.exe;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\CodeGen\SDNodeProperties.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\CodeGen\ValueTypes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\Directive\DirectiveBase.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenACC\ACC.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\Attributes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\Intrinsics.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsAArch64.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsARM.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsBPF.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsHexagon.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsHexagonDep.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsMips.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsNVVM.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsPowerPC.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsRISCV.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsSystemZ.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsVE.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsVEVL.gen.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsX86.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsXCore.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Option\OptParser.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\TableGen\Automaton.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\TableGen\SearchableTable.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GenericOpcodes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\Combine.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\Target.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\Target.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetCallingConv.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetInstrPredicate.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetItinerary.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetPfmCounters.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetSchedule.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetSelectionDAG.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.h.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\cff304096bea9489d84da24ee5c1acb4\OMP.inc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building OMP.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+..\..\..\..\Debug\bin\llvm-tblgen.exe --gen-directive-impl -I E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP -IE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include -IE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include --long-string-literals=0 E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/OMP.td -o E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/OMP.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\Debug\bin\llvm-tblgen.exe;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\CodeGen\SDNodeProperties.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\CodeGen\ValueTypes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\Directive\DirectiveBase.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenACC\ACC.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\Attributes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\Intrinsics.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsAArch64.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsARM.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsBPF.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsHexagon.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsHexagonDep.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsMips.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsNVVM.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsPowerPC.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsRISCV.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsSystemZ.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsVE.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsVEVL.gen.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsX86.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsXCore.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Option\OptParser.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\TableGen\Automaton.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\TableGen\SearchableTable.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GenericOpcodes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\Combine.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\Target.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\Target.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetCallingConv.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetInstrPredicate.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetItinerary.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetPfmCounters.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetSchedule.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetSelectionDAG.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building OMP.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+..\..\..\..\Release\bin\llvm-tblgen.exe --gen-directive-impl -I E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP -IE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include -IE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include --long-string-literals=0 E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/OMP.td -o E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/OMP.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\Release\bin\llvm-tblgen.exe;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\CodeGen\SDNodeProperties.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\CodeGen\ValueTypes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\Directive\DirectiveBase.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenACC\ACC.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\Attributes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\Intrinsics.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsAArch64.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsARM.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsBPF.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsHexagon.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsHexagonDep.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsMips.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsNVVM.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsPowerPC.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsRISCV.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsSystemZ.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsVE.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsVEVL.gen.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsX86.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsXCore.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Option\OptParser.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\TableGen\Automaton.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\TableGen\SearchableTable.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GenericOpcodes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\Combine.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\Target.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\Target.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetCallingConv.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetInstrPredicate.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetItinerary.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetPfmCounters.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetSchedule.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetSelectionDAG.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building OMP.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+..\..\..\..\MinSizeRel\bin\llvm-tblgen.exe --gen-directive-impl -I E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP -IE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include -IE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include --long-string-literals=0 E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/OMP.td -o E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/OMP.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\MinSizeRel\bin\llvm-tblgen.exe;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\CodeGen\SDNodeProperties.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\CodeGen\ValueTypes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\Directive\DirectiveBase.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenACC\ACC.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\Attributes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\Intrinsics.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsAArch64.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsARM.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsBPF.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsHexagon.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsHexagonDep.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsMips.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsNVVM.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsPowerPC.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsRISCV.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsSystemZ.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsVE.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsVEVL.gen.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsX86.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsXCore.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Option\OptParser.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\TableGen\Automaton.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\TableGen\SearchableTable.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GenericOpcodes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\Combine.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\Target.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\Target.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetCallingConv.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetInstrPredicate.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetItinerary.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetPfmCounters.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetSchedule.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetSelectionDAG.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building OMP.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+..\..\..\..\RelWithDebInfo\bin\llvm-tblgen.exe --gen-directive-impl -I E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP -IE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include -IE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include --long-string-literals=0 E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/OMP.td -o E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/OMP.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\RelWithDebInfo\bin\llvm-tblgen.exe;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\CodeGen\SDNodeProperties.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\CodeGen\ValueTypes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\Directive\DirectiveBase.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenACC\ACC.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\Attributes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\Intrinsics.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsAArch64.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsARM.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsBPF.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsHexagon.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsHexagonDep.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsMips.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsNVVM.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsPowerPC.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsRISCV.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsSystemZ.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsVE.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsVEVL.gen.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsX86.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\IntrinsicsXCore.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Option\OptParser.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\TableGen\Automaton.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\TableGen\SearchableTable.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GenericOpcodes.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\Combine.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\GlobalISel\Target.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\Target.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetCallingConv.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetInstrPredicate.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetItinerary.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetPfmCounters.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetSchedule.td;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Target\TargetSelectionDAG.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\0e7812728cdb95a365ca34aaad183458\omp_gen.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.h.inc;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\CMakeFiles\omp_gen</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.h.inc;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\CMakeFiles\omp_gen</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.h.inc;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\CMakeFiles\omp_gen</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.h.inc;E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\OMP.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\CMakeFiles\omp_gen</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm -BE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm --check-stamp-file E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm -BE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm --check-stamp-file E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm -BE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm --check-stamp-file E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm -BE:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm --check-stamp-file E:/git/WindowsResearch/retdec-master/deps/llvm-project-main/llvm/include/llvm/Frontend/OpenMP/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\CMakeFiles\omp_gen" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\ZERO_CHECK.vcxproj">
+      <Project>{C175A360-4B66-38CD-8AA0-0892E7D0B2F6}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\utils\TableGen\llvm-tblgen.vcxproj">
+      <Project>{00FCEBA7-E44E-3E8C-98EA-411955269D00}</Project>
+      <Name>llvm-tblgen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

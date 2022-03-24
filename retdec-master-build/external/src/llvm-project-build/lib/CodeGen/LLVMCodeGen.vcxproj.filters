@@ -1,0 +1,937 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\IntrinsicLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\AggressiveAntiDepBreaker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\AllocationOrder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\Analysis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\AtomicExpandPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\BasicTargetTransformInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\BranchFolding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\BranchRelaxation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\BreakFalseDeps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\BuiltinGCs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\CalcSpillWeights.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\CallingConvLower.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\CFIInstrInserter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\CodeGen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\CodeGenPrepare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\CriticalAntiDepBreaker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\DeadMachineInstructionElim.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\DetectDeadLanes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\DFAPacketizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\DwarfEHPrepare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\EarlyIfConversion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\EdgeBundles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ExecutionDomainFix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ExpandISelPseudos.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ExpandMemCmp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ExpandPostRAPseudos.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ExpandReductions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\FaultMaps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\FEntryInserter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\FuncletLayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\GCMetadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\GCMetadataPrinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\GCRootLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\GCStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\GlobalMerge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\IfConversion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ImplicitNullChecks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\IndirectBrExpandPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\InlineSpiller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\InterferenceCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\InterleavedAccessPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\InterleavedLoadCombinePass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LatencyPriorityQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LazyMachineBlockFrequencyInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LexicalScopes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LiveDebugValues.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LiveDebugVariables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LiveIntervals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LiveInterval.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LiveIntervalUnion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LivePhysRegs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LiveRangeCalc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LiveRangeEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LiveRangeShrink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LiveRegMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LiveRegUnits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LiveStacks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LiveVariables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LLVMTargetMachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LocalStackSlotAllocation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LoopTraversal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LowLevelType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LowerEmuTLS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineBasicBlock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineBlockFrequencyInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineBlockPlacement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineBranchProbabilityInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineCombiner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineCopyPropagation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineCSE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineDominanceFrontier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineDominators.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineFrameInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineFunctionPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineFunctionPrinterPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineInstrBundle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineInstr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineLICM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineLoopInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineModuleInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineModuleInfoImpls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineOperand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineOptimizationRemarkEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineOutliner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachinePipeliner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachinePostDominators.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineRegionInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineRegisterInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineScheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineSink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineSSAUpdater.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineTraceMetrics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MachineVerifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\PatchableFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MIRPrinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MIRPrintingPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MacroFusion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\OptimizePHIs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ParallelCG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\PeepholeOptimizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\PHIElimination.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\PHIEliminationUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\PostRAHazardRecognizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\PostRASchedulerList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\PreISelIntrinsicLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ProcessImplicitDefs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\PrologEpilogInserter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\PseudoSourceValue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ReachingDefAnalysis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\RegAllocBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\RegAllocBasic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\RegAllocFast.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\RegAllocGreedy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\RegAllocPBQP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\RegisterClassInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\RegisterCoalescer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\RegisterPressure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\RegisterScavenging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\RenameIndependentSubregs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\MIRCanonicalizerPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\RegisterUsageInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\RegUsageInfoCollector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\RegUsageInfoPropagate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ResetMachineFunctionPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\SafeStack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\SafeStackColoring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\SafeStackLayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ScalarizeMaskedMemIntrin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ScheduleDAG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ScheduleDAGInstrs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ScheduleDAGPrinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ScoreboardHazardRecognizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ShadowStackGCLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ShrinkWrap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\SjLjEHPrepare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\SlotIndexes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\SpillPlacement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\SplitKit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\StackColoring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\StackMapLivenessAnalysis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\StackMaps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\StackProtector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\StackSlotColoring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\TailDuplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\TailDuplicator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\TargetFrameLoweringImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\TargetInstrInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\TargetLoweringBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\TargetLoweringObjectFileImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\TargetOptionsImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\TargetPassConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\TargetRegisterInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\TargetSchedule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\TargetSubtargetInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\TwoAddressInstructionPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\UnreachableBlockElim.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\ValueTypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\VirtRegMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\WasmEHPrepare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\WinEHPrepare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\XRayInstrumentation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\AggressiveAntiDepBreaker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\AllocationOrder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\AntiDepBreaker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\BranchFolding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\CriticalAntiDepBreaker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\InterferenceCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LiveDebugVariables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LiveRangeCalc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LiveRangeUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\PHIEliminationUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\RegAllocBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\RegisterCoalescer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\SafeStackColoring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\SafeStackLayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\SpillPlacement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\Spiller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\SplitKit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\AccelTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\Analysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\AsmPrinter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\AsmPrinterHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\AtomicExpandUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\BasicTTIImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\BuiltinGCs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\CalcSpillWeights.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\CallingConvLower.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\CostTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\DAGCombine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\DFAPacketizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\DIE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\DbgEntityHistoryCalculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\DebugHandlerBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\DwarfStringPoolEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\EdgeBundles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\ExecutionDomainFix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\ExpandReductions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\FastISel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\FaultMaps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\FunctionLoweringInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\GCMetadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\GCMetadataPrinter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\GCStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\ISDOpcodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\IntrinsicLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\LatencyPriorityQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\LazyMachineBlockFrequencyInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\LexicalScopes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\LinkAllAsmWriterComponents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\LinkAllCodegenComponents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\LiveInterval.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\LiveIntervalUnion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\LiveIntervals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\LivePhysRegs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\LiveRangeEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\LiveRegMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\LiveRegUnits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\LiveStacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\LiveVariables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\LoopTraversal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\LowLevelType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MIRPrinter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MIRYamlMapping.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachORelocation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineBasicBlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineBlockFrequencyInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineBranchProbabilityInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineCombinerPattern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineConstantPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineDominanceFrontier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineDominators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineFrameInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineFunctionPass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineInstr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineInstrBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineInstrBundle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineInstrBundleIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineJumpTableInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineLoopInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineMemOperand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineModuleInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineModuleInfoImpls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineOperand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineOptimizationRemarkEmitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineOutliner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachinePassRegistry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachinePipeliner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachinePostDominators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineRegionInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineRegisterInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineSSAUpdater.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineScheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MachineTraceMetrics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\MacroFusion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\PBQPRAConstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\ParallelCG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\Passes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\PreISelIntrinsicLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\PseudoSourceValue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\ReachingDefAnalysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\RegAllocPBQP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\RegAllocRegistry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\RegisterClassInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\RegisterPressure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\RegisterScavenging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\RegisterUsageInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\ResourcePriorityQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\RuntimeLibcalls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\ScheduleDAG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\ScheduleDAGInstrs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\ScheduleDAGMutation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\ScheduleDFS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\ScheduleHazardRecognizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\SchedulerRegistry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\ScoreboardHazardRecognizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\SelectionDAG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\SelectionDAGAddressAnalysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\SelectionDAGISel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\SelectionDAGNodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\SelectionDAGTargetInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\SlotIndexes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\StackMaps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\StackProtector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\TailDuplicator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\TargetCallingConv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\TargetFrameLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\TargetInstrInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\TargetLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\TargetLoweringObjectFileImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\TargetOpcodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\TargetPassConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\TargetRegisterInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\TargetSchedule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\TargetSubtargetInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\UnreachableBlockElim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\ValueTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\VirtRegMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\WasmEHFuncInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\WinEHFuncInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\CommandFlags.inc" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\PBQP\CostAllocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\PBQP\Graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\PBQP\Math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\PBQP\ReductionRules.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\CodeGen\PBQP\Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{77B960D0-A950-36E8-B074-FFB3C2582AE8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{283FABAB-9EC2-3CDC-80FD-B4EC54011305}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

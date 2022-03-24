@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\benchmark_register.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\colorprint.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\commandlineflags.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\complexity.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\console_reporter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\counter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\csv_reporter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\json_reporter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\reporter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\sleep.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\statistics.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\string_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\sysinfo.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\timers.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\include\benchmark\benchmark.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\arraysize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\benchmark_api_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\benchmark_register.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\check.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\colorprint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\commandlineflags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\complexity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\counter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\cycleclock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\internal_macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\re.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\sleep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\statistics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\string_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\thread_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\thread_timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\timers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\benchmark\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4FB833BD-9B35-32BF-AA2C-717EF61F231A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F5EFF11C-59B4-3E16-AE47-1BB430D6DD64}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

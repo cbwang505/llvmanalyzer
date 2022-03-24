@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{32096055-DC70-3647-90C6-5D7819493DF2}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>UnitTests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/unittests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/unittests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/unittests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/unittests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/unittests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/unittests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/unittests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/unittests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\ZERO_CHECK.vcxproj">
+      <Project>{F54A6DCD-7DD0-3E66-A1E0-084C36271102}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\ADT\ADTTests.vcxproj">
+      <Project>{08CD83F5-CBF3-36E6-8119-03DB4CC69595}</Project>
+      <Name>ADTTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\Analysis\AnalysisTests.vcxproj">
+      <Project>{60208C7E-D66F-396F-A458-0FD0CD8AB184}</Project>
+      <Name>AnalysisTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\AsmParser\AsmParserTests.vcxproj">
+      <Project>{0A555650-5E72-3A67-B68B-953A6DC8FB83}</Project>
+      <Name>AsmParserTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\BinaryFormat\BinaryFormatTests.vcxproj">
+      <Project>{A6C0ED28-B403-3C81-A545-574B7A115C4B}</Project>
+      <Name>BinaryFormatTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\Bitcode\BitcodeTests.vcxproj">
+      <Project>{40EEF27B-DAC6-311F-A473-E72F717439FC}</Project>
+      <Name>BitcodeTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify\CFIVerifyTests.vcxproj">
+      <Project>{F8B85226-5FD4-3DA0-8850-EF17F421B5F3}</Project>
+      <Name>CFIVerifyTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\CodeGen\CodeGenTests.vcxproj">
+      <Project>{AA655627-9474-3836-BF46-4C72ADB30F9C}</Project>
+      <Name>CodeGenTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\DebugInfo\CodeView\DebugInfoCodeViewTests.vcxproj">
+      <Project>{832104F2-A49E-332B-8DB4-DAB724A705C3}</Project>
+      <Name>DebugInfoCodeViewTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\DebugInfo\DWARF\DebugInfoDWARFTests.vcxproj">
+      <Project>{899727FD-CFFE-3F05-8021-45E5A9138D8D}</Project>
+      <Name>DebugInfoDWARFTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\DebugInfo\MSF\DebugInfoMSFTests.vcxproj">
+      <Project>{DB44ED89-729C-3989-984B-015AE08DBB1C}</Project>
+      <Name>DebugInfoMSFTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\DebugInfo\PDB\DebugInfoPDBTests.vcxproj">
+      <Project>{15B3B5FF-516F-3560-B5B3-4C85F3D49090}</Project>
+      <Name>DebugInfoPDBTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\Demangle\DemangleTests.vcxproj">
+      <Project>{9B38A19A-7413-37CB-A0FA-5BFFC287CA08}</Project>
+      <Name>DemangleTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\Support\DynamicLibrary\DynamicLibraryTests.vcxproj">
+      <Project>{1DADC18B-6BBD-3D4E-991A-FE7EF012F83C}</Project>
+      <Name>DynamicLibraryTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\ExecutionEngine\ExecutionEngineTests.vcxproj">
+      <Project>{7B3BD412-2233-3FF3-81B6-FC99BA8949C1}</Project>
+      <Name>ExecutionEngineTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\FuzzMutate\FuzzMutateTests.vcxproj">
+      <Project>{0C7F1A9F-88A8-3F8B-8D7D-61E0D6AB8F67}</Project>
+      <Name>FuzzMutateTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\CodeGen\GlobalISel\GlobalISelTests.vcxproj">
+      <Project>{589D499C-ABAE-31E4-91FC-61B1DC9CB47C}</Project>
+      <Name>GlobalISelTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\Transforms\IPO\IPOTests.vcxproj">
+      <Project>{711DF3F9-2FE1-3E7F-B2F7-127165B5B1C8}</Project>
+      <Name>IPOTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\IR\IRTests.vcxproj">
+      <Project>{5B5A1290-4F7B-31EC-A88F-3F817F3E1ED3}</Project>
+      <Name>IRTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-exegesis\LLVMExegesisTests.vcxproj">
+      <Project>{7793D3E5-AF3C-3F00-9490-F68F4C8F8C4F}</Project>
+      <Name>LLVMExegesisTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-exegesis\X86\LLVMExegesisX86Tests.vcxproj">
+      <Project>{BBADB730-B9D8-37E9-8FAE-08DCE4C83218}</Project>
+      <Name>LLVMExegesisX86Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\LineEditor\LineEditorTests.vcxproj">
+      <Project>{D0D9E65A-56B9-319D-ADA2-19EE35C4DD01}</Project>
+      <Name>LineEditorTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\Linker\LinkerTests.vcxproj">
+      <Project>{D85B14D2-D24F-36C2-9D4B-2124D1ABFE6D}</Project>
+      <Name>LinkerTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\ExecutionEngine\MCJIT\MCJITTests.vcxproj">
+      <Project>{19B1F05E-6ED9-31C4-930B-BCAB2C4C4C65}</Project>
+      <Name>MCJITTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\MC\MCTests.vcxproj">
+      <Project>{8B0B2D10-C531-3CE4-A098-8340F8D0A226}</Project>
+      <Name>MCTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\MI\MITests.vcxproj">
+      <Project>{24C14A0B-63D7-3E74-937E-B6BFFD99C6C4}</Project>
+      <Name>MITests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\Object\ObjectTests.vcxproj">
+      <Project>{3374EB63-DE13-3689-B35F-3DE646AF32C7}</Project>
+      <Name>ObjectTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\ObjectYAML\ObjectYAMLTests.vcxproj">
+      <Project>{74E2A0F1-22BF-3D57-A3D0-D824CAD4A00D}</Project>
+      <Name>ObjectYAMLTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\OptRemarks\OptRemarksTests.vcxproj">
+      <Project>{90871B22-3FB8-34C8-93A5-BE883894FF22}</Project>
+      <Name>OptRemarksTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\Option\OptionTests.vcxproj">
+      <Project>{66382F5A-62F6-3EDF-B56E-EB49CAE7BD35}</Project>
+      <Name>OptionTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\ExecutionEngine\Orc\OrcJITTests.vcxproj">
+      <Project>{11A1F03B-2335-3FF5-8367-080D516FFB4E}</Project>
+      <Name>OrcJITTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\Passes\PluginsTests.vcxproj">
+      <Project>{61504EB5-C616-3D8B-A12B-AADB7C5D49FF}</Project>
+      <Name>PluginsTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\ProfileData\ProfileDataTests.vcxproj">
+      <Project>{52F6FC53-1085-354D-843B-649619D5E702}</Project>
+      <Name>ProfileDataTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\Transforms\Scalar\ScalarTests.vcxproj">
+      <Project>{BA748B97-555E-36B5-B73D-B43DA3FBE73D}</Project>
+      <Name>ScalarTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\Support\SupportTests.vcxproj">
+      <Project>{6C6C834D-5313-3861-9007-D686348A3174}</Project>
+      <Name>SupportTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\TextAPI\TextAPITests.vcxproj">
+      <Project>{FE09496B-48E3-3A23-B6A7-DC0EA9C64192}</Project>
+      <Name>TextAPITests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\Transforms\Utils\UtilsTests.vcxproj">
+      <Project>{824E5FC3-96B6-3B1A-951E-FFEC8AFC8E46}</Project>
+      <Name>UtilsTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\Transforms\Vectorize\VectorizeTests.vcxproj">
+      <Project>{F67FB48B-D655-3F6E-8D5C-6A6F4963AAAA}</Project>
+      <Name>VectorizeTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\XRay\XRayTests.vcxproj">
+      <Project>{683447D9-6F55-37C8-9A7F-4F524CD6AC5A}</Project>
+      <Name>XRayTests</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

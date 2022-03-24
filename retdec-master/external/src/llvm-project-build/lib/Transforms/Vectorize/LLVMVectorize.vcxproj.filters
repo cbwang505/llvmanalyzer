@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\LoadStoreVectorizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\LoopVectorizationLegality.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\LoopVectorize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\SLPVectorizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\Vectorize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\VPlan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\VPlanHCFGBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\VPlanHCFGTransforms.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\VPlanSLP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\VPlanVerifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\LoopVectorizationPlanner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\VPRecipeBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\VPlan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\VPlanDominatorTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\VPlanHCFGBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\VPlanHCFGTransforms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\VPlanLoopInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\VPlanValue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\VPlanVerifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Coroutines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\IPO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Instrumentation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\ObjCARC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Vectorize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Vectorize\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4FB833BD-9B35-32BF-AA2C-717EF61F231A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F5EFF11C-59B4-3E16-AE47-1BB430D6DD64}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

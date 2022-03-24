@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8BB825AF-68F5-324C-BB1F-CA8740659677}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/keystone/llvm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/keystone -BE:/git/WindowsResearch/retdec-master-build/external/src/keystone --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/keystone/llvm/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\AddFileDependencies.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\CMakeFiles\3.20.5\CMakeASMCompiler.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\LLVMBuild.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\config-ix.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\AddLLVM.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\AddLLVMDefinitions.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\CheckAtomic.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\ChooseMSVCCRT.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\DetermineGCCCompatible.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\GetHostTriple.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\HandleLLVMOptions.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\HandleLLVMStdlib.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\LLVM-Config.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\LLVMProcessSources.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\VersionFromVCS.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Config\AsmParsers.def.in;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Config\Targets.def.in;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Config\config.h.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Config\llvm-config.h.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Support\DataTypes.h.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\__init__.py;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\componentinfo.py;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\configutil.py;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\main.py;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\util.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/keystone/llvm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/keystone -BE:/git/WindowsResearch/retdec-master-build/external/src/keystone --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/keystone/llvm/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\AddFileDependencies.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\CMakeFiles\3.20.5\CMakeASMCompiler.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\LLVMBuild.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\config-ix.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\AddLLVM.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\AddLLVMDefinitions.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\CheckAtomic.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\ChooseMSVCCRT.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\DetermineGCCCompatible.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\GetHostTriple.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\HandleLLVMOptions.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\HandleLLVMStdlib.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\LLVM-Config.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\LLVMProcessSources.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\VersionFromVCS.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Config\AsmParsers.def.in;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Config\Targets.def.in;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Config\config.h.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Config\llvm-config.h.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Support\DataTypes.h.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\__init__.py;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\componentinfo.py;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\configutil.py;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\main.py;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\util.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/keystone/llvm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/keystone -BE:/git/WindowsResearch/retdec-master-build/external/src/keystone --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/keystone/llvm/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\AddFileDependencies.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\CMakeFiles\3.20.5\CMakeASMCompiler.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\LLVMBuild.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\config-ix.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\AddLLVM.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\AddLLVMDefinitions.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\CheckAtomic.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\ChooseMSVCCRT.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\DetermineGCCCompatible.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\GetHostTriple.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\HandleLLVMOptions.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\HandleLLVMStdlib.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\LLVM-Config.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\LLVMProcessSources.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\VersionFromVCS.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Config\AsmParsers.def.in;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Config\Targets.def.in;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Config\config.h.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Config\llvm-config.h.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Support\DataTypes.h.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\__init__.py;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\componentinfo.py;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\configutil.py;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\main.py;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\util.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/keystone/llvm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/keystone -BE:/git/WindowsResearch/retdec-master-build/external/src/keystone --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/keystone/llvm/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\AddFileDependencies.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\CMakeFiles\3.20.5\CMakeASMCompiler.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\LLVMBuild.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\config-ix.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\AddLLVM.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\AddLLVMDefinitions.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\CheckAtomic.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\ChooseMSVCCRT.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\DetermineGCCCompatible.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\GetHostTriple.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\HandleLLVMOptions.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\HandleLLVMStdlib.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\LLVM-Config.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\LLVMProcessSources.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\cmake\modules\VersionFromVCS.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Config\AsmParsers.def.in;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Config\Targets.def.in;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Config\config.h.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Config\llvm-config.h.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include\llvm\Support\DataTypes.h.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\__init__.py;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\componentinfo.py;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\configutil.py;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\main.py;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\utils\llvm-build\llvmbuild\util.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\ZERO_CHECK.vcxproj">
+      <Project>{99032B01-40A0-38FA-80BF-69D2C108E712}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\keystone.vcxproj">
+      <Project>{1E8D4F85-4FEE-3A48-9D28-40A068E0C2F2}</Project>
+      <Name>keystone</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\cs.c">
+      <Filter>Source\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\MCInst.c">
+      <Filter>Source\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\MCInstrDesc.c">
+      <Filter>Source\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\MCRegisterInfo.c">
+      <Filter>Source\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\SStream.c">
+      <Filter>Source\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\utils.c">
+      <Filter>Source\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\ARM\ARMDisassembler.c">
+      <Filter>Source\ARM</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\ARM\ARMInstPrinter.c">
+      <Filter>Source\ARM</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\ARM\ARMMapping.c">
+      <Filter>Source\ARM</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\ARM\ARMModule.c">
+      <Filter>Source\ARM</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\AArch64\AArch64BaseInfo.c">
+      <Filter>Source\ARM64</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\AArch64\AArch64Disassembler.c">
+      <Filter>Source\ARM64</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\AArch64\AArch64InstPrinter.c">
+      <Filter>Source\ARM64</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\AArch64\AArch64Mapping.c">
+      <Filter>Source\ARM64</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\AArch64\AArch64Module.c">
+      <Filter>Source\ARM64</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\Mips\MipsDisassembler.c">
+      <Filter>Source\Mips</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\Mips\MipsInstPrinter.c">
+      <Filter>Source\Mips</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\Mips\MipsMapping.c">
+      <Filter>Source\Mips</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\Mips\MipsModule.c">
+      <Filter>Source\Mips</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\PowerPC\PPCDisassembler.c">
+      <Filter>Source\PowerPC</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\PowerPC\PPCInstPrinter.c">
+      <Filter>Source\PowerPC</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\PowerPC\PPCMapping.c">
+      <Filter>Source\PowerPC</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\PowerPC\PPCModule.c">
+      <Filter>Source\PowerPC</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86Disassembler.c">
+      <Filter>Source\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86DisassemblerDecoder.c">
+      <Filter>Source\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86IntelInstPrinter.c">
+      <Filter>Source\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86Mapping.c">
+      <Filter>Source\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86Module.c">
+      <Filter>Source\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86ATTInstPrinter.c">
+      <Filter>Source\X86</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\include\capstone\arm64.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\include\capstone\arm.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\include\capstone\capstone.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\include\capstone\mips.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\include\capstone\ppc.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\include\capstone\x86.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\include\capstone\sparc.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\include\capstone\systemz.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\include\capstone\xcore.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\include\capstone\m68k.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\include\capstone\tms320c64x.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\include\capstone\m680x.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\include\capstone\platform.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\cs_priv.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\LEB128.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\MathExtras.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\MCDisassembler.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\MCFixedLenDisassembler.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\MCInst.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\MCInstrDesc.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\MCRegisterInfo.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\SStream.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\utils.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\ARM\ARMAddressingModes.h">
+      <Filter>Include\ARM</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\ARM\ARMBaseInfo.h">
+      <Filter>Include\ARM</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\ARM\ARMDisassembler.h">
+      <Filter>Include\ARM</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\ARM\ARMInstPrinter.h">
+      <Filter>Include\ARM</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\ARM\ARMMapping.h">
+      <Filter>Include\ARM</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\AArch64\AArch64AddressingModes.h">
+      <Filter>Include\ARM64</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\AArch64\AArch64BaseInfo.h">
+      <Filter>Include\ARM64</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\AArch64\AArch64Disassembler.h">
+      <Filter>Include\ARM64</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\AArch64\AArch64InstPrinter.h">
+      <Filter>Include\ARM64</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\AArch64\AArch64Mapping.h">
+      <Filter>Include\ARM64</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\Mips\MipsDisassembler.h">
+      <Filter>Include\Mips</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\Mips\MipsInstPrinter.h">
+      <Filter>Include\Mips</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\Mips\MipsMapping.h">
+      <Filter>Include\Mips</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\PowerPC\PPCDisassembler.h">
+      <Filter>Include\PowerPC</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\PowerPC\PPCInstPrinter.h">
+      <Filter>Include\PowerPC</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\PowerPC\PPCMapping.h">
+      <Filter>Include\PowerPC</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\PowerPC\PPCPredicates.h">
+      <Filter>Include\PowerPC</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86BaseInfo.h">
+      <Filter>Include\X86</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86Disassembler.h">
+      <Filter>Include\X86</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86DisassemblerDecoder.h">
+      <Filter>Include\X86</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86DisassemblerDecoderCommon.h">
+      <Filter>Include\X86</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86InstPrinter.h">
+      <Filter>Include\X86</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86Mapping.h">
+      <Filter>Include\X86</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\ARM\ARMGenAsmWriter.inc">
+      <Filter>Include\ARM</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\ARM\ARMGenDisassemblerTables.inc">
+      <Filter>Include\ARM</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\ARM\ARMGenInstrInfo.inc">
+      <Filter>Include\ARM</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\ARM\ARMGenRegisterInfo.inc">
+      <Filter>Include\ARM</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\ARM\ARMGenSubtargetInfo.inc">
+      <Filter>Include\ARM</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\ARM\ARMMappingInsn.inc">
+      <Filter>Include\ARM</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\ARM\ARMMappingInsnOp.inc">
+      <Filter>Include\ARM</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\AArch64\AArch64GenAsmWriter.inc">
+      <Filter>Include\ARM64</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\AArch64\AArch64GenDisassemblerTables.inc">
+      <Filter>Include\ARM64</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\AArch64\AArch64GenInstrInfo.inc">
+      <Filter>Include\ARM64</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\AArch64\AArch64GenRegisterInfo.inc">
+      <Filter>Include\ARM64</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\AArch64\AArch64GenSubtargetInfo.inc">
+      <Filter>Include\ARM64</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\AArch64\AArch64MappingInsn.inc">
+      <Filter>Include\ARM64</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\Mips\MipsGenAsmWriter.inc">
+      <Filter>Include\Mips</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\Mips\MipsGenDisassemblerTables.inc">
+      <Filter>Include\Mips</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\Mips\MipsGenInstrInfo.inc">
+      <Filter>Include\Mips</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\Mips\MipsGenRegisterInfo.inc">
+      <Filter>Include\Mips</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\Mips\MipsGenSubtargetInfo.inc">
+      <Filter>Include\Mips</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\Mips\MipsMappingInsn.inc">
+      <Filter>Include\Mips</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\PowerPC\PPCGenAsmWriter.inc">
+      <Filter>Include\PowerPC</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\PowerPC\PPCGenDisassemblerTables.inc">
+      <Filter>Include\PowerPC</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\PowerPC\PPCGenInstrInfo.inc">
+      <Filter>Include\PowerPC</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\PowerPC\PPCGenRegisterInfo.inc">
+      <Filter>Include\PowerPC</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\PowerPC\PPCGenSubtargetInfo.inc">
+      <Filter>Include\PowerPC</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\PowerPC\PPCMappingInsn.inc">
+      <Filter>Include\PowerPC</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86GenAsmWriter.inc">
+      <Filter>Include\X86</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86GenAsmWriter1.inc">
+      <Filter>Include\X86</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86GenAsmWriter1_reduce.inc">
+      <Filter>Include\X86</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86GenAsmWriter_reduce.inc">
+      <Filter>Include\X86</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86GenDisassemblerTables.inc">
+      <Filter>Include\X86</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86GenDisassemblerTables_reduce.inc">
+      <Filter>Include\X86</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86GenInstrInfo.inc">
+      <Filter>Include\X86</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86GenInstrInfo_reduce.inc">
+      <Filter>Include\X86</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86GenRegisterInfo.inc">
+      <Filter>Include\X86</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86MappingInsn.inc">
+      <Filter>Include\X86</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86MappingInsnOp.inc">
+      <Filter>Include\X86</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86MappingInsnOp_reduce.inc">
+      <Filter>Include\X86</Filter>
+    </None>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch\X86\X86MappingInsn_reduce.inc">
+      <Filter>Include\X86</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{E9778967-1B8A-3CD1-90AE-0E24B508FDD9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\ARM">
+      <UniqueIdentifier>{55046B3C-93FE-3143-BBE6-41A3C1B3B295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\ARM64">
+      <UniqueIdentifier>{49A62CDB-328A-3A5A-B619-83F4C56B4CBA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Common">
+      <UniqueIdentifier>{90E1B657-337A-3DAB-9111-AC592C987857}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Engine">
+      <UniqueIdentifier>{89279F24-A89E-33DE-965E-21C6CFECD9DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Mips">
+      <UniqueIdentifier>{CA368B10-DB6A-31C6-94B1-B502064AD559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\PowerPC">
+      <UniqueIdentifier>{20724E7F-DE16-3AE9-9294-87B92B8F63F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\X86">
+      <UniqueIdentifier>{55E3DD63-9F2F-3867-A351-C4B674CC595A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{90E1D482-8B07-3897-8674-67E03E797062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ARM">
+      <UniqueIdentifier>{C0452365-A893-39C5-ADFA-8C116D898D0C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ARM64">
+      <UniqueIdentifier>{D5B13A16-3EE5-36FC-905A-BF67A8A76A0B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine">
+      <UniqueIdentifier>{67B58295-5337-3190-987C-2E37E65A2D1A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Mips">
+      <UniqueIdentifier>{B3D4F29E-57D2-3A52-855A-39D8C29C622F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\PowerPC">
+      <UniqueIdentifier>{90F9AC1B-3939-3724-95D0-1529CBAACFD1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\X86">
+      <UniqueIdentifier>{46686E73-9601-3FAF-921D-73E2D319DC22}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\ADCE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\AlignmentFromAssumptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\BDCE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\CallSiteSplitting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\ConstantHoisting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\ConstantProp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\CorrelatedValuePropagation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\DCE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\DeadStoreElimination.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\DivRemPairs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\EarlyCSE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\FlattenCFGPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\Float2Int.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\GuardWidening.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\GVN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\GVNHoist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\GVNSink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\IVUsersPrinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\InductiveRangeCheckElimination.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\IndVarSimplify.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\InferAddressSpaces.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\InstSimplifyPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\JumpThreading.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LICM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopAccessAnalysisPrinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopSink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopDeletion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopDataPrefetch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopDistribute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopIdiomRecognize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopInstSimplify.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopInterchange.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopLoadElimination.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopPassManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopPredication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopRerollPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopRotation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopSimplifyCFG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopStrengthReduce.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopUnrollPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopUnrollAndJamPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopUnswitch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LoopVersioningLICM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LowerAtomic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LowerExpectIntrinsic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LowerGuardIntrinsic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\MakeGuardsExplicit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\MemCpyOptimizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\MergeICmps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\MergedLoadStoreMotion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\NaryReassociate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\NewGVN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\PartiallyInlineLibCalls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\PlaceSafepoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\Reassociate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\Reg2Mem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\RewriteStatepointsForGC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\SCCP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\SROA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\Scalar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\Scalarizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\SeparateConstOffsetFromGEP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\SimpleLoopUnswitch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\SimplifyCFGPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\Sink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\SpeculativeExecution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\SpeculateAroundPHIs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\StraightLineStrengthReduce.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\StructurizeCFG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\TailRecursionElimination.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\WarnMissedTransforms.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Coroutines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\IPO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Instrumentation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\ObjCARC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Vectorize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\ADCE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\AlignmentFromAssumptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\BDCE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\CallSiteSplitting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\ConstantHoisting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\CorrelatedValuePropagation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\DCE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\DeadStoreElimination.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\DivRemPairs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\EarlyCSE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\Float2Int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\GVN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\GVNExpression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\GuardWidening.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\IVUsersPrinter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\IndVarSimplify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\InductiveRangeCheckElimination.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\InstSimplifyPass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\JumpThreading.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LICM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LoopAccessAnalysisPrinter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LoopDataPrefetch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LoopDeletion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LoopDistribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LoopIdiomRecognize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LoopInstSimplify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LoopLoadElimination.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LoopPassManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LoopPredication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LoopRotation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LoopSimplifyCFG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LoopSink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LoopStrengthReduce.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LoopUnrollAndJamPass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LoopUnrollPass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LowerAtomic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LowerExpectIntrinsic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\LowerGuardIntrinsic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\MakeGuardsExplicit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\MemCpyOptimizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\MergedLoadStoreMotion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\NaryReassociate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\NewGVN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\PartiallyInlineLibCalls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\Reassociate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\RewriteStatepointsForGC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\SCCP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\SROA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\Scalarizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\SimpleLoopUnswitch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\SimplifyCFG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\Sink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\SpeculateAroundPHIs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\SpeculativeExecution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\TailRecursionElimination.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Transforms\Scalar\WarnMissedTransforms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{77B960D0-A950-36E8-B074-FFB3C2582AE8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{283FABAB-9EC2-3CDC-80FD-B4EC54011305}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

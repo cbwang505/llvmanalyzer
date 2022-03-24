@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-build\CMakeFiles\496a9de5e0c74d418dbe77db7e5edf37\Experimental.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project\deps\pog\deps\re2\re2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-build\CMakeFiles\Experimental" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AF8FC9AB-9148-3E50-98BC-4129C5AE3F76}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

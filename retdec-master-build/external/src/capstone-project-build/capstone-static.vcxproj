@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{36E08C1D-A159-3D51-88FF-25BF7717977E}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>capstone-static</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">capstone-static.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">capstone</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">capstone-static.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">capstone</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">capstone-static.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">capstone</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">capstone-static.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">capstone</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CAPSTONE_ARM_SUPPORT;CAPSTONE_ARM64_SUPPORT;CAPSTONE_MIPS_SUPPORT;CAPSTONE_PPC_SUPPORT;CAPSTONE_X86_SUPPORT;CAPSTONE_USE_SYS_DYN_MEM;CAPSTONE_HAS_ARM;CAPSTONE_HAS_ARM64;CAPSTONE_HAS_MIPS;CAPSTONE_HAS_POWERPC;CAPSTONE_HAS_X86;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CAPSTONE_ARM_SUPPORT;CAPSTONE_ARM64_SUPPORT;CAPSTONE_MIPS_SUPPORT;CAPSTONE_PPC_SUPPORT;CAPSTONE_X86_SUPPORT;CAPSTONE_USE_SYS_DYN_MEM;CAPSTONE_HAS_ARM;CAPSTONE_HAS_ARM64;CAPSTONE_HAS_MIPS;CAPSTONE_HAS_POWERPC;CAPSTONE_HAS_X86;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CAPSTONE_ARM_SUPPORT;CAPSTONE_ARM64_SUPPORT;CAPSTONE_MIPS_SUPPORT;CAPSTONE_PPC_SUPPORT;CAPSTONE_X86_SUPPORT;CAPSTONE_USE_SYS_DYN_MEM;CAPSTONE_HAS_ARM;CAPSTONE_HAS_ARM64;CAPSTONE_HAS_MIPS;CAPSTONE_HAS_POWERPC;CAPSTONE_HAS_X86;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CAPSTONE_ARM_SUPPORT;CAPSTONE_ARM64_SUPPORT;CAPSTONE_MIPS_SUPPORT;CAPSTONE_PPC_SUPPORT;CAPSTONE_X86_SUPPORT;CAPSTONE_USE_SYS_DYN_MEM;CAPSTONE_HAS_ARM;CAPSTONE_HAS_ARM64;CAPSTONE_HAS_MIPS;CAPSTONE_HAS_POWERPC;CAPSTONE_HAS_X86;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CAPSTONE_ARM_SUPPORT;CAPSTONE_ARM64_SUPPORT;CAPSTONE_MIPS_SUPPORT;CAPSTONE_PPC_SUPPORT;CAPSTONE_X86_SUPPORT;CAPSTONE_USE_SYS_DYN_MEM;CAPSTONE_HAS_ARM;CAPSTONE_HAS_ARM64;CAPSTONE_HAS_MIPS;CAPSTONE_HAS_POWERPC;CAPSTONE_HAS_X86;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CAPSTONE_ARM_SUPPORT;CAPSTONE_ARM64_SUPPORT;CAPSTONE_MIPS_SUPPORT;CAPSTONE_PPC_SUPPORT;CAPSTONE_X86_SUPPORT;CAPSTONE_USE_SYS_DYN_MEM;CAPSTONE_HAS_ARM;CAPSTONE_HAS_ARM64;CAPSTONE_HAS_MIPS;CAPSTONE_HAS_POWERPC;CAPSTONE_HAS_X86;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CAPSTONE_ARM_SUPPORT;CAPSTONE_ARM64_SUPPORT;CAPSTONE_MIPS_SUPPORT;CAPSTONE_PPC_SUPPORT;CAPSTONE_X86_SUPPORT;CAPSTONE_USE_SYS_DYN_MEM;CAPSTONE_HAS_ARM;CAPSTONE_HAS_ARM64;CAPSTONE_HAS_MIPS;CAPSTONE_HAS_POWERPC;CAPSTONE_HAS_X86;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CAPSTONE_ARM_SUPPORT;CAPSTONE_ARM64_SUPPORT;CAPSTONE_MIPS_SUPPORT;CAPSTONE_PPC_SUPPORT;CAPSTONE_X86_SUPPORT;CAPSTONE_USE_SYS_DYN_MEM;CAPSTONE_HAS_ARM;CAPSTONE_HAS_ARM64;CAPSTONE_HAS_MIPS;CAPSTONE_HAS_POWERPC;CAPSTONE_HAS_X86;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/capstone-project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/capstone-project -BE:/git/WindowsResearch/retdec-master-build/external/src/capstone-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/capstone-project-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\3.17.2\CMakeCCompiler.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\3.17.2\CMakeCXXCompiler.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\3.17.2\CMakeRCCompiler.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\3.17.2\CMakeSystem.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\capstone.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/capstone-project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/capstone-project -BE:/git/WindowsResearch/retdec-master-build/external/src/capstone-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/capstone-project-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\3.17.2\CMakeCCompiler.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\3.17.2\CMakeCXXCompiler.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\3.17.2\CMakeRCCompiler.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\3.17.2\CMakeSystem.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\capstone.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/capstone-project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/capstone-project -BE:/git/WindowsResearch/retdec-master-build/external/src/capstone-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/capstone-project-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\3.17.2\CMakeCCompiler.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\3.17.2\CMakeCXXCompiler.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\3.17.2\CMakeRCCompiler.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\3.17.2\CMakeSystem.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\capstone.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/capstone-project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/capstone-project -BE:/git/WindowsResearch/retdec-master-build/external/src/capstone-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/capstone-project-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\3.17.2\CMakeCCompiler.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\3.17.2\CMakeCXXCompiler.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\3.17.2\CMakeRCCompiler.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\3.17.2\CMakeSystem.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\capstone.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\cs.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\MCInst.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\MCInstrDesc.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\MCRegisterInfo.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\SStream.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\utils.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\ARM\ARMDisassembler.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\ARM\ARMInstPrinter.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\ARM\ARMMapping.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\ARM\ARMModule.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\AArch64\AArch64BaseInfo.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\AArch64\AArch64Disassembler.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\AArch64\AArch64InstPrinter.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\AArch64\AArch64Mapping.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\AArch64\AArch64Module.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\Mips\MipsDisassembler.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\Mips\MipsInstPrinter.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\Mips\MipsMapping.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\Mips\MipsModule.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\PowerPC\PPCDisassembler.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\PowerPC\PPCInstPrinter.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\PowerPC\PPCMapping.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\PowerPC\PPCModule.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86Disassembler.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86DisassemblerDecoder.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86IntelInstPrinter.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86Mapping.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86Module.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86ATTInstPrinter.c" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include\capstone\arm64.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include\capstone\arm.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include\capstone\capstone.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include\capstone\mips.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include\capstone\ppc.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include\capstone\x86.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include\capstone\sparc.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include\capstone\systemz.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include\capstone\xcore.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include\capstone\m68k.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include\capstone\tms320c64x.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include\capstone\m680x.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\include\capstone\platform.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\cs_priv.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\LEB128.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\MathExtras.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\MCDisassembler.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\MCFixedLenDisassembler.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\MCInst.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\MCInstrDesc.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\MCRegisterInfo.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\SStream.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\utils.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\ARM\ARMAddressingModes.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\ARM\ARMBaseInfo.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\ARM\ARMDisassembler.h" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\ARM\ARMGenAsmWriter.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\ARM\ARMGenDisassemblerTables.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\ARM\ARMGenInstrInfo.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\ARM\ARMGenRegisterInfo.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\ARM\ARMGenSubtargetInfo.inc" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\ARM\ARMInstPrinter.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\ARM\ARMMapping.h" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\ARM\ARMMappingInsn.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\ARM\ARMMappingInsnOp.inc" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\AArch64\AArch64AddressingModes.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\AArch64\AArch64BaseInfo.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\AArch64\AArch64Disassembler.h" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\AArch64\AArch64GenAsmWriter.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\AArch64\AArch64GenDisassemblerTables.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\AArch64\AArch64GenInstrInfo.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\AArch64\AArch64GenRegisterInfo.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\AArch64\AArch64GenSubtargetInfo.inc" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\AArch64\AArch64InstPrinter.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\AArch64\AArch64Mapping.h" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\AArch64\AArch64MappingInsn.inc" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\Mips\MipsDisassembler.h" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\Mips\MipsGenAsmWriter.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\Mips\MipsGenDisassemblerTables.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\Mips\MipsGenInstrInfo.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\Mips\MipsGenRegisterInfo.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\Mips\MipsGenSubtargetInfo.inc" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\Mips\MipsInstPrinter.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\Mips\MipsMapping.h" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\Mips\MipsMappingInsn.inc" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\PowerPC\PPCDisassembler.h" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\PowerPC\PPCGenAsmWriter.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\PowerPC\PPCGenDisassemblerTables.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\PowerPC\PPCGenInstrInfo.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\PowerPC\PPCGenRegisterInfo.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\PowerPC\PPCGenSubtargetInfo.inc" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\PowerPC\PPCInstPrinter.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\PowerPC\PPCMapping.h" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\PowerPC\PPCMappingInsn.inc" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\PowerPC\PPCPredicates.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86BaseInfo.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86Disassembler.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86DisassemblerDecoder.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86DisassemblerDecoderCommon.h" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86GenAsmWriter.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86GenAsmWriter1.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86GenAsmWriter1_reduce.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86GenAsmWriter_reduce.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86GenDisassemblerTables.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86GenDisassemblerTables_reduce.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86GenInstrInfo.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86GenInstrInfo_reduce.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86GenRegisterInfo.inc" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86InstPrinter.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86Mapping.h" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86MappingInsn.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86MappingInsnOp.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86MappingInsnOp_reduce.inc" />
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch\X86\X86MappingInsn_reduce.inc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project-build\ZERO_CHECK.vcxproj">
+      <Project>{893AAFFE-0ACF-343F-9C4D-AD4E737D8CED}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://github.com/avast/yaramod/archive/94fc854153f48556087533616e3b0945d6f8023c.zip'
+tag='SHA256=f89546604a9617afb9c6cf8f241cb6dfb398e13b1c77a19f6193d037572b875c'

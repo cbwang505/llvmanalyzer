@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{77013137-789C-324B-97CD-D0701DA5CC8E}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>LLVMAnalysis</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\Debug\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LLVMAnalysis.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LLVMAnalysis</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\Release\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LLVMAnalysis.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LLVMAnalysis</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\MinSizeRel\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">LLVMAnalysis.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">LLVMAnalysis</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\RelWithDebInfo\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">LLVMAnalysis.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">LLVMAnalysis</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/lib/Analysis/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/lib/Analysis/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Analysis\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/lib/Analysis/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/lib/Analysis/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Analysis\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/lib/Analysis/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/lib/Analysis/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Analysis\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/lib/Analysis/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/lib/Analysis/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Analysis\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\AliasAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\AliasAnalysisEvaluator.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\AliasAnalysisSummary.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\AliasSetTracker.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\Analysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\AssumptionCache.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\BasicAliasAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\BlockFrequencyInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\BlockFrequencyInfoImpl.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\BranchProbabilityInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\CFG.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\CFGPrinter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\CFLAndersAliasAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\CFLSteensAliasAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\CGSCCPassManager.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\CallGraph.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\CallGraphSCCPass.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\CallPrinter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\CaptureTracking.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\CmpInstAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\CostModel.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\CodeMetrics.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\ConstantFolding.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\Delinearization.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\DemandedBits.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\DependenceAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\DivergenceAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\DomPrinter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\DominanceFrontier.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\EHPersonalities.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\GlobalsModRef.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\GuardUtils.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\IVDescriptors.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\IVUsers.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\IndirectCallPromotionAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\InlineCost.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\InstCount.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\InstructionPrecedenceTracking.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\InstructionSimplify.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\Interval.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\IntervalPartition.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\IteratedDominanceFrontier.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\LazyBranchProbabilityInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\LazyBlockFrequencyInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\LazyCallGraph.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\LazyValueInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\LegacyDivergenceAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\Lint.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\Loads.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\LoopAccessAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\LoopAnalysisManager.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\LoopUnrollAnalyzer.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\LoopInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\LoopPass.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\MemDepPrinter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\MemDerefPrinter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\MemoryBuiltins.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\MemoryDependenceAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\MemoryLocation.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\MemorySSA.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\MemorySSAUpdater.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\ModuleDebugInfoPrinter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\ModuleSummaryAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\MustExecute.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\ObjCARCAliasAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\ObjCARCAnalysisUtils.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\ObjCARCInstKind.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\OptimizationRemarkEmitter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\OrderedBasicBlock.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\OrderedInstructions.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\PHITransAddr.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\PhiValues.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\PostDominators.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\ProfileSummaryInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\PtrUseVisitor.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\RegionInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\RegionPass.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\RegionPrinter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\ScalarEvolution.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\ScalarEvolutionAliasAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\ScalarEvolutionExpander.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\ScalarEvolutionNormalization.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\StackSafetyAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\SyncDependenceAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\SyntheticCountsUtils.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\TargetLibraryInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\TargetTransformInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\Trace.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\TypeBasedAliasAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\TypeMetadataUtils.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\ScopedNoAliasAA.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\ValueLattice.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\ValueLatticeUtils.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\ValueTracking.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\VectorUtils.cpp" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\AliasAnalysisSummary.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\CFLGraph.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\StratifiedSets.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\AliasAnalysis.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\AliasAnalysisEvaluator.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\AliasSetTracker.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\AssumptionCache.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\BasicAliasAnalysis.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\BlockFrequencyInfo.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\BlockFrequencyInfoImpl.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\BranchProbabilityInfo.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\CFG.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\CFGPrinter.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\CFLAliasAnalysisUtils.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\CFLAndersAliasAnalysis.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\CFLSteensAliasAnalysis.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\CGSCCPassManager.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\CallGraph.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\CallGraphSCCPass.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\CallPrinter.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\CaptureTracking.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\CmpInstAnalysis.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\CodeMetrics.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\ConstantFolding.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\DOTGraphTraitsPass.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\DemandedBits.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\DependenceAnalysis.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\DivergenceAnalysis.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\DomPrinter.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\DominanceFrontier.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\DominanceFrontierImpl.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\EHPersonalities.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\GlobalsModRef.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\GuardUtils.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\IVDescriptors.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\IVUsers.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\IndirectCallPromotionAnalysis.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\IndirectCallVisitor.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\InlineCost.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\InstructionPrecedenceTracking.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\InstructionSimplify.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\Interval.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\IntervalIterator.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\IntervalPartition.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\IteratedDominanceFrontier.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\LazyBlockFrequencyInfo.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\LazyBranchProbabilityInfo.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\LazyCallGraph.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\LazyValueInfo.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\LegacyDivergenceAnalysis.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\Lint.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\Loads.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\LoopAccessAnalysis.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\LoopAnalysisManager.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\LoopInfo.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\LoopInfoImpl.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\LoopIterator.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\LoopPass.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\LoopUnrollAnalyzer.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\MemoryBuiltins.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\MemoryDependenceAnalysis.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\MemoryLocation.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\MemorySSA.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\MemorySSAUpdater.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\ModuleSummaryAnalysis.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\MustExecute.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\ObjCARCAliasAnalysis.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\ObjCARCAnalysisUtils.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\ObjCARCInstKind.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\OptimizationRemarkEmitter.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\OrderedBasicBlock.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\OrderedInstructions.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\PHITransAddr.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\Passes.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\PhiValues.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\PostDominators.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\ProfileSummaryInfo.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\PtrUseVisitor.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\RegionInfo.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\RegionInfoImpl.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\RegionIterator.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\RegionPass.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\RegionPrinter.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\ScalarEvolution.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\ScalarEvolutionAliasAnalysis.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\ScalarEvolutionExpander.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\ScalarEvolutionExpressions.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\ScalarEvolutionNormalization.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\ScopedNoAliasAA.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\SparsePropagation.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\StackSafetyAnalysis.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\SyncDependenceAnalysis.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\SyntheticCountsUtils.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\TargetFolder.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\TargetLibraryInfo.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\TargetTransformInfo.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\TargetTransformInfoImpl.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\Trace.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\TypeBasedAliasAnalysis.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\TypeMetadataUtils.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\ValueLattice.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\ValueLatticeUtils.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\ValueTracking.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Analysis\VectorUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\ZERO_CHECK.vcxproj">
+      <Project>{F54A6DCD-7DD0-3E66-A1E0-084C36271102}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include\llvm\IR\intrinsics_gen.vcxproj">
+      <Project>{B70AB4D8-2C1B-3F6F-A8E5-620093A6DC9C}</Project>
+      <Name>intrinsics_gen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

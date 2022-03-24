@@ -1,0 +1,902 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{781E3D10-CA68-3A2D-977F-970F792A13B8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>fmt-dep</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\16959e33ca0cef9743f23a22e9185ba5\fmt-dep-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Creating directories for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project/deps/pog/deps/fmt/fmt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Creating directories for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project/deps/pog/deps/fmt/fmt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Creating directories for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project/deps/pog/deps/fmt/fmt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Creating directories for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project/deps/pog/deps/fmt/fmt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\16959e33ca0cef9743f23a22e9185ba5\fmt-dep-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No download step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No download step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No download step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No download step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\16959e33ca0cef9743f23a22e9185ba5\fmt-dep-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No update step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No update step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No update step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No update step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\16959e33ca0cef9743f23a22e9185ba5\fmt-dep-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No patch step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No patch step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No patch step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No patch step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\16959e33ca0cef9743f23a22e9185ba5\fmt-dep-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing configure step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt -DCMAKE_BUILD_TYPE= "-DCMAKE_CXX_FLAGS=/DWIN32 /D_WINDOWS /W3 /GR /EHsc" "-DCMAKE_CXX_FLAGS_RELEASE=/MD /O2 /Ob2 /DNDEBUG" "-DCMAKE_CXX_FLAGS_DEBUG=/MDd /Zi /Ob0 /Od /RTC1" -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DFMT_TEST=OFF -DFMT_DOC=OFF "-GVisual Studio 15 2017" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise" E:/git/WindowsResearch/retdec-master/external/src/yaramod-project/deps/pog/deps/fmt/fmt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\tmp\fmt-dep-cfgcmd.txt;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-update;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing configure step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt -DCMAKE_BUILD_TYPE= "-DCMAKE_CXX_FLAGS=/DWIN32 /D_WINDOWS /W3 /GR /EHsc" "-DCMAKE_CXX_FLAGS_RELEASE=/MD /O2 /Ob2 /DNDEBUG" "-DCMAKE_CXX_FLAGS_DEBUG=/MDd /Zi /Ob0 /Od /RTC1" -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DFMT_TEST=OFF -DFMT_DOC=OFF "-GVisual Studio 15 2017" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise" E:/git/WindowsResearch/retdec-master/external/src/yaramod-project/deps/pog/deps/fmt/fmt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\tmp\fmt-dep-cfgcmd.txt;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-update;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing configure step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt -DCMAKE_BUILD_TYPE= "-DCMAKE_CXX_FLAGS=/DWIN32 /D_WINDOWS /W3 /GR /EHsc" "-DCMAKE_CXX_FLAGS_RELEASE=/MD /O2 /Ob2 /DNDEBUG" "-DCMAKE_CXX_FLAGS_DEBUG=/MDd /Zi /Ob0 /Od /RTC1" -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DFMT_TEST=OFF -DFMT_DOC=OFF "-GVisual Studio 15 2017" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise" E:/git/WindowsResearch/retdec-master/external/src/yaramod-project/deps/pog/deps/fmt/fmt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\tmp\fmt-dep-cfgcmd.txt;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-update;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing configure step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt -DCMAKE_BUILD_TYPE= "-DCMAKE_CXX_FLAGS=/DWIN32 /D_WINDOWS /W3 /GR /EHsc" "-DCMAKE_CXX_FLAGS_RELEASE=/MD /O2 /Ob2 /DNDEBUG" "-DCMAKE_CXX_FLAGS_DEBUG=/MDd /Zi /Ob0 /Od /RTC1" -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DFMT_TEST=OFF -DFMT_DOC=OFF "-GVisual Studio 15 2017" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise" E:/git/WindowsResearch/retdec-master/external/src/yaramod-project/deps/pog/deps/fmt/fmt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\tmp\fmt-dep-cfgcmd.txt;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-update;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\16959e33ca0cef9743f23a22e9185ba5\fmt-dep-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing build step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug -- -m
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing build step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release -- -m
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing build step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config MinSizeRel -- -m
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing build step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config RelWithDebInfo -- -m
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\16959e33ca0cef9743f23a22e9185ba5\fmt-dep-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing install step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --target install --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing install step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --target install --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing install step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --target install --config MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing install step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --target install --config RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\16959e33ca0cef9743f23a22e9185ba5\fmt-dep-rename.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing rename step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E rename E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/lib/fmtd.lib E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/lib/pog_fmt.lib
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-rename
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-rename</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing rename step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E rename E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/lib/fmt.lib E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/lib/pog_fmt.lib
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-rename
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-rename</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing rename step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E rename E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/lib/fmt.lib E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/lib/pog_fmt.lib
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-rename
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-rename</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing rename step for 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E rename E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/lib/fmt.lib E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/lib/pog_fmt.lib
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-rename
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-rename</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\69d58ecb9934e21c51f14f9d08a6b3f6\fmt-dep-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Completed 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/CMakeFiles/$(Configuration)/fmt-dep-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-install;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-mkdir;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-download;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-update;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-patch;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-configure;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-build;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-rename;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\CMakeFiles\$(Configuration)\fmt-dep-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Completed 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/CMakeFiles/$(Configuration)/fmt-dep-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-install;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-mkdir;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-download;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-update;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-patch;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-configure;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-build;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-rename;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\CMakeFiles\$(Configuration)\fmt-dep-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Completed 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/CMakeFiles/$(Configuration)/fmt-dep-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-install;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-mkdir;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-download;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-update;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-patch;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-configure;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-build;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-rename;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\CMakeFiles\$(Configuration)\fmt-dep-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Completed 'fmt-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/CMakeFiles/$(Configuration)/fmt-dep-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/src/fmt-dep-stamp/$(Configuration)/fmt-dep-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-install;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-mkdir;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-download;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-update;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-patch;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-configure;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-build;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-stamp\$(Configuration)\fmt-dep-rename;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\CMakeFiles\$(Configuration)\fmt-dep-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\9bf61ad009b12df442c2a214f8ab9fe1\fmt-dep.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\CMakeFiles\$(Configuration)\fmt-dep-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\CMakeFiles\fmt-dep</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\CMakeFiles\$(Configuration)\fmt-dep-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\CMakeFiles\fmt-dep</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\CMakeFiles\$(Configuration)\fmt-dep-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\CMakeFiles\fmt-dep</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\CMakeFiles\$(Configuration)\fmt-dep-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\CMakeFiles\fmt-dep</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project\deps\pog\deps\fmt\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/yaramod-project/deps/pog/deps/fmt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/yaramod-project -BE:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\ProcessorCount.cmake;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\tmp\fmt-dep-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/yaramod-project/deps/pog/deps/fmt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/yaramod-project -BE:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\ProcessorCount.cmake;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\tmp\fmt-dep-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/yaramod-project/deps/pog/deps/fmt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/yaramod-project -BE:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\ProcessorCount.cmake;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\tmp\fmt-dep-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/yaramod-project/deps/pog/deps/fmt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/yaramod-project -BE:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\ProcessorCount.cmake;E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\tmp\fmt-dep-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\fmt\CMakeFiles\fmt-dep" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\ZERO_CHECK.vcxproj">
+      <Project>{1AA90927-57B5-33BD-BDAC-8CB9D7B8ACA0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

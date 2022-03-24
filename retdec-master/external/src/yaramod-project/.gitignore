@@ -1,0 +1,8 @@
+/doc/html/
+/doc/doxygen.log
+/build/
+
+__pycache__/
+dist/
+env/
+*.egg-info/

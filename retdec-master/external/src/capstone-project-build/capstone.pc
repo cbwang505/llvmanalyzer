@@ -1,0 +1,12 @@
+prefix=E:/git/WindowsResearch/retdec-master/deps/install/capstone
+exec_prefix=
+libdir=/lib
+includedir=/include
+
+Name: capstone
+Description: Capstone disassembly engine
+Version: 4.0.0
+URL: http://www.capstone-engine.org
+archive=/libcapstone.a
+Libs: -L -lcapstone
+Cflags: -I

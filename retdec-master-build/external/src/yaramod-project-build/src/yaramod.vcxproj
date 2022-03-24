@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AF3A8F05-E651-3324-8E62-8F1E1C208F53}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>yaramod</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">yaramod.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">yaramod</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">yaramod.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">yaramod</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">yaramod.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">yaramod</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">yaramod.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">yaramod</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps\pog\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;YARAMOD_OS_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;YARAMOD_OS_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps\pog\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps\pog\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps\pog\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;YARAMOD_OS_WINDOWS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;YARAMOD_OS_WINDOWS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps\pog\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps\pog\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps\pog\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;YARAMOD_OS_WINDOWS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;YARAMOD_OS_WINDOWS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps\pog\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps\pog\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps\pog\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;YARAMOD_OS_WINDOWS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;YARAMOD_OS_WINDOWS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps\pog\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps\pog\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\include;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project -BE:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project -BE:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project -BE:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project -BE:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\builder\yara_expression_builder.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\builder\yara_file_builder.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\builder\yara_hex_string_builder.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\builder\yara_rule_builder.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\parser\parser_driver.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\hex_string.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\literal.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\meta.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\modules\androguard_module.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\modules\cuckoo_module.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\modules\dex_module.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\modules\dotnet_module.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\modules\elf_module.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\modules\hash_module.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\modules\macho_module.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\modules\magic_module.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\modules\math_module.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\modules\module.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\modules\pe_module.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\modules\phish_module.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\modules\time_module.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\modules\metadata_module.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\plain_string.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\rule.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\token.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\token_stream.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\types\yara_file.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\utils\filesystem.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\utils\utils.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\src\yaramod.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\ZERO_CHECK.vcxproj">
+      <Project>{D9944913-3B3F-3177-BEFB-81ED2F844FEC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt-dep.vcxproj">
+      <Project>{D9B1E414-7C6E-3F97-B7E6-6BF2F4BCB0AC}</Project>
+      <Name>fmt-dep</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2-dep.vcxproj">
+      <Project>{DC79BA2B-B411-3CCB-8754-AC0653482082}</Project>
+      <Name>re2-dep</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

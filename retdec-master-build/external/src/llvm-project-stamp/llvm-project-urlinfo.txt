@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://github.com/avast/llvm/archive/2a1f3d8a97241c6e91710be8f84cf3cf80c03390.zip'
+tag='SHA256=96389d211d74e758ae35957e1fc7366b65edbd3d2342badc9800a8be8bae1cb8'

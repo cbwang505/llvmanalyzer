@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4B80E40F-C8E7-377E-B05E-8000692EF183}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>LLVMDebugInfoPDB</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\Debug\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LLVMDebugInfoPDB.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LLVMDebugInfoPDB</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\Release\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LLVMDebugInfoPDB.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LLVMDebugInfoPDB</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\MinSizeRel\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">LLVMDebugInfoPDB.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">LLVMDebugInfoPDB</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\RelWithDebInfo\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">LLVMDebugInfoPDB.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">LLVMDebugInfoPDB</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/lib/DebugInfo/PDB/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master-build/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/llvm-project-build/lib/DebugInfo/PDB/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\lib\DebugInfo\PDB\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/lib/DebugInfo/PDB/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master-build/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/llvm-project-build/lib/DebugInfo/PDB/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\lib\DebugInfo\PDB\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/lib/DebugInfo/PDB/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master-build/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/llvm-project-build/lib/DebugInfo/PDB/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\lib\DebugInfo\PDB\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/lib/DebugInfo/PDB/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master-build/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/llvm-project-build/lib/DebugInfo/PDB/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\lib\DebugInfo\PDB\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\GenericError.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\IPDBSourceFile.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDB.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBContext.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBExtras.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBInterfaceAnchors.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbol.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolAnnotation.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolBlock.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolCompiland.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolCompilandDetails.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolCompilandEnv.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolCustom.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolData.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolExe.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolFunc.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolFuncDebugEnd.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolFuncDebugStart.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolLabel.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolPublicSymbol.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolThunk.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolTypeArray.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolTypeBaseClass.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolTypeBuiltin.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolTypeCustom.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolTypeDimension.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolTypeEnum.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolTypeFriend.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolTypeFunctionArg.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolTypeFunctionSig.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolTypeManaged.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolTypePointer.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolTypeTypedef.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolTypeUDT.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolTypeVTable.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolTypeVTableShape.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolUnknown.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymbolUsingNamespace.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\PDBSymDumper.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\UDTLayout.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\DbiModuleDescriptor.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\DbiModuleDescriptorBuilder.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\DbiModuleList.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\DbiStream.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\DbiStreamBuilder.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\EnumTables.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\GlobalsStream.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\Hash.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\HashTable.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\InfoStream.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\InfoStreamBuilder.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\ModuleDebugStream.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\NativeCompilandSymbol.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\NativeEnumGlobals.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\NativeEnumModules.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\NativeEnumTypes.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\NativeExeSymbol.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\NativeRawSymbol.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\NativeSymbolEnumerator.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\NativeTypeArray.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\NativeTypeBuiltin.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\NativeTypeEnum.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\NativeTypeFunctionSig.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\NativeTypePointer.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\NativeTypeTypedef.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\NativeTypeUDT.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\NativeTypeVTShape.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\NamedStreamMap.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\NativeSession.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\PDBFile.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\PDBFileBuilder.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\PDBStringTable.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\PDBStringTableBuilder.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\PublicsStream.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\GSIStreamBuilder.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\RawError.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\SymbolCache.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\SymbolStream.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\TpiHashing.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\TpiStream.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\Native\TpiStreamBuilder.cpp" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\DbiModuleDescriptor.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\DbiModuleDescriptorBuilder.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\DbiModuleList.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\DbiStream.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\DbiStreamBuilder.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\EnumTables.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\Formatters.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\GSIStreamBuilder.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\GlobalsStream.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\Hash.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\HashTable.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\ISectionContribVisitor.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\InfoStream.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\InfoStreamBuilder.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\ModuleDebugStream.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\NamedStreamMap.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\NativeCompilandSymbol.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\NativeEnumGlobals.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\NativeEnumModules.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\NativeEnumTypes.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\NativeExeSymbol.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\NativeRawSymbol.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\NativeSession.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\NativeSymbolEnumerator.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\NativeTypeArray.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\NativeTypeBuiltin.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\NativeTypeEnum.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\NativeTypeFunctionSig.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\NativeTypePointer.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\NativeTypeTypedef.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\NativeTypeUDT.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\NativeTypeVTShape.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\PDBFile.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\PDBFileBuilder.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\PDBStringTable.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\PDBStringTableBuilder.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\PublicsStream.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\RawConstants.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\RawError.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\RawTypes.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\SymbolCache.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\SymbolStream.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\TpiHashing.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\TpiStream.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\Native\TpiStreamBuilder.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\ConcreteSymbolEnumerator.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\GenericError.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\IPDBDataStream.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\IPDBEnumChildren.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\IPDBFrameData.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\IPDBInjectedSource.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\IPDBLineNumber.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\IPDBRawSymbol.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\IPDBSectionContrib.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\IPDBSession.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\IPDBSourceFile.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\IPDBTable.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDB.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBContext.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBExtras.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymDumper.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbol.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolAnnotation.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolBlock.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolCompiland.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolCompilandDetails.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolCompilandEnv.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolCustom.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolData.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolExe.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolFunc.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolFuncDebugEnd.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolFuncDebugStart.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolLabel.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolPublicSymbol.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolThunk.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolTypeArray.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolTypeBaseClass.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolTypeBuiltin.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolTypeCustom.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolTypeDimension.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolTypeEnum.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolTypeFriend.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolTypeFunctionArg.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolTypeFunctionSig.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolTypeManaged.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolTypePointer.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolTypeTypedef.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolTypeUDT.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolTypeVTable.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolTypeVTableShape.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolUnknown.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBSymbolUsingNamespace.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\PDBTypes.h" />
+    <ClInclude Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\DebugInfo\PDB\UDTLayout.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\ZERO_CHECK.vcxproj">
+      <Project>{F5BD7428-6641-3ADB-9B9B-AA01B80ABE56}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

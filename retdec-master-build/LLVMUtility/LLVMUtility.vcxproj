@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{FD6DBFD8-9569-4827-AA18-FAA5DCF90DAB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LLVMUtility</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>__X64__;_DEBUG;_WINDOWS;__NT__;__IDP__;__VC__;MATERIAL_DESIGN_STYLE;LLVMUTILITY_EXPORTS;PLUGIN_SUBMODULE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(IDADIR)\idasdk\include;E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master-build\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;E:\git\WindowsResearch\retdec-master-build\LLVMAnalyzer;$(IDADIR)\plugins\hexrays_sdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>E:\git\WindowsResearch\retdec-master-build\src\ar-extractor\Debug\retdec-ar-extractor.lib;E:\git\WindowsResearch\retdec-master-build\src\macho-extractor\Debug\retdec-macho-extractor.lib;E:\git\WindowsResearch\retdec-master-build\src\unpackertool\Debug\retdec-unpackertool.lib;E:\git\WindowsResearch\retdec-master-build\src\retdec\Debug\retdec-retdec.lib;E:\git\WindowsResearch\retdec-master-build\src\bin2llvmir\Debug\retdec-bin2llvmir.lib;-WHOLEARCHIVE:retdec-bin2llvmir.lib;E:\git\WindowsResearch\retdec-master-build\src\llvmir2hll\Debug\retdec-llvmir2hll.lib;-WHOLEARCHIVE:retdec-llvmir2hll.lib;E:\git\WindowsResearch\retdec-master-build\src\unpacker\Debug\retdec-unpacker.lib;E:\git\WindowsResearch\retdec-master-build\src\cpdetect\Debug\retdec-cpdetect.lib;E:\git\WindowsResearch\retdec-master-build\deps\tinyxml2\Debug\retdec-tinyxml2.lib;E:\git\WindowsResearch\retdec-master-build\src\rtti-finder\Debug\retdec-rtti-finder.lib;E:\git\WindowsResearch\retdec-master-build\src\capstone2llvmir\Debug\retdec-capstone2llvmir.lib;E:\git\WindowsResearch\retdec-master-build\src\debugformat\Debug\retdec-debugformat.lib;E:\git\WindowsResearch\retdec-master-build\src\pdbparser\Debug\retdec-pdbparser.lib;E:\git\WindowsResearch\retdec-master-build\src\demangler\Debug\retdec-demangler.lib;E:\git\WindowsResearch\retdec-master-build\src\stacofin\Debug\retdec-stacofin.lib;E:\git\WindowsResearch\retdec-master-build\src\loader\Debug\retdec-loader.lib;E:\git\WindowsResearch\retdec-master-build\src\yaracpp\Debug\retdec-yaracpp.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\yara\lib\libyara64.lib;E:\git\WindowsResearch\retdec-master-build\src\fileformat\Debug\retdec-fileformat.lib;E:\git\WindowsResearch\retdec-master-build\src\pelib\Debug\retdec-pelib.lib;C:\openssl\lib\libeay32.lib;E:\git\WindowsResearch\retdec-master-build\src\ctypesparser\Debug\retdec-ctypesparser.lib;E:\git\WindowsResearch\retdec-master-build\src\ctypes\Debug\retdec-ctypes.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMDebugInfoDWARF.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMBitWriter.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMIRReader.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMObject.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMBinaryFormat.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMInstCombine.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMSupport.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMDemangle.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMipo.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMAsmParser.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMBitReader.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMMCParser.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMCodeGen.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMScalarOpts.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMTransformUtils.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMAnalysis.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMTarget.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMCore.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMMC.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMPasses.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMX86AsmParser.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMX86AsmPrinter.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMX86Desc.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMX86Disassembler.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMX86Info.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMX86Utils.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMAsmPrinter.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMGlobalISel.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMDebugInfoCodeView.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMMCDisassembler.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMInstrumentation.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMProfileData.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMSelectionDAG.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMVectorize.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMX86CodeGen.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\capstone\lib\capstone.lib;E:\git\WindowsResearch\retdec-master-build\src\config\Debug\retdec-config.lib;E:\git\WindowsResearch\retdec-master-build\src\serdes\Debug\retdec-serdes.lib;E:\git\WindowsResearch\retdec-master-build\src\common\Debug\retdec-common.lib;E:\git\WindowsResearch\retdec-master-build\src\utils\Debug\retdec-utils.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMExecutionEngine.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMRuntimeDyld.lib;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\lib\LLVMMCJIT.lib;ida.lib;Crypt32.lib;ws2_32.lib;-WHOLEARCHIVE:E:\git\WindowsResearch\retdec-master-build\x64\Debug\LLVMSymbolicExecution.lib;E:\git\WindowsResearch\toollib\z3-4.8.14-x64-win\bin\libz3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(IDADIR)\idasdk\lib\x64_win_vc_32;$(IDADIR)\idasdk\lib\x64_win_qt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>"E:\git\WindowsResearch\xcopy.exe" "$(OutDir)$(TargetFileName)" "%systemroot%\System32" /y /e /i /q /r</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;LLVMUTILITY_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;LLVMUTILITY_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;LLVMUTILITY_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\LLVMAnalyzer\config.h" />
+    <ClInclude Include="..\LLVMAnalyzer\function.h" />
+    <ClInclude Include="..\LLVMAnalyzer\IDAStructWriter.h" />
+    <ClInclude Include="..\LLVMAnalyzer\LLVMIDALogger.h" />
+    <ClInclude Include="..\LLVMAnalyzer\place.h" />
+    <ClInclude Include="..\LLVMAnalyzer\retdec.h" />
+    <ClInclude Include="..\LLVMAnalyzer\retdecida.h" />
+    <ClInclude Include="..\LLVMAnalyzer\stdafx.h" />
+    <ClInclude Include="..\LLVMAnalyzer\token.h" />
+    <ClInclude Include="..\LLVMAnalyzer\ui.h" />
+    <ClInclude Include="..\LLVMAnalyzer\utils.h" />
+    <ClInclude Include="..\LLVMAnalyzer\yx.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="PlainCodeView.h" />
+    <ClInclude Include="retdectool.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\LLVMAnalyzer\config.cpp" />
+    <ClCompile Include="..\LLVMAnalyzer\function.cpp" />
+    <ClCompile Include="..\LLVMAnalyzer\IDAStructWriter.cpp" />
+    <ClCompile Include="..\LLVMAnalyzer\LLVMIDALogger.cpp" />
+    <ClCompile Include="..\LLVMAnalyzer\place.cpp" />
+    <ClCompile Include="..\LLVMAnalyzer\token.cpp" />
+    <ClCompile Include="..\LLVMAnalyzer\ui.cpp" />
+    <ClCompile Include="..\LLVMAnalyzer\utils.cpp" />
+    <ClCompile Include="..\LLVMAnalyzer\yx.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="PlainCodeView.cpp" />
+    <ClCompile Include="retdectool.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

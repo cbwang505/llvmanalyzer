@@ -1,0 +1,11 @@
+prefix=E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt
+exec_prefix=E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt
+libdir=E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/lib
+includedir=E:/git/WindowsResearch/retdec-master/external/src/yaramod-project-build/deps/pog/deps/fmt/fmt/include
+
+Name: fmt
+Description: A modern formatting library
+Version: 6.0.0
+Libs: -L${libdir} -lfmt
+Cflags: -I${includedir}
+

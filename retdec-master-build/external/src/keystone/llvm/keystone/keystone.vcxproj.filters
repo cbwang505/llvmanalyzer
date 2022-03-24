@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\ConstantPools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\ELFObjectWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCAsmBackend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCAsmInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCAsmInfoCOFF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCAsmInfoDarwin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCAsmInfoELF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCAssembler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCCodeEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCELFObjectTargetWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCELFStreamer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCExpr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCFragment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCInst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCInstrDesc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCLabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCObjectFileInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCObjectStreamer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCObjectWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\AsmLexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\AsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\COFFAsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\DarwinAsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\ELFAsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\MCAsmLexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\MCAsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\MCAsmParserExtension.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\MCTargetAsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCRegisterInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCSection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCSectionCOFF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCSectionELF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCSectionMachO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCStreamer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCSubtargetInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCSymbol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCSymbolELF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCTargetOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCValue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\StringTableBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\SubtargetFeature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\APFloat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\APInt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\APSInt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\ARMBuildAttrs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\ErrorHandling.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\Hashing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\IntEqClasses.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\LEB128.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\Memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\MemoryBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\Path.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\Regex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\ScaledNumber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\SmallPtrSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\SmallVector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\SourceMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\StringExtras.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\StringMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\StringPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\StringRef.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\StringSaver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\TargetParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\TargetRegistry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\Triple.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\Twine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\raw_ostream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\regcomp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\regerror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\regexec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\regfree.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\regstrlcpy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\AsmParser\AArch64AsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\MCTargetDesc\AArch64AsmBackend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\MCTargetDesc\AArch64ELFObjectWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\MCTargetDesc\AArch64MCAsmInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\MCTargetDesc\AArch64MCCodeEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\MCTargetDesc\AArch64MCExpr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\MCTargetDesc\AArch64MCTargetDesc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\MCTargetDesc\AArch64TargetStreamer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\TargetInfo\AArch64TargetInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\Utils\AArch64BaseInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\AsmParser\ARMAsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\MCTargetDesc\ARMAsmBackend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\MCTargetDesc\ARMELFObjectWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\MCTargetDesc\ARMMCAsmInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\MCTargetDesc\ARMMCCodeEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\MCTargetDesc\ARMMCExpr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\MCTargetDesc\ARMMCTargetDesc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\MCTargetDesc\ARMTargetStreamer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\TargetInfo\ARMTargetInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\AsmParser\HexagonAsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonAsmBackend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonELFObjectWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCAsmInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCChecker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCCodeEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCCompound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCDuplexInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCExpr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCInstrInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCShuffler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCTargetDesc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonShuffler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\TargetInfo\HexagonTargetInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\AsmParser\MipsAsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\MCTargetDesc\MipsABIInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\MCTargetDesc\MipsAsmBackend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\MCTargetDesc\MipsELFObjectWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\MCTargetDesc\MipsMCAsmInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\MCTargetDesc\MipsMCCodeEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\MCTargetDesc\MipsMCExpr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\MCTargetDesc\MipsMCTargetDesc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\TargetInfo\MipsTargetInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\AsmParser\PPCAsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\MCTargetDesc\PPCAsmBackend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\MCTargetDesc\PPCELFObjectWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\MCTargetDesc\PPCMCAsmInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\MCTargetDesc\PPCMCCodeEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\MCTargetDesc\PPCMCExpr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\MCTargetDesc\PPCMCTargetDesc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\MCTargetDesc\PPCPredicates.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\TargetInfo\PowerPCTargetInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\AsmParser\SparcAsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\MCTargetDesc\SparcAsmBackend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\MCTargetDesc\SparcELFObjectWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\MCTargetDesc\SparcMCAsmInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\MCTargetDesc\SparcMCCodeEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\MCTargetDesc\SparcMCExpr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\MCTargetDesc\SparcMCTargetDesc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\TargetInfo\SparcTargetInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\AsmParser\SystemZAsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\MCTargetDesc\SystemZMCAsmBackend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\MCTargetDesc\SystemZMCAsmInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\MCTargetDesc\SystemZMCCodeEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\MCTargetDesc\SystemZMCObjectWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\MCTargetDesc\SystemZMCTargetDesc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\TargetInfo\SystemZTargetInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\AsmParser\X86AsmInstrumentation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\AsmParser\X86AsmParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\MCTargetDesc\X86AsmBackend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\MCTargetDesc\X86ELFObjectWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\MCTargetDesc\X86MCAsmInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\MCTargetDesc\X86MCCodeEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\MCTargetDesc\X86MCTargetDesc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\TargetInfo\X86TargetInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\ks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A58FEBE6-17F4-334C-93F0-A272D9812EBE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

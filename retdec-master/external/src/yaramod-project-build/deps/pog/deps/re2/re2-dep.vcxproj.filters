@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\b208cce900eca24966aa96e1d554a217\re2-dep-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\b208cce900eca24966aa96e1d554a217\re2-dep-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\b208cce900eca24966aa96e1d554a217\re2-dep-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\b208cce900eca24966aa96e1d554a217\re2-dep-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\b208cce900eca24966aa96e1d554a217\re2-dep-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\b208cce900eca24966aa96e1d554a217\re2-dep-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\b208cce900eca24966aa96e1d554a217\re2-dep-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\b208cce900eca24966aa96e1d554a217\re2-dep-rename.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\1d2f673eec629cd27b73676e8ce82913\re2-dep-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\CMakeFiles\f46b69eae590af46a26bd5ad0fb36e08\re2-dep.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project\deps\pog\deps\re2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\re2-dep" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B0547AB9-C5BE-3CAF-AF9A-893A3E985463}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

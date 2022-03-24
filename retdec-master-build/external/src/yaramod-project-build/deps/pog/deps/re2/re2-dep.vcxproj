@@ -1,0 +1,903 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DC79BA2B-B411-3CCB-8754-AC0653482082}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>re2-dep</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\CMakeFiles\aa904a1208cb4a5726f2e9b5468fd6e1\re2-dep-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project/deps/pog/deps/re2/re2
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project/deps/pog/deps/re2/re2
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project/deps/pog/deps/re2/re2
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project/deps/pog/deps/re2/re2
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\CMakeFiles\aa904a1208cb4a5726f2e9b5468fd6e1\re2-dep-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No download step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No download step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No download step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No download step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\CMakeFiles\aa904a1208cb4a5726f2e9b5468fd6e1\re2-dep-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No update step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No update step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No update step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No update step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\CMakeFiles\aa904a1208cb4a5726f2e9b5468fd6e1\re2-dep-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\CMakeFiles\aa904a1208cb4a5726f2e9b5468fd6e1\re2-dep-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing configure step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2 -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_BUILD_TYPE=Release "-DCMAKE_CXX_FLAGS=/DWIN32 /D_WINDOWS /W3 /GR /EHsc" "-DCMAKE_CXX_FLAGS_RELEASE=/MD /O2 /Ob2 /DNDEBUG" "-DCMAKE_CXX_FLAGS_DEBUG=/MDd /Zi /Ob0 /Od /RTC1" -DRE2_BUILD_TESTING=OFF "-GVisual Studio 15 2017" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise" E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project/deps/pog/deps/re2/re2
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\tmp\re2-dep-cfgcmd.txt;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing configure step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2 -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_BUILD_TYPE=Release "-DCMAKE_CXX_FLAGS=/DWIN32 /D_WINDOWS /W3 /GR /EHsc" "-DCMAKE_CXX_FLAGS_RELEASE=/MD /O2 /Ob2 /DNDEBUG" "-DCMAKE_CXX_FLAGS_DEBUG=/MDd /Zi /Ob0 /Od /RTC1" -DRE2_BUILD_TESTING=OFF "-GVisual Studio 15 2017" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise" E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project/deps/pog/deps/re2/re2
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\tmp\re2-dep-cfgcmd.txt;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing configure step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2 -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_BUILD_TYPE=Release "-DCMAKE_CXX_FLAGS=/DWIN32 /D_WINDOWS /W3 /GR /EHsc" "-DCMAKE_CXX_FLAGS_RELEASE=/MD /O2 /Ob2 /DNDEBUG" "-DCMAKE_CXX_FLAGS_DEBUG=/MDd /Zi /Ob0 /Od /RTC1" -DRE2_BUILD_TESTING=OFF "-GVisual Studio 15 2017" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise" E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project/deps/pog/deps/re2/re2
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\tmp\re2-dep-cfgcmd.txt;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing configure step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2 -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_BUILD_TYPE=Release "-DCMAKE_CXX_FLAGS=/DWIN32 /D_WINDOWS /W3 /GR /EHsc" "-DCMAKE_CXX_FLAGS_RELEASE=/MD /O2 /Ob2 /DNDEBUG" "-DCMAKE_CXX_FLAGS_DEBUG=/MDd /Zi /Ob0 /Od /RTC1" -DRE2_BUILD_TESTING=OFF "-GVisual Studio 15 2017" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise" E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project/deps/pog/deps/re2/re2
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\tmp\re2-dep-cfgcmd.txt;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\CMakeFiles\aa904a1208cb4a5726f2e9b5468fd6e1\re2-dep-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing build step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug -- -m
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing build step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release -- -m
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing build step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config MinSizeRel -- -m
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing build step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config RelWithDebInfo -- -m
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\CMakeFiles\aa904a1208cb4a5726f2e9b5468fd6e1\re2-dep-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing install step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --target install --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing install step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --target install --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing install step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --target install --config MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing install step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --target install --config RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\CMakeFiles\aa904a1208cb4a5726f2e9b5468fd6e1\re2-dep-rename.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing rename step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E rename E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/lib/re2.lib E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/lib/pog_re2.lib
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-rename
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-rename</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing rename step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E rename E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/lib/re2.lib E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/lib/pog_re2.lib
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-rename
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-rename</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing rename step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E rename E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/lib/re2.lib E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/lib/pog_re2.lib
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-rename
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-rename</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing rename step for 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E rename E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/lib/re2.lib E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/lib/pog_re2.lib
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-rename
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-rename</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\CMakeFiles\9b536b2783ec10c0b8a1e3e0d56c3f1c\re2-dep-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/CMakeFiles/$(Configuration)/re2-dep-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-install;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-mkdir;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-download;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-update;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-patch;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-configure;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-build;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-rename;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\$(Configuration)\re2-dep-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/CMakeFiles/$(Configuration)/re2-dep-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-install;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-mkdir;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-download;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-update;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-patch;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-configure;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-build;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-rename;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\$(Configuration)\re2-dep-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/CMakeFiles/$(Configuration)/re2-dep-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-install;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-mkdir;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-download;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-update;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-patch;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-configure;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-build;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-rename;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\$(Configuration)\re2-dep-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 're2-dep'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/CMakeFiles/$(Configuration)/re2-dep-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/re2/src/re2-dep-stamp/$(Configuration)/re2-dep-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-install;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-mkdir;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-download;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-update;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-patch;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-configure;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-build;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\src\re2-dep-stamp\$(Configuration)\re2-dep-rename;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\$(Configuration)\re2-dep-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\CMakeFiles\e73ab30bef033b1456b6ee760fb6f473\re2-dep.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\$(Configuration)\re2-dep-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\re2-dep</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\$(Configuration)\re2-dep-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\re2-dep</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\$(Configuration)\re2-dep-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\re2-dep</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\$(Configuration)\re2-dep-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\re2-dep</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project\deps\pog\deps\re2\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project/deps/pog/deps/re2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project -BE:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\ProcessorCount.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\tmp\re2-dep-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project/deps/pog/deps/re2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project -BE:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\ProcessorCount.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\tmp\re2-dep-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project/deps/pog/deps/re2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project -BE:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\ProcessorCount.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\tmp\re2-dep-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project/deps/pog/deps/re2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project -BE:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/yaramod-project-build/deps/pog/deps/re2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\ProcessorCount.cmake;E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\re2\tmp\re2-dep-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\re2\CMakeFiles\re2-dep">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\ZERO_CHECK.vcxproj">
+      <Project>{D9944913-3B3F-3177-BEFB-81ED2F844FEC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

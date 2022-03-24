@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\Attributes.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\IntrinsicImpl.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\IntrinsicEnums.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\IntrinsicsAArch64.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\IntrinsicsAMDGPU.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\IntrinsicsARM.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\IntrinsicsBPF.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\IntrinsicsHexagon.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\IntrinsicsMips.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\IntrinsicsNVPTX.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\IntrinsicsPowerPC.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\IntrinsicsR600.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\IntrinsicsRISCV.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\IntrinsicsS390.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\IntrinsicsWebAssembly.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\IntrinsicsX86.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\IntrinsicsXCore.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\e660b1313d7849a2d91201f5e0f7034c\IntrinsicsVE.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\08386f207c5da727cd7c5b0f509d3b28\intrinsics_gen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\IR\CMakeFiles\intrinsics_gen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9E40D7EC-AA7F-33C0-B948-6A5944F02939}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

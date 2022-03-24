@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7A8BB77D-24F1-3E49-ACDE-53BDB8310017}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>bin2llvmir</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\src\bin2llvmir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bin2llvmir.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">retdec-bin2llvmir</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\src\bin2llvmir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bin2llvmir.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">retdec-bin2llvmir</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\src\bin2llvmir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bin2llvmir.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">retdec-bin2llvmir</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\src\bin2llvmir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bin2llvmir.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">retdec-bin2llvmir</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\eigen;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master-build\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;RAPIDJSON_HAS_STDSTRING=1;RAPIDJSON_HAS_CXX11_RVALUE_REFS=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;RAPIDJSON_HAS_STDSTRING=1;RAPIDJSON_HAS_CXX11_RVALUE_REFS=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\eigen;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master-build\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\eigen;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master-build\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\eigen;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master-build\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;RAPIDJSON_HAS_STDSTRING=1;RAPIDJSON_HAS_CXX11_RVALUE_REFS=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;RAPIDJSON_HAS_STDSTRING=1;RAPIDJSON_HAS_CXX11_RVALUE_REFS=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\eigen;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master-build\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\eigen;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master-build\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\eigen;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master-build\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;RAPIDJSON_HAS_STDSTRING=1;RAPIDJSON_HAS_CXX11_RVALUE_REFS=1;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;RAPIDJSON_HAS_STDSTRING=1;RAPIDJSON_HAS_CXX11_RVALUE_REFS=1;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\eigen;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master-build\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\eigen;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master-build\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\eigen;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master-build\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;RAPIDJSON_HAS_STDSTRING=1;RAPIDJSON_HAS_CXX11_RVALUE_REFS=1;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;RAPIDJSON_HAS_STDSTRING=1;RAPIDJSON_HAS_CXX11_RVALUE_REFS=1;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\eigen;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master-build\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\eigen;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master-build\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/src/bin2llvmir/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master -BE:/git/WindowsResearch/retdec-master-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/src/bin2llvmir/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master\src\bin2llvmir\retdec-bin2llvmir-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\src\bin2llvmir\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/src/bin2llvmir/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master -BE:/git/WindowsResearch/retdec-master-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/src/bin2llvmir/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master\src\bin2llvmir\retdec-bin2llvmir-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\src\bin2llvmir\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/src/bin2llvmir/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master -BE:/git/WindowsResearch/retdec-master-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/src/bin2llvmir/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master\src\bin2llvmir\retdec-bin2llvmir-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\src\bin2llvmir\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/src/bin2llvmir/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master -BE:/git/WindowsResearch/retdec-master-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/src/bin2llvmir/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master\src\bin2llvmir\retdec-bin2llvmir-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\src\bin2llvmir\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\retdec-master\src\bin2llvmir\optimizations\type_reconstructor\type_reconstructor.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\analyses\ctor_dtor.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\analyses\indirectly_called_funcs_analysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\analyses\reachable_funcs_analysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\analyses\reaching_definitions.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\analyses\symbolic_tree.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\asm_inst_remover\asm_inst_remover.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\class_hierarchy\hierarchy.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\class_hierarchy\hierarchy_analysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\cond_branch_opt\cond_branch_opt.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\constants\constants.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\decoder\arm.cpp">
+      <ObjectFileName>$(IntDir)/optimizations/decoder/arm.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\decoder\arm64.cpp">
+      <ObjectFileName>$(IntDir)/optimizations/decoder/arm64.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\decoder\bbs.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\decoder\decoder_ranges.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\decoder\decoder_init.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\decoder\decoder.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\decoder\functions.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\decoder\ir_modifications.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\decoder\jump_targets.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\decoder\mips.cpp">
+      <ObjectFileName>$(IntDir)/optimizations/decoder/mips.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\decoder\patterns.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\decoder\powerpc.cpp">
+      <ObjectFileName>$(IntDir)/optimizations/decoder/powerpc.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\decoder\x86.cpp">
+      <ObjectFileName>$(IntDir)/optimizations/decoder/x86.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\dump_module\dump_module.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\idioms\idioms.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\idioms\idioms_abstract.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\idioms\idioms_analysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\idioms\idioms_borland.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\idioms\idioms_common.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\idioms\idioms_gcc.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\idioms\idioms_intel.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\idioms\idioms_llvm.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\idioms\idioms_magicdivmod.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\idioms\idioms_owatcom.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\idioms\idioms_vstudio.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\idioms_libgcc\idioms_libgcc.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\inst_opt\inst_opt_pass.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\inst_opt\inst_opt.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\inst_opt_rda\inst_opt_rda_pass.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\inst_opt_rda\inst_opt_rda.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\main_detection\main_detection.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\param_return\collector\collector.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\param_return\collector\pic32.cpp">
+      <ObjectFileName>$(IntDir)/optimizations/param_return/collector/pic32.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\param_return\filter\filter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\param_return\filter\ms_x64.cpp">
+      <ObjectFileName>$(IntDir)/optimizations/param_return/filter/ms_x64.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\param_return\param_return.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\param_return\data_entries.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\phi_remover\phi_remover.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\provider_init\provider_init.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\register_localization\register_localization.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\x86_addr_spaces\x86_addr_spaces_pass.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\x86_addr_spaces\x86_addr_spaces.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\x87_fpu\x87_fpu.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\select_functions\select_functions.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\simple_types\simple_types.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\stack\stack.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\stack_pointer_ops\stack_pointer_ops.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\value_protect\value_protect.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\writer_bc\writer_bc.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\writer_config\writer_config.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\writer_dsm\writer_dsm.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\writer_bin\writer_bin.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\stack_deobfuscator\stack_deobfuscator.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\writer_ll\writer_ll.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\syscalls\arm.cpp">
+      <ObjectFileName>$(IntDir)/optimizations/syscalls/arm.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\syscalls\arm64.cpp">
+      <ObjectFileName>$(IntDir)/optimizations/syscalls/arm64.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\syscalls\mips.cpp">
+      <ObjectFileName>$(IntDir)/optimizations/syscalls/mips.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\syscalls\syscalls.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\syscalls\x86.cpp">
+      <ObjectFileName>$(IntDir)/optimizations/syscalls/x86.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\optimizations\unreachable_funcs\unreachable_funcs.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\abi\abi.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\abi\arm.cpp">
+      <ObjectFileName>$(IntDir)/providers/abi/arm.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\abi\arm64.cpp">
+      <ObjectFileName>$(IntDir)/providers/abi/arm64.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\abi\mips.cpp">
+      <ObjectFileName>$(IntDir)/providers/abi/mips.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\abi\mips64.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\abi\ms_x64.cpp">
+      <ObjectFileName>$(IntDir)/providers/abi/ms_x64.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\abi\pic32.cpp">
+      <ObjectFileName>$(IntDir)/providers/abi/pic32.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\abi\powerpc.cpp">
+      <ObjectFileName>$(IntDir)/providers/abi/powerpc.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\abi\powerpc64.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\abi\x64.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\abi\x86.cpp">
+      <ObjectFileName>$(IntDir)/providers/abi/x86.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\calling_convention.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\arm\arm_conv.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\arm64\arm64_conv.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\mips\mips_conv.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\mips\mips_psp.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\mips64\mips64_conv.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\pic32\pic32_conv.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\powerpc\powerpc_conv.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\powerpc64\powerpc64_conv.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\x64\x64_conv.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\x64\x64_microsoft.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\x64\x64_systemv.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\x86\x86_cdecl.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\x86\x86_conv.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\x86\x86_fastcall.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\x86\x86_pascal.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\x86\x86_thiscall.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\calling_convention\x86\x86_watcom.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\asm_instruction.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\config.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\debugformat.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\demangler.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\fileimage.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\lti.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\providers\names.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\utils\capstone.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\utils\ctypes2llvm.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\utils\debug.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\utils\ir_modifier.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\utils\llvm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\ZERO_CHECK.vcxproj">
+      <Project>{19956220-4746-3D50-89E9-7D2A7DB636D5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\deps\capstone\capstone-project.vcxproj">
+      <Project>{895CBFB1-6003-3B89-82DB-D4C911D6EE04}</Project>
+      <Name>capstone-project</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\capstone2llvmir\capstone2llvmir.vcxproj">
+      <Project>{64FE9D8C-379C-3657-9ECB-276F993AD065}</Project>
+      <Name>capstone2llvmir</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\common\common.vcxproj">
+      <Project>{DC74623A-EAEF-3133-9AC5-A18F2AE5A5CC}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\config\config.vcxproj">
+      <Project>{7D3E4010-2875-3FA1-92CD-75DB64AA54A9}</Project>
+      <Name>config</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\cpdetect\cpdetect.vcxproj">
+      <Project>{204BDEF9-7BE0-3332-BEAB-B47376EE7685}</Project>
+      <Name>cpdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\ctypes\ctypes.vcxproj">
+      <Project>{101823F4-3093-39D1-B7AE-329343C50C22}</Project>
+      <Name>ctypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\ctypesparser\ctypesparser.vcxproj">
+      <Project>{70F2BC85-0DDF-3F68-87AB-9E56175648F5}</Project>
+      <Name>ctypesparser</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\debugformat\debugformat.vcxproj">
+      <Project>{1F1EA66A-0385-38ED-AD3F-1E289E24DEB7}</Project>
+      <Name>debugformat</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\demangler\demangler.vcxproj">
+      <Project>{1943E8C7-04BF-36ED-AD5E-C4603CF1C6B1}</Project>
+      <Name>demangler</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\fileformat\fileformat.vcxproj">
+      <Project>{A9F85473-FC66-33F2-AB0F-DC55647335B4}</Project>
+      <Name>fileformat</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\deps\llvm\llvm-project.vcxproj">
+      <Project>{4FF1A625-C5DE-3ECA-8CB3-C8F230FA97DA}</Project>
+      <Name>llvm-project</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\loader\loader.vcxproj">
+      <Project>{A188C956-FFED-3F24-BB58-A52EA83DA037}</Project>
+      <Name>loader</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\pdbparser\pdbparser.vcxproj">
+      <Project>{EC79CABC-935C-3600-BC57-D56EFA442C57}</Project>
+      <Name>pdbparser</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\pelib\pelib.vcxproj">
+      <Project>{D0140E13-B452-3D49-B3AC-8B73D66FE635}</Project>
+      <Name>pelib</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\rtti-finder\rtti-finder.vcxproj">
+      <Project>{287F525E-685F-32F1-9266-395AA7AB0D35}</Project>
+      <Name>rtti-finder</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\serdes\serdes.vcxproj">
+      <Project>{7B4FBFE0-2FF0-3E8C-8006-CBEE1D6FA69D}</Project>
+      <Name>serdes</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\stacofin\stacofin.vcxproj">
+      <Project>{8A59533B-D757-379E-906C-84E5453C99B9}</Project>
+      <Name>stacofin</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\deps\tinyxml2\tinyxml2.vcxproj">
+      <Project>{46C27AE8-0DD1-3096-A256-1510F711A6B9}</Project>
+      <Name>tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\utils\utils.vcxproj">
+      <Project>{1D542208-F54D-3E8D-992E-3450D5474E5C}</Project>
+      <Name>utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\deps\yara\yara.vcxproj">
+      <Project>{2650CBE7-B681-3851-B270-6F6CDA3E951B}</Project>
+      <Name>yara</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\yaracpp\yaracpp.vcxproj">
+      <Project>{240F9C95-3AE8-3D43-9AD1-015C778AC735}</Project>
+      <Name>yaracpp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

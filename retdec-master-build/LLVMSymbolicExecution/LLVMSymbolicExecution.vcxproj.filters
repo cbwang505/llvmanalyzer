@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LLVMSymbolicExecution.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\AddressSpace.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Expr\ArrayCache.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Expr\ArrayExprOptimizer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Expr\ArrayExprRewriter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Expr\ArrayExprVisitor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Expr\Assignment.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Expr\AssignmentGenerator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\AssignmentValidatingSolver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\CachingSolver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\CallPathManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\CexCachingSolver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Module\Checks.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Support\CompressionStream.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\ConstantDivision.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Expr\Constraints.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\ConstructSolverChain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\Context.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\CoreSolver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\CoreStats.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\DummySolver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Support\ErrorHandling.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\ExecutionState.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\Executor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\ExecutorUtil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Expr\Expr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Expr\ExprBuilder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Expr\ExprEvaluator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Expr\ExprPPrinter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Expr\ExprSMTLIBPrinter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Expr\ExprUtil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Expr\ExprVisitor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\ExternalDispatcher.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\FastCexSolver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Support\FileHandling.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Module\FunctionAlias.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\ImpliedValue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\IncompleteSolver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\IndependentSolver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Module\InstructionInfoTable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Module\InstructionOperandTypeCheckPass.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Module\IntrinsicCleaner.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Module\KInstruction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Module\KModule.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\KQueryLoggingSolver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Basic\KTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Expr\Lexer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Module\LowerSwitch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\Memory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\MemoryManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Support\MemoryUsage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\MergeHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\MetaSMTSolver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Module\ModuleUtil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Module\Optimize.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Module\OptNone.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Expr\Parser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Module\PhiCleaner.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Support\PrintVersion.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\PTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\QueryLoggingSolver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Module\RaiseAsm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Support\RNG.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\Searcher.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\SeedInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\SMTLIBLoggingSolver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\Solver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\SolverCmdLine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\SolverImpl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\SolverStats.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\SpecialFunctionHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Basic\Statistics.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\StatsTracker.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\STPBuilder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\STPSolver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Support\Time.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Support\Timer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\TimingSolver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Support\TreeStream.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Expr\Updates.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\UserSearcher.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\ValidatingSolver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\Z3Builder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Solver\Z3Solver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\retdec-master\external\src\llvm-project\lib\Linker\LinkModules.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\retdec-master\external\src\llvm-project\lib\Linker\IRMover.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Core\SymbolicTypeReconstructor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Support\RetdecInterpreterHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\klee\Expr\ArrayCache.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\ArrayExprHash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\ArrayExprOptimizer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\ArrayExprRewriter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\ArrayExprVisitor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\Assignment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\AssignmentGenerator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\ADT\BitArray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\ADT\Bits.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Core\BranchTypes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Support\Casting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Module\Cell.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Solver\Common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Support\CompressionStream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\Constraints.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Support\Debug.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\ADT\DiscretePDF.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Support\ErrorHandling.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\Expr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\ExprBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\ExprEvaluator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\ExprHashMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\ExprPPrinter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\ExprRangeEvaluator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\ExprSMTLIBPrinter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\ExprUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\ExprVisitor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Support\FileHandling.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Support\FloatEvaluation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\ADT\ImmutableMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\ADT\ImmutableSet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\ADT\ImmutableTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Solver\IncompleteSolver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Module\InstructionInfoTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Core\Interpreter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Support\IntEvaluation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Module\KInstIterator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Module\KInstruction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\klee.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Module\KModule.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\ADT\KTest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\Parser\Lexer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\ADT\MapOfSets.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\System\MemoryUsage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Support\ModuleUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Support\OptionCategories.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Expr\Parser\Parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Support\PrintContext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Support\PrintVersion.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\ADT\Ref.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\ADT\RNG.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Solver\Solver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Solver\SolverCmdLine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Solver\SolverImpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Solver\SolverStats.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Statistics\Statistic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Statistics\Statistics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Core\TerminationTypes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\System\Time.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Support\Timer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Statistics\TimerStatIncrementer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\ADT\TreeStream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Config\Version.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\AddressSpace.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\CallPathManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Solver\ConstantDivision.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\Context.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\CoreStats.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\ExecutionState.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\Executor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\ExternalDispatcher.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\GetElementPtrTypeIterator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\ImpliedValue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Module\KLEEIRMetaData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\Memory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\MemoryManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\MergeHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Solver\MetaSMTBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Solver\MetaSMTSolver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Module\Passes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\PTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Solver\QueryLoggingSolver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\Searcher.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\SeedInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\SpecialFunctionHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\StatsTracker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Solver\STPBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Solver\STPSolver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\TimingSolver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\UserSearcher.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Solver\Z3Builder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Solver\Z3Solver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\klee\Config\config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Core\SymbolicTypeReconstructor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Support\RetdecInterpreterHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\klee\Config\CompileTimeInfo.h.cmin">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="include\klee\Config\config.h.cmin">
+      <Filter>头文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

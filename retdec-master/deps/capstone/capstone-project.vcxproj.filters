@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\933813cd4d4e5665c85e08ba3e15baa6\capstone-project-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\933813cd4d4e5665c85e08ba3e15baa6\capstone-project-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\933813cd4d4e5665c85e08ba3e15baa6\capstone-project-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\933813cd4d4e5665c85e08ba3e15baa6\capstone-project-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\933813cd4d4e5665c85e08ba3e15baa6\capstone-project-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\933813cd4d4e5665c85e08ba3e15baa6\capstone-project-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\933813cd4d4e5665c85e08ba3e15baa6\capstone-project-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\933813cd4d4e5665c85e08ba3e15baa6\capstone-project-movelib64.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\7d662f0cf37dff06fdb6f02f914525a4\capstone-project-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\40d0d039856c79aa649fd6f18fe717fc\capstone-project.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\capstone\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\git\WindowsResearch\retdec-master\deps\capstone\CMakeFiles\capstone-project" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{90FA2DAF-97EF-3E94-9B73-1CFC998A0DD3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0CDAA21A-0494-3E14-AE18-0644ADAD4B06}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/git/WindowsResearch/retdec-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master -BE:/git/WindowsResearch/retdec-master --check-stamp-file E:/git/WindowsResearch/retdec-master/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.17\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;E:\git\WindowsResearch\retdec-master\CMakeFiles\3.17.2\CMakeCCompiler.cmake;E:\git\WindowsResearch\retdec-master\CMakeFiles\3.17.2\CMakeCXXCompiler.cmake;E:\git\WindowsResearch\retdec-master\CMakeFiles\3.17.2\CMakeRCCompiler.cmake;E:\git\WindowsResearch\retdec-master\CMakeFiles\3.17.2\CMakeSystem.cmake;E:\git\WindowsResearch\retdec-master\cmake\deps.cmake;E:\git\WindowsResearch\retdec-master\cmake\options.cmake;E:\git\WindowsResearch\retdec-master\cmake\utils.cmake;E:\git\WindowsResearch\retdec-master\retdec-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/git/WindowsResearch/retdec-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master -BE:/git/WindowsResearch/retdec-master --check-stamp-file E:/git/WindowsResearch/retdec-master/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.17\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;E:\git\WindowsResearch\retdec-master\CMakeFiles\3.17.2\CMakeCCompiler.cmake;E:\git\WindowsResearch\retdec-master\CMakeFiles\3.17.2\CMakeCXXCompiler.cmake;E:\git\WindowsResearch\retdec-master\CMakeFiles\3.17.2\CMakeRCCompiler.cmake;E:\git\WindowsResearch\retdec-master\CMakeFiles\3.17.2\CMakeSystem.cmake;E:\git\WindowsResearch\retdec-master\cmake\deps.cmake;E:\git\WindowsResearch\retdec-master\cmake\options.cmake;E:\git\WindowsResearch\retdec-master\cmake\utils.cmake;E:\git\WindowsResearch\retdec-master\retdec-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/git/WindowsResearch/retdec-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master -BE:/git/WindowsResearch/retdec-master --check-stamp-file E:/git/WindowsResearch/retdec-master/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.17\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;E:\git\WindowsResearch\retdec-master\CMakeFiles\3.17.2\CMakeCCompiler.cmake;E:\git\WindowsResearch\retdec-master\CMakeFiles\3.17.2\CMakeCXXCompiler.cmake;E:\git\WindowsResearch\retdec-master\CMakeFiles\3.17.2\CMakeRCCompiler.cmake;E:\git\WindowsResearch\retdec-master\CMakeFiles\3.17.2\CMakeSystem.cmake;E:\git\WindowsResearch\retdec-master\cmake\deps.cmake;E:\git\WindowsResearch\retdec-master\cmake\options.cmake;E:\git\WindowsResearch\retdec-master\cmake\utils.cmake;E:\git\WindowsResearch\retdec-master\retdec-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/git/WindowsResearch/retdec-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master -BE:/git/WindowsResearch/retdec-master --check-stamp-file E:/git/WindowsResearch/retdec-master/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.17\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;E:\git\WindowsResearch\retdec-master\CMakeFiles\3.17.2\CMakeCCompiler.cmake;E:\git\WindowsResearch\retdec-master\CMakeFiles\3.17.2\CMakeCXXCompiler.cmake;E:\git\WindowsResearch\retdec-master\CMakeFiles\3.17.2\CMakeRCCompiler.cmake;E:\git\WindowsResearch\retdec-master\CMakeFiles\3.17.2\CMakeSystem.cmake;E:\git\WindowsResearch\retdec-master\cmake\deps.cmake;E:\git\WindowsResearch\retdec-master\cmake\options.cmake;E:\git\WindowsResearch\retdec-master\cmake\utils.cmake;E:\git\WindowsResearch\retdec-master\retdec-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\ZERO_CHECK.vcxproj">
+      <Project>{A27EA167-967B-3C21-BA4F-D980144A06E8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\ar-extractor\ar-extractor.vcxproj">
+      <Project>{9A72A9F8-B246-3FDE-B2FB-E5A784839C5C}</Project>
+      <Name>ar-extractor</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\ar-extractortool\ar-extractortool.vcxproj">
+      <Project>{FEB0CD37-D1B2-3904-A454-A9DBDF461A7E}</Project>
+      <Name>ar-extractortool</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\bin2llvmir.vcxproj">
+      <Project>{19F7DE3E-91A9-3603-9897-C4F4D753B978}</Project>
+      <Name>bin2llvmir</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\bin2pat\bin2pat.vcxproj">
+      <Project>{6436BB8C-D902-3B01-9C0A-D84014CF86E7}</Project>
+      <Name>bin2pat</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\deps\capstone\capstone-project.vcxproj">
+      <Project>{4894C394-7F6A-331B-9FE5-B6C492108026}</Project>
+      <Name>capstone-project</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\capstone2llvmir\capstone2llvmir.vcxproj">
+      <Project>{A1109517-4249-3F90-B60B-957D64E7F1C9}</Project>
+      <Name>capstone2llvmir</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\common\common.vcxproj">
+      <Project>{9756CF53-9811-3C46-A819-C73C0828D8CB}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\config\config.vcxproj">
+      <Project>{EDDD3071-51C1-3951-83CB-8CD9F06FB4AE}</Project>
+      <Name>config</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\cpdetect\cpdetect.vcxproj">
+      <Project>{C61F0D48-6C1E-3543-8D2F-AF192832ADC8}</Project>
+      <Name>cpdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\ctypes\ctypes.vcxproj">
+      <Project>{08EF913D-15BE-39A0-BEC2-0A2483282804}</Project>
+      <Name>ctypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\ctypesparser\ctypesparser.vcxproj">
+      <Project>{6F12A8AE-CC5B-363D-826D-E306A00F18AD}</Project>
+      <Name>ctypesparser</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\debugformat\debugformat.vcxproj">
+      <Project>{92F85DBE-0E8D-3216-8030-E2A759DD5062}</Project>
+      <Name>debugformat</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\demangler\demangler.vcxproj">
+      <Project>{0355920B-04F5-3DF8-8F5D-170608E85BDE}</Project>
+      <Name>demangler</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\fileformat\fileformat.vcxproj">
+      <Project>{8694C0BC-DC4A-330B-A5C4-C2BEF0E86170}</Project>
+      <Name>fileformat</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\fileinfo\fileinfo.vcxproj">
+      <Project>{C4391BA3-67EE-349E-AF35-F3E479BC9A40}</Project>
+      <Name>fileinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\getsig\getsig.vcxproj">
+      <Project>{7E937C1C-AE9F-38AC-B73E-9532E7846E50}</Project>
+      <Name>getsig</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\idr2pat\idr2pat.vcxproj">
+      <Project>{A81BDE31-FD58-3ECE-90F7-E069995375EE}</Project>
+      <Name>idr2pat</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\deps\llvm\llvm-project.vcxproj">
+      <Project>{099FD53E-73C2-3254-9A9B-B58BE2D91612}</Project>
+      <Name>llvm-project</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\llvmir2hll\llvmir2hll.vcxproj">
+      <Project>{EF77AAB8-C054-3C7B-893E-7694D87BDA65}</Project>
+      <Name>llvmir2hll</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\loader\loader.vcxproj">
+      <Project>{314FFD0F-586B-3556-A3E5-E5B18B7C339A}</Project>
+      <Name>loader</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\macho-extractor\macho-extractor.vcxproj">
+      <Project>{2BD975C3-AD0E-312C-8B9A-836EDCE97C7C}</Project>
+      <Name>macho-extractor</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\macho-extractortool\macho-extractortool.vcxproj">
+      <Project>{0E73F8CE-2BA6-303C-B741-BFAE86D5C82E}</Project>
+      <Name>macho-extractortool</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\unpackertool\main.vcxproj">
+      <Project>{C99D4D8B-BA8A-34FF-9840-ED8A82ABA62A}</Project>
+      <Name>main</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\pat2yara\pat2yara.vcxproj">
+      <Project>{4EA03C1E-0924-3A29-A6A0-5373284551FB}</Project>
+      <Name>pat2yara</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\patterngen\patterngen.vcxproj">
+      <Project>{B0EA9810-6E47-37BE-BFC9-C931100CB2BC}</Project>
+      <Name>patterngen</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\pdbparser\pdbparser.vcxproj">
+      <Project>{BB711F0B-39FB-378E-8C73-A87190B3873E}</Project>
+      <Name>pdbparser</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\pelib\pelib.vcxproj">
+      <Project>{7D29A11A-682F-3B3C-9938-EFA5E73083E3}</Project>
+      <Name>pelib</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\retdec\retdec.vcxproj">
+      <Project>{5AE95F8C-ABF1-333D-8EEA-A59481DD4EC3}</Project>
+      <Name>retdec</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\retdec-decompiler\retdec-decompiler.vcxproj">
+      <Project>{3D270BFF-7346-35DE-BD8A-6D0284908C65}</Project>
+      <Name>retdec-decompiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\rtti-finder\rtti-finder.vcxproj">
+      <Project>{A04BDE66-64DF-3AED-AC62-83FDBBF0DD8F}</Project>
+      <Name>rtti-finder</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\serdes\serdes.vcxproj">
+      <Project>{A30B59DD-3F88-3B2D-8F09-B6EFEDFFAE93}</Project>
+      <Name>serdes</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\stacofin\stacofin.vcxproj">
+      <Project>{24C54EBA-EA28-31FE-A10E-32D06DC1AFC1}</Project>
+      <Name>stacofin</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\stacofintool\stacofintool.vcxproj">
+      <Project>{967F274C-DCE5-3776-9984-218B40D9BA04}</Project>
+      <Name>stacofintool</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\deps\tinyxml2\tinyxml2.vcxproj">
+      <Project>{730F680C-B605-334C-A3F3-B14927FF6DC3}</Project>
+      <Name>tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\unpacker\unpacker.vcxproj">
+      <Project>{8165AA94-05C2-38A0-A7DB-A25F6F001C92}</Project>
+      <Name>unpacker</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\unpackertool\unpackertool.vcxproj">
+      <Project>{F60981BC-04A3-3883-B374-96D4DE6B5827}</Project>
+      <Name>unpackertool</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\utils\utils.vcxproj">
+      <Project>{39311356-8795-31CF-8593-194E12110CE6}</Project>
+      <Name>utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\deps\yara\yara.vcxproj">
+      <Project>{A5E5E001-032A-3CB2-AEC8-D99D8C81B77C}</Project>
+      <Name>yara</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\yaracpp\yaracpp.vcxproj">
+      <Project>{2E1D4352-5FE3-3BDD-A141-7F293AB89DF7}</Project>
+      <Name>yaracpp</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\deps\yaramod\yaramod-project.vcxproj">
+      <Project>{A5688C2B-436D-3314-86C6-54A7FA3BE720}</Project>
+      <Name>yaramod-project</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

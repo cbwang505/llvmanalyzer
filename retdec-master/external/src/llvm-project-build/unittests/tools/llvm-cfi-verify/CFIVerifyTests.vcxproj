@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F8B85226-5FD4-3DA0-8850-EF17F421B5F3}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>CFIVerifyTests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CFIVerifyTests.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CFIVerifyTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CFIVerifyTests.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CFIVerifyTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CFIVerifyTests.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CFIVerifyTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CFIVerifyTests.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CFIVerifyTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googletest\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googletest\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googletest\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\Debug\lib\LLVMX86AsmPrinter.lib;..\..\..\Debug\lib\LLVMX86AsmParser.lib;..\..\..\Debug\lib\LLVMX86Desc.lib;..\..\..\Debug\lib\LLVMX86Disassembler.lib;..\..\..\Debug\lib\LLVMX86Info.lib;..\..\..\Debug\lib\LLVMMC.lib;..\..\..\Debug\lib\LLVMMCParser.lib;..\..\..\Debug\lib\LLVMObject.lib;..\..\..\Debug\lib\LLVMSupport.lib;..\..\..\Debug\lib\LLVMSymbolize.lib;..\..\..\Debug\lib\LLVMSupport.lib;..\..\..\Debug\lib\gtest_main.lib;..\..\..\Debug\lib\gtest.lib;LLVMCFIVerify.lib;..\..\..\Debug\lib\LLVMDebugInfoDWARF.lib;..\..\..\Debug\lib\LLVMDebugInfoPDB.lib;..\..\..\Debug\lib\LLVMObject.lib;..\..\..\Debug\lib\LLVMMCParser.lib;..\..\..\Debug\lib\LLVMMC.lib;..\..\..\Debug\lib\LLVMBitReader.lib;..\..\..\Debug\lib\LLVMCore.lib;..\..\..\Debug\lib\LLVMBinaryFormat.lib;..\..\..\Debug\lib\LLVMDebugInfoCodeView.lib;..\..\..\Debug\lib\LLVMDebugInfoMSF.lib;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\DIA SDK\lib\amd64\diaguids.lib;..\..\..\Debug\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;..\..\..\Debug\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/unittests/tools/llvm-cfi-verify/Debug/CFIVerifyTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/unittests/tools/llvm-cfi-verify/Debug/CFIVerifyTests.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googletest\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googletest\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googletest\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\Release\lib\LLVMX86AsmPrinter.lib;..\..\..\Release\lib\LLVMX86AsmParser.lib;..\..\..\Release\lib\LLVMX86Desc.lib;..\..\..\Release\lib\LLVMX86Disassembler.lib;..\..\..\Release\lib\LLVMX86Info.lib;..\..\..\Release\lib\LLVMMC.lib;..\..\..\Release\lib\LLVMMCParser.lib;..\..\..\Release\lib\LLVMObject.lib;..\..\..\Release\lib\LLVMSupport.lib;..\..\..\Release\lib\LLVMSymbolize.lib;..\..\..\Release\lib\LLVMSupport.lib;..\..\..\Release\lib\gtest_main.lib;..\..\..\Release\lib\gtest.lib;LLVMCFIVerify.lib;..\..\..\Release\lib\LLVMDebugInfoDWARF.lib;..\..\..\Release\lib\LLVMDebugInfoPDB.lib;..\..\..\Release\lib\LLVMObject.lib;..\..\..\Release\lib\LLVMMCParser.lib;..\..\..\Release\lib\LLVMMC.lib;..\..\..\Release\lib\LLVMBitReader.lib;..\..\..\Release\lib\LLVMCore.lib;..\..\..\Release\lib\LLVMBinaryFormat.lib;..\..\..\Release\lib\LLVMDebugInfoCodeView.lib;..\..\..\Release\lib\LLVMDebugInfoMSF.lib;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\DIA SDK\lib\amd64\diaguids.lib;..\..\..\Release\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;..\..\..\Release\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/unittests/tools/llvm-cfi-verify/Release/CFIVerifyTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/unittests/tools/llvm-cfi-verify/Release/CFIVerifyTests.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googletest\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googletest\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googletest\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\MinSizeRel\lib\LLVMX86AsmPrinter.lib;..\..\..\MinSizeRel\lib\LLVMX86AsmParser.lib;..\..\..\MinSizeRel\lib\LLVMX86Desc.lib;..\..\..\MinSizeRel\lib\LLVMX86Disassembler.lib;..\..\..\MinSizeRel\lib\LLVMX86Info.lib;..\..\..\MinSizeRel\lib\LLVMMC.lib;..\..\..\MinSizeRel\lib\LLVMMCParser.lib;..\..\..\MinSizeRel\lib\LLVMObject.lib;..\..\..\MinSizeRel\lib\LLVMSupport.lib;..\..\..\MinSizeRel\lib\LLVMSymbolize.lib;..\..\..\MinSizeRel\lib\LLVMSupport.lib;..\..\..\MinSizeRel\lib\gtest_main.lib;..\..\..\MinSizeRel\lib\gtest.lib;LLVMCFIVerify.lib;..\..\..\MinSizeRel\lib\LLVMDebugInfoDWARF.lib;..\..\..\MinSizeRel\lib\LLVMDebugInfoPDB.lib;..\..\..\MinSizeRel\lib\LLVMObject.lib;..\..\..\MinSizeRel\lib\LLVMMCParser.lib;..\..\..\MinSizeRel\lib\LLVMMC.lib;..\..\..\MinSizeRel\lib\LLVMBitReader.lib;..\..\..\MinSizeRel\lib\LLVMCore.lib;..\..\..\MinSizeRel\lib\LLVMBinaryFormat.lib;..\..\..\MinSizeRel\lib\LLVMDebugInfoCodeView.lib;..\..\..\MinSizeRel\lib\LLVMDebugInfoMSF.lib;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\DIA SDK\lib\amd64\diaguids.lib;..\..\..\MinSizeRel\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;..\..\..\MinSizeRel\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/unittests/tools/llvm-cfi-verify/MinSizeRel/CFIVerifyTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/unittests/tools/llvm-cfi-verify/MinSizeRel/CFIVerifyTests.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googletest\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googletest\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests\tools\llvm-cfi-verify;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googletest\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\unittest\googlemock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\RelWithDebInfo\lib\LLVMX86AsmPrinter.lib;..\..\..\RelWithDebInfo\lib\LLVMX86AsmParser.lib;..\..\..\RelWithDebInfo\lib\LLVMX86Desc.lib;..\..\..\RelWithDebInfo\lib\LLVMX86Disassembler.lib;..\..\..\RelWithDebInfo\lib\LLVMX86Info.lib;..\..\..\RelWithDebInfo\lib\LLVMMC.lib;..\..\..\RelWithDebInfo\lib\LLVMMCParser.lib;..\..\..\RelWithDebInfo\lib\LLVMObject.lib;..\..\..\RelWithDebInfo\lib\LLVMSupport.lib;..\..\..\RelWithDebInfo\lib\LLVMSymbolize.lib;..\..\..\RelWithDebInfo\lib\LLVMSupport.lib;..\..\..\RelWithDebInfo\lib\gtest_main.lib;..\..\..\RelWithDebInfo\lib\gtest.lib;LLVMCFIVerify.lib;..\..\..\RelWithDebInfo\lib\LLVMDebugInfoDWARF.lib;..\..\..\RelWithDebInfo\lib\LLVMDebugInfoPDB.lib;..\..\..\RelWithDebInfo\lib\LLVMObject.lib;..\..\..\RelWithDebInfo\lib\LLVMMCParser.lib;..\..\..\RelWithDebInfo\lib\LLVMMC.lib;..\..\..\RelWithDebInfo\lib\LLVMBitReader.lib;..\..\..\RelWithDebInfo\lib\LLVMCore.lib;..\..\..\RelWithDebInfo\lib\LLVMBinaryFormat.lib;..\..\..\RelWithDebInfo\lib\LLVMDebugInfoCodeView.lib;..\..\..\RelWithDebInfo\lib\LLVMDebugInfoMSF.lib;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\DIA SDK\lib\amd64\diaguids.lib;..\..\..\RelWithDebInfo\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;..\..\..\RelWithDebInfo\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/unittests/tools/llvm-cfi-verify/RelWithDebInfo/CFIVerifyTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/unittests/tools/llvm-cfi-verify/RelWithDebInfo/CFIVerifyTests.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests\tools\llvm-cfi-verify\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/unittests/tools/llvm-cfi-verify/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/unittests/tools/llvm-cfi-verify/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/unittests/tools/llvm-cfi-verify/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/unittests/tools/llvm-cfi-verify/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/unittests/tools/llvm-cfi-verify/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/unittests/tools/llvm-cfi-verify/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/unittests/tools/llvm-cfi-verify/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/unittests/tools/llvm-cfi-verify/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\tools\llvm-cfi-verify\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests\tools\llvm-cfi-verify\FileAnalysis.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\unittests\tools\llvm-cfi-verify\GraphBuilder.cpp" />
+    <ResourceCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\resources\windows_version_resource.rc">
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RC_VERSION_FIELD_1=8;RC_VERSION_FIELD_2=0;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"8.0.0\";RC_INTERNAL_NAME=\"CFIVerifyTests\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"8.0.0\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RC_VERSION_FIELD_1=8;RC_VERSION_FIELD_2=0;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"8.0.0\";RC_INTERNAL_NAME=\"CFIVerifyTests\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"8.0.0\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">RC_VERSION_FIELD_1=8;RC_VERSION_FIELD_2=0;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"8.0.0\";RC_INTERNAL_NAME=\"CFIVerifyTests\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"8.0.0\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">RC_VERSION_FIELD_1=8;RC_VERSION_FIELD_2=0;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"8.0.0\";RC_INTERNAL_NAME=\"CFIVerifyTests\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"8.0.0\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\ZERO_CHECK.vcxproj">
+      <Project>{F54A6DCD-7DD0-3E66-A1E0-084C36271102}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\BinaryFormat\LLVMBinaryFormat.vcxproj">
+      <Project>{D937895F-C83D-38D5-AE96-0E4D9F580174}</Project>
+      <Name>LLVMBinaryFormat</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Bitcode\Reader\LLVMBitReader.vcxproj">
+      <Project>{E9643E1E-C0DE-3348-A830-A27F4C059E6E}</Project>
+      <Name>LLVMBitReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\IR\LLVMCore.vcxproj">
+      <Project>{9403A0B3-F5BF-30C7-8F5C-D12517DE127D}</Project>
+      <Name>LLVMCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\DebugInfo\CodeView\LLVMDebugInfoCodeView.vcxproj">
+      <Project>{FF4EB20A-4D5F-3E3C-BD0E-6E40206EC6D6}</Project>
+      <Name>LLVMDebugInfoCodeView</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\DebugInfo\DWARF\LLVMDebugInfoDWARF.vcxproj">
+      <Project>{25835E6F-6B3B-3830-928D-2A30D28C4BF6}</Project>
+      <Name>LLVMDebugInfoDWARF</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\DebugInfo\MSF\LLVMDebugInfoMSF.vcxproj">
+      <Project>{D7790D19-5B1C-39B9-BCEC-E8951C85B1C5}</Project>
+      <Name>LLVMDebugInfoMSF</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\DebugInfo\PDB\LLVMDebugInfoPDB.vcxproj">
+      <Project>{520907D7-3A4E-3C0F-82AE-5BAF376C9B68}</Project>
+      <Name>LLVMDebugInfoPDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Demangle\LLVMDemangle.vcxproj">
+      <Project>{DA33797B-05B0-3538-B732-3844DE2D163F}</Project>
+      <Name>LLVMDemangle</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\MC\LLVMMC.vcxproj">
+      <Project>{34C55F2E-5A16-3D59-B7D5-E6C143FDAC23}</Project>
+      <Name>LLVMMC</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\MC\MCParser\LLVMMCParser.vcxproj">
+      <Project>{EF0C5A9B-9520-3EF6-8AE0-560274DA9EBE}</Project>
+      <Name>LLVMMCParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Object\LLVMObject.vcxproj">
+      <Project>{A231B82B-217F-304F-BF53-74E9CFE07E16}</Project>
+      <Name>LLVMObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Support\LLVMSupport.vcxproj">
+      <Project>{F1958D1A-488E-3211-9604-219FFE34D99D}</Project>
+      <Name>LLVMSupport</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\DebugInfo\Symbolize\LLVMSymbolize.vcxproj">
+      <Project>{2C04883A-B994-3EF4-BC73-CF969B3189E5}</Project>
+      <Name>LLVMSymbolize</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Target\X86\AsmParser\LLVMX86AsmParser.vcxproj">
+      <Project>{5A2F8948-A480-3F4D-BD1B-5D4EA8AFF187}</Project>
+      <Name>LLVMX86AsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Target\X86\InstPrinter\LLVMX86AsmPrinter.vcxproj">
+      <Project>{45E7D13F-ABF8-34C9-8D30-58BA41FCE165}</Project>
+      <Name>LLVMX86AsmPrinter</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Target\X86\MCTargetDesc\LLVMX86Desc.vcxproj">
+      <Project>{8DBB00A2-D38A-3D91-99EB-AF7A00F1CCEA}</Project>
+      <Name>LLVMX86Desc</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Target\X86\Disassembler\LLVMX86Disassembler.vcxproj">
+      <Project>{D68E5ABE-E89F-302A-85E0-46D249BBB8DC}</Project>
+      <Name>LLVMX86Disassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Target\X86\TargetInfo\LLVMX86Info.vcxproj">
+      <Project>{65FC88F0-CF6F-320B-91BE-C83D5F2F8A35}</Project>
+      <Name>LLVMX86Info</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\utils\unittest\gtest.vcxproj">
+      <Project>{A9944DD5-D020-3766-8C37-F605A0FEEFD3}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\utils\unittest\UnitTestMain\gtest_main.vcxproj">
+      <Project>{44BF8266-E3A1-3CA0-8848-4AEBDF47A3CA}</Project>
+      <Name>gtest_main</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

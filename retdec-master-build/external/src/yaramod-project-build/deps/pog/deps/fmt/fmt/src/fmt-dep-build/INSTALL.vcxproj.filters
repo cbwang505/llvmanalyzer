@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\yaramod-project-build\deps\pog\deps\fmt\fmt\src\fmt-dep-build\CMakeFiles\bd085c8c04f7fc113c25472c8a104d4b\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{170A8276-7928-358A-BC04-185E9BA28E00}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

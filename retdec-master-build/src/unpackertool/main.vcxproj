@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8095F040-1FD2-316C-9370-F8D5614B13DC}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>main</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\src\unpackertool\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">main.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">retdec-unpacker</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\src\unpackertool\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">main.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">retdec-unpacker</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\src\unpackertool\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">main.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">retdec-unpacker</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\src\unpackertool\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">main.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">retdec-unpacker</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\src;E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\src;E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\src;E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\retdec-unpackertool.lib;..\unpacker\Debug\retdec-unpacker.lib;..\loader\Debug\retdec-loader.lib;..\cpdetect\Debug\retdec-cpdetect.lib;..\fileformat\Debug\retdec-fileformat.lib;..\common\Debug\retdec-common.lib;C:\openssl\lib\libeay32.lib;Crypt32.lib;ws2_32.lib;..\yaracpp\Debug\retdec-yaracpp.lib;..\..\deps\install\yara\lib\libyara64.lib;..\..\deps\tinyxml2\Debug\retdec-tinyxml2.lib;..\..\deps\install\llvm\lib\LLVMDebugInfoDWARF.lib;..\..\deps\install\llvm\lib\LLVMBitWriter.lib;..\..\deps\install\llvm\lib\LLVMIRReader.lib;..\..\deps\install\llvm\lib\LLVMObject.lib;..\..\deps\install\llvm\lib\LLVMBinaryFormat.lib;..\..\deps\install\llvm\lib\LLVMInstCombine.lib;..\..\deps\install\llvm\lib\LLVMSupport.lib;..\..\deps\install\llvm\lib\LLVMDemangle.lib;..\..\deps\install\llvm\lib\LLVMipo.lib;..\..\deps\install\llvm\lib\LLVMAsmParser.lib;..\..\deps\install\llvm\lib\LLVMBitReader.lib;..\..\deps\install\llvm\lib\LLVMMCParser.lib;..\..\deps\install\llvm\lib\LLVMCodeGen.lib;..\..\deps\install\llvm\lib\LLVMScalarOpts.lib;..\..\deps\install\llvm\lib\LLVMTransformUtils.lib;..\..\deps\install\llvm\lib\LLVMAnalysis.lib;..\..\deps\install\llvm\lib\LLVMTarget.lib;..\..\deps\install\llvm\lib\LLVMCore.lib;..\..\deps\install\llvm\lib\LLVMMC.lib;..\..\deps\install\llvm\lib\LLVMObject.lib;..\..\deps\install\llvm\lib\LLVMBinaryFormat.lib;..\..\deps\install\llvm\lib\LLVMInstCombine.lib;..\..\deps\install\llvm\lib\LLVMSupport.lib;..\..\deps\install\llvm\lib\LLVMDemangle.lib;..\..\deps\install\llvm\lib\LLVMipo.lib;..\..\deps\install\llvm\lib\LLVMAsmParser.lib;..\..\deps\install\llvm\lib\LLVMBitReader.lib;..\..\deps\install\llvm\lib\LLVMMCParser.lib;..\..\deps\install\llvm\lib\LLVMCodeGen.lib;..\..\deps\install\llvm\lib\LLVMScalarOpts.lib;..\..\deps\install\llvm\lib\LLVMTransformUtils.lib;..\..\deps\install\llvm\lib\LLVMAnalysis.lib;..\..\deps\install\llvm\lib\LLVMTarget.lib;..\..\deps\install\llvm\lib\LLVMCore.lib;..\..\deps\install\llvm\lib\LLVMMC.lib;..\..\deps\install\llvm\lib\LLVMPasses.lib;..\..\deps\install\llvm\lib\LLVMX86AsmParser.lib;..\..\deps\install\llvm\lib\LLVMX86AsmPrinter.lib;..\..\deps\install\llvm\lib\LLVMX86Desc.lib;..\..\deps\install\llvm\lib\LLVMX86Disassembler.lib;..\..\deps\install\llvm\lib\LLVMX86Info.lib;..\..\deps\install\llvm\lib\LLVMX86Utils.lib;..\..\deps\install\llvm\lib\LLVMAsmPrinter.lib;..\..\deps\install\llvm\lib\LLVMGlobalISel.lib;..\..\deps\install\llvm\lib\LLVMDebugInfoCodeView.lib;..\..\deps\install\llvm\lib\LLVMMCDisassembler.lib;..\..\deps\install\llvm\lib\LLVMInstrumentation.lib;..\..\deps\install\llvm\lib\LLVMProfileData.lib;..\..\deps\install\llvm\lib\LLVMSelectionDAG.lib;..\..\deps\install\llvm\lib\LLVMVectorize.lib;..\..\deps\install\llvm\lib\LLVMX86CodeGen.lib;..\..\deps\install\llvm\lib\LLVMExecutionEngine.lib;..\..\deps\install\llvm\lib\LLVMRuntimeDyld.lib;..\..\deps\install\llvm\lib\LLVMMCJIT.lib;..\utils\Debug\retdec-utils.lib;..\pelib\Debug\retdec-pelib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/git/WindowsResearch/retdec-master-build/src/unpackertool/Debug/retdec-unpacker.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/git/WindowsResearch/retdec-master-build/src/unpackertool/Debug/retdec-unpacker.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\src;E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\src;E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\src;E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\retdec-unpackertool.lib;..\unpacker\Release\retdec-unpacker.lib;..\loader\Release\retdec-loader.lib;..\cpdetect\Release\retdec-cpdetect.lib;..\fileformat\Release\retdec-fileformat.lib;..\common\Release\retdec-common.lib;C:\openssl\lib\libeay32.lib;Crypt32.lib;ws2_32.lib;..\yaracpp\Release\retdec-yaracpp.lib;..\..\deps\install\yara\lib\libyara64.lib;..\..\deps\tinyxml2\Release\retdec-tinyxml2.lib;..\..\deps\install\llvm\lib\LLVMDebugInfoDWARF.lib;..\..\deps\install\llvm\lib\LLVMBitWriter.lib;..\..\deps\install\llvm\lib\LLVMIRReader.lib;..\..\deps\install\llvm\lib\LLVMObject.lib;..\..\deps\install\llvm\lib\LLVMBinaryFormat.lib;..\..\deps\install\llvm\lib\LLVMInstCombine.lib;..\..\deps\install\llvm\lib\LLVMSupport.lib;..\..\deps\install\llvm\lib\LLVMDemangle.lib;..\..\deps\install\llvm\lib\LLVMipo.lib;..\..\deps\install\llvm\lib\LLVMAsmParser.lib;..\..\deps\install\llvm\lib\LLVMBitReader.lib;..\..\deps\install\llvm\lib\LLVMMCParser.lib;..\..\deps\install\llvm\lib\LLVMCodeGen.lib;..\..\deps\install\llvm\lib\LLVMScalarOpts.lib;..\..\deps\install\llvm\lib\LLVMTransformUtils.lib;..\..\deps\install\llvm\lib\LLVMAnalysis.lib;..\..\deps\install\llvm\lib\LLVMTarget.lib;..\..\deps\install\llvm\lib\LLVMCore.lib;..\..\deps\install\llvm\lib\LLVMMC.lib;..\..\deps\install\llvm\lib\LLVMObject.lib;..\..\deps\install\llvm\lib\LLVMBinaryFormat.lib;..\..\deps\install\llvm\lib\LLVMInstCombine.lib;..\..\deps\install\llvm\lib\LLVMSupport.lib;..\..\deps\install\llvm\lib\LLVMDemangle.lib;..\..\deps\install\llvm\lib\LLVMipo.lib;..\..\deps\install\llvm\lib\LLVMAsmParser.lib;..\..\deps\install\llvm\lib\LLVMBitReader.lib;..\..\deps\install\llvm\lib\LLVMMCParser.lib;..\..\deps\install\llvm\lib\LLVMCodeGen.lib;..\..\deps\install\llvm\lib\LLVMScalarOpts.lib;..\..\deps\install\llvm\lib\LLVMTransformUtils.lib;..\..\deps\install\llvm\lib\LLVMAnalysis.lib;..\..\deps\install\llvm\lib\LLVMTarget.lib;..\..\deps\install\llvm\lib\LLVMCore.lib;..\..\deps\install\llvm\lib\LLVMMC.lib;..\..\deps\install\llvm\lib\LLVMPasses.lib;..\..\deps\install\llvm\lib\LLVMX86AsmParser.lib;..\..\deps\install\llvm\lib\LLVMX86AsmPrinter.lib;..\..\deps\install\llvm\lib\LLVMX86Desc.lib;..\..\deps\install\llvm\lib\LLVMX86Disassembler.lib;..\..\deps\install\llvm\lib\LLVMX86Info.lib;..\..\deps\install\llvm\lib\LLVMX86Utils.lib;..\..\deps\install\llvm\lib\LLVMAsmPrinter.lib;..\..\deps\install\llvm\lib\LLVMGlobalISel.lib;..\..\deps\install\llvm\lib\LLVMDebugInfoCodeView.lib;..\..\deps\install\llvm\lib\LLVMMCDisassembler.lib;..\..\deps\install\llvm\lib\LLVMInstrumentation.lib;..\..\deps\install\llvm\lib\LLVMProfileData.lib;..\..\deps\install\llvm\lib\LLVMSelectionDAG.lib;..\..\deps\install\llvm\lib\LLVMVectorize.lib;..\..\deps\install\llvm\lib\LLVMX86CodeGen.lib;..\..\deps\install\llvm\lib\LLVMExecutionEngine.lib;..\..\deps\install\llvm\lib\LLVMRuntimeDyld.lib;..\..\deps\install\llvm\lib\LLVMMCJIT.lib;..\utils\Release\retdec-utils.lib;..\pelib\Release\retdec-pelib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/git/WindowsResearch/retdec-master-build/src/unpackertool/Release/retdec-unpacker.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/git/WindowsResearch/retdec-master-build/src/unpackertool/Release/retdec-unpacker.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\src;E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\src;E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\src;E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\retdec-unpackertool.lib;..\unpacker\MinSizeRel\retdec-unpacker.lib;..\loader\MinSizeRel\retdec-loader.lib;..\cpdetect\MinSizeRel\retdec-cpdetect.lib;..\fileformat\MinSizeRel\retdec-fileformat.lib;..\common\MinSizeRel\retdec-common.lib;C:\openssl\lib\libeay32.lib;Crypt32.lib;ws2_32.lib;..\yaracpp\MinSizeRel\retdec-yaracpp.lib;..\..\deps\install\yara\lib\libyara64.lib;..\..\deps\tinyxml2\MinSizeRel\retdec-tinyxml2.lib;..\..\deps\install\llvm\lib\LLVMDebugInfoDWARF.lib;..\..\deps\install\llvm\lib\LLVMBitWriter.lib;..\..\deps\install\llvm\lib\LLVMIRReader.lib;..\..\deps\install\llvm\lib\LLVMObject.lib;..\..\deps\install\llvm\lib\LLVMBinaryFormat.lib;..\..\deps\install\llvm\lib\LLVMInstCombine.lib;..\..\deps\install\llvm\lib\LLVMSupport.lib;..\..\deps\install\llvm\lib\LLVMDemangle.lib;..\..\deps\install\llvm\lib\LLVMipo.lib;..\..\deps\install\llvm\lib\LLVMAsmParser.lib;..\..\deps\install\llvm\lib\LLVMBitReader.lib;..\..\deps\install\llvm\lib\LLVMMCParser.lib;..\..\deps\install\llvm\lib\LLVMCodeGen.lib;..\..\deps\install\llvm\lib\LLVMScalarOpts.lib;..\..\deps\install\llvm\lib\LLVMTransformUtils.lib;..\..\deps\install\llvm\lib\LLVMAnalysis.lib;..\..\deps\install\llvm\lib\LLVMTarget.lib;..\..\deps\install\llvm\lib\LLVMCore.lib;..\..\deps\install\llvm\lib\LLVMMC.lib;..\..\deps\install\llvm\lib\LLVMObject.lib;..\..\deps\install\llvm\lib\LLVMBinaryFormat.lib;..\..\deps\install\llvm\lib\LLVMInstCombine.lib;..\..\deps\install\llvm\lib\LLVMSupport.lib;..\..\deps\install\llvm\lib\LLVMDemangle.lib;..\..\deps\install\llvm\lib\LLVMipo.lib;..\..\deps\install\llvm\lib\LLVMAsmParser.lib;..\..\deps\install\llvm\lib\LLVMBitReader.lib;..\..\deps\install\llvm\lib\LLVMMCParser.lib;..\..\deps\install\llvm\lib\LLVMCodeGen.lib;..\..\deps\install\llvm\lib\LLVMScalarOpts.lib;..\..\deps\install\llvm\lib\LLVMTransformUtils.lib;..\..\deps\install\llvm\lib\LLVMAnalysis.lib;..\..\deps\install\llvm\lib\LLVMTarget.lib;..\..\deps\install\llvm\lib\LLVMCore.lib;..\..\deps\install\llvm\lib\LLVMMC.lib;..\..\deps\install\llvm\lib\LLVMPasses.lib;..\..\deps\install\llvm\lib\LLVMX86AsmParser.lib;..\..\deps\install\llvm\lib\LLVMX86AsmPrinter.lib;..\..\deps\install\llvm\lib\LLVMX86Desc.lib;..\..\deps\install\llvm\lib\LLVMX86Disassembler.lib;..\..\deps\install\llvm\lib\LLVMX86Info.lib;..\..\deps\install\llvm\lib\LLVMX86Utils.lib;..\..\deps\install\llvm\lib\LLVMAsmPrinter.lib;..\..\deps\install\llvm\lib\LLVMGlobalISel.lib;..\..\deps\install\llvm\lib\LLVMDebugInfoCodeView.lib;..\..\deps\install\llvm\lib\LLVMMCDisassembler.lib;..\..\deps\install\llvm\lib\LLVMInstrumentation.lib;..\..\deps\install\llvm\lib\LLVMProfileData.lib;..\..\deps\install\llvm\lib\LLVMSelectionDAG.lib;..\..\deps\install\llvm\lib\LLVMVectorize.lib;..\..\deps\install\llvm\lib\LLVMX86CodeGen.lib;..\..\deps\install\llvm\lib\LLVMExecutionEngine.lib;..\..\deps\install\llvm\lib\LLVMRuntimeDyld.lib;..\..\deps\install\llvm\lib\LLVMMCJIT.lib;..\utils\MinSizeRel\retdec-utils.lib;..\pelib\MinSizeRel\retdec-pelib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/git/WindowsResearch/retdec-master-build/src/unpackertool/MinSizeRel/retdec-unpacker.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/git/WindowsResearch/retdec-master-build/src/unpackertool/MinSizeRel/retdec-unpacker.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\src;E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\src;E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\src;E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\retdec-unpackertool.lib;..\unpacker\RelWithDebInfo\retdec-unpacker.lib;..\loader\RelWithDebInfo\retdec-loader.lib;..\cpdetect\RelWithDebInfo\retdec-cpdetect.lib;..\fileformat\RelWithDebInfo\retdec-fileformat.lib;..\common\RelWithDebInfo\retdec-common.lib;C:\openssl\lib\libeay32.lib;Crypt32.lib;ws2_32.lib;..\yaracpp\RelWithDebInfo\retdec-yaracpp.lib;..\..\deps\install\yara\lib\libyara64.lib;..\..\deps\tinyxml2\RelWithDebInfo\retdec-tinyxml2.lib;..\..\deps\install\llvm\lib\LLVMDebugInfoDWARF.lib;..\..\deps\install\llvm\lib\LLVMBitWriter.lib;..\..\deps\install\llvm\lib\LLVMIRReader.lib;..\..\deps\install\llvm\lib\LLVMObject.lib;..\..\deps\install\llvm\lib\LLVMBinaryFormat.lib;..\..\deps\install\llvm\lib\LLVMInstCombine.lib;..\..\deps\install\llvm\lib\LLVMSupport.lib;..\..\deps\install\llvm\lib\LLVMDemangle.lib;..\..\deps\install\llvm\lib\LLVMipo.lib;..\..\deps\install\llvm\lib\LLVMAsmParser.lib;..\..\deps\install\llvm\lib\LLVMBitReader.lib;..\..\deps\install\llvm\lib\LLVMMCParser.lib;..\..\deps\install\llvm\lib\LLVMCodeGen.lib;..\..\deps\install\llvm\lib\LLVMScalarOpts.lib;..\..\deps\install\llvm\lib\LLVMTransformUtils.lib;..\..\deps\install\llvm\lib\LLVMAnalysis.lib;..\..\deps\install\llvm\lib\LLVMTarget.lib;..\..\deps\install\llvm\lib\LLVMCore.lib;..\..\deps\install\llvm\lib\LLVMMC.lib;..\..\deps\install\llvm\lib\LLVMObject.lib;..\..\deps\install\llvm\lib\LLVMBinaryFormat.lib;..\..\deps\install\llvm\lib\LLVMInstCombine.lib;..\..\deps\install\llvm\lib\LLVMSupport.lib;..\..\deps\install\llvm\lib\LLVMDemangle.lib;..\..\deps\install\llvm\lib\LLVMipo.lib;..\..\deps\install\llvm\lib\LLVMAsmParser.lib;..\..\deps\install\llvm\lib\LLVMBitReader.lib;..\..\deps\install\llvm\lib\LLVMMCParser.lib;..\..\deps\install\llvm\lib\LLVMCodeGen.lib;..\..\deps\install\llvm\lib\LLVMScalarOpts.lib;..\..\deps\install\llvm\lib\LLVMTransformUtils.lib;..\..\deps\install\llvm\lib\LLVMAnalysis.lib;..\..\deps\install\llvm\lib\LLVMTarget.lib;..\..\deps\install\llvm\lib\LLVMCore.lib;..\..\deps\install\llvm\lib\LLVMMC.lib;..\..\deps\install\llvm\lib\LLVMPasses.lib;..\..\deps\install\llvm\lib\LLVMX86AsmParser.lib;..\..\deps\install\llvm\lib\LLVMX86AsmPrinter.lib;..\..\deps\install\llvm\lib\LLVMX86Desc.lib;..\..\deps\install\llvm\lib\LLVMX86Disassembler.lib;..\..\deps\install\llvm\lib\LLVMX86Info.lib;..\..\deps\install\llvm\lib\LLVMX86Utils.lib;..\..\deps\install\llvm\lib\LLVMAsmPrinter.lib;..\..\deps\install\llvm\lib\LLVMGlobalISel.lib;..\..\deps\install\llvm\lib\LLVMDebugInfoCodeView.lib;..\..\deps\install\llvm\lib\LLVMMCDisassembler.lib;..\..\deps\install\llvm\lib\LLVMInstrumentation.lib;..\..\deps\install\llvm\lib\LLVMProfileData.lib;..\..\deps\install\llvm\lib\LLVMSelectionDAG.lib;..\..\deps\install\llvm\lib\LLVMVectorize.lib;..\..\deps\install\llvm\lib\LLVMX86CodeGen.lib;..\..\deps\install\llvm\lib\LLVMExecutionEngine.lib;..\..\deps\install\llvm\lib\LLVMRuntimeDyld.lib;..\..\deps\install\llvm\lib\LLVMMCJIT.lib;..\utils\RelWithDebInfo\retdec-utils.lib;..\pelib\RelWithDebInfo\retdec-pelib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/git/WindowsResearch/retdec-master-build/src/unpackertool/RelWithDebInfo/retdec-unpacker.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/git/WindowsResearch/retdec-master-build/src/unpackertool/RelWithDebInfo/retdec-unpacker.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\src\unpackertool\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/src/unpackertool/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master -BE:/git/WindowsResearch/retdec-master-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/src/unpackertool/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master\src\unpackertool\retdec-unpackertool-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\src\unpackertool\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/src/unpackertool/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master -BE:/git/WindowsResearch/retdec-master-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/src/unpackertool/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master\src\unpackertool\retdec-unpackertool-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\src\unpackertool\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/src/unpackertool/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master -BE:/git/WindowsResearch/retdec-master-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/src/unpackertool/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master\src\unpackertool\retdec-unpackertool-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\src\unpackertool\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/src/unpackertool/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master -BE:/git/WindowsResearch/retdec-master-build --check-stamp-file E:/git/WindowsResearch/retdec-master-build/src/unpackertool/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master\src\unpackertool\retdec-unpackertool-config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\src\unpackertool\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\unpackertool\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\ZERO_CHECK.vcxproj">
+      <Project>{19956220-4746-3D50-89E9-7D2A7DB636D5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\common\common.vcxproj">
+      <Project>{DC74623A-EAEF-3133-9AC5-A18F2AE5A5CC}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\cpdetect\cpdetect.vcxproj">
+      <Project>{204BDEF9-7BE0-3332-BEAB-B47376EE7685}</Project>
+      <Name>cpdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\fileformat\fileformat.vcxproj">
+      <Project>{A9F85473-FC66-33F2-AB0F-DC55647335B4}</Project>
+      <Name>fileformat</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\deps\llvm\llvm-project.vcxproj">
+      <Project>{4FF1A625-C5DE-3ECA-8CB3-C8F230FA97DA}</Project>
+      <Name>llvm-project</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\loader\loader.vcxproj">
+      <Project>{A188C956-FFED-3F24-BB58-A52EA83DA037}</Project>
+      <Name>loader</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\pelib\pelib.vcxproj">
+      <Project>{D0140E13-B452-3D49-B3AC-8B73D66FE635}</Project>
+      <Name>pelib</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\deps\tinyxml2\tinyxml2.vcxproj">
+      <Project>{46C27AE8-0DD1-3096-A256-1510F711A6B9}</Project>
+      <Name>tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\unpacker\unpacker.vcxproj">
+      <Project>{7636CCB1-C2DE-369B-81DB-A8639D9F02D7}</Project>
+      <Name>unpacker</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\unpackertool\unpackertool.vcxproj">
+      <Project>{C1A3EB20-CA03-3F91-B9DE-703CF77DE176}</Project>
+      <Name>unpackertool</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\utils\utils.vcxproj">
+      <Project>{1D542208-F54D-3E8D-992E-3450D5474E5C}</Project>
+      <Name>utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\deps\yara\yara.vcxproj">
+      <Project>{2650CBE7-B681-3851-B270-6F6CDA3E951B}</Project>
+      <Name>yara</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\src\yaracpp\yaracpp.vcxproj">
+      <Project>{240F9C95-3AE8-3D43-9AD1-015C778AC735}</Project>
+      <Name>yaracpp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

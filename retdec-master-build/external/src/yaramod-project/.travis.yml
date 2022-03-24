@@ -1,0 +1,55 @@
+language: cpp
+
+matrix:
+  fast_finish: true
+  include:
+    - os: linux
+      dist: bionic
+      addons:
+        apt:
+          packages:
+            - build-essential
+            - coreutils
+            - python3-venv
+      env:
+        - DEPLOY_TO_PYPI=true  # Deploy to PyPI only from Linux build.
+      before_script:
+        - NPROC=$(nproc)
+    - os: osx
+      osx_image: xcode11.2
+      install:
+        - brew install gnu-sed
+      before_script:
+        - NPROC=$(sysctl -n hw.physicalcpu)
+
+script:
+  - ./setup_env.sh
+  - source env/bin/activate
+  - python3 setup.py build --with-unit-tests
+  - python3 setup.py install
+  - build/tests/cpp/yaramod_tests
+  - pytest -v tests/python
+  - cd docs/rtd
+  - pip install -r requirements.txt
+  - make clean && make html SPHINXOPTS="-W --keep-going -n"
+
+deploy:
+  provider: pypi
+  skip_cleanup: true
+  user: yaramod
+  password:
+    secure: nwOzwwWlEm2JQ0GHGGeHMUZUz1BfXI4Jc9bCwvy156QFaw/G9gKUYSibR/JGO1SLOn8HgqShNBaOWFgsEF2FLVVqVAe31yID65pnFTWNN60MDxPi+G58Y+uTy79eILyeF8LFByRreB5Oj6i4sl8J/0lHd8DABUYnrYXeVzaTkvI45Rq9cK1511BcQ2/fjgN6rbK90tRChlXAS/253koBxVdXuRPpsJsbTfXS4fuBBtQayi8TjYAZmkxxFyC8v+s+gj1FkBZILNzeZVWPaYmNzjfJ3zrSKsW4Xcdtm8sa3JUrCT1BXvjjAcCjAcIwvkLSvmH3lv+oJusKvxSOtQVwBvVGXMwAhfpBTCTeEYRkxy6ZQz7omjQEIWutg8hf7IcLKHJ1eH773+qsvSf44eN0ZK0BDri3e7hfybPEHZ0893goGBe9a24zdk0LhQ+hPMZGwUtPNipGfaaH3q+AvS9bbhUhjQq5q0zkUv+GLflECB5UopnPBmv3y/Gs6Kgalzyz06ZnGThVfi9usmKEwZem3hx6BRX6YYLgyCfpK269+wPMqDpa3jWr9bNE2zHBKMxv/vqaeQ71uImsH1phFXtxtE79dYiYesMOnZOCfFjsWkicyeKUxyd/UUr/BP8X6XkLNxw0edwPfF7qhNdIcOej+dbwjRfwu+w5M2kHu8pjv8U=
+  on:
+    tags: true
+    condition: $DEPLOY_TO_PYPI = true
+
+branches:
+  only:
+    # Pushes and PRs to the master branch.
+    - master
+    # Version tags.
+    - /^v?\d+\.\d+.*$/
+
+notifications:
+  email:
+    on_success: never

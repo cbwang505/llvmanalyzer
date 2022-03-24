@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\ae27d674e268b50be056793b47d1f106\yaramod-project-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\ae27d674e268b50be056793b47d1f106\yaramod-project-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\ae27d674e268b50be056793b47d1f106\yaramod-project-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\ae27d674e268b50be056793b47d1f106\yaramod-project-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\ae27d674e268b50be056793b47d1f106\yaramod-project-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\ae27d674e268b50be056793b47d1f106\yaramod-project-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\ae27d674e268b50be056793b47d1f106\yaramod-project-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\60a24ac82ae2e59967c5c76ab6a1cefc\yaramod-project-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\549e8506012ce9917182c9c435a7a978\yaramod-project.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\yaramod\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\git\WindowsResearch\retdec-master\deps\yaramod\CMakeFiles\yaramod-project" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{90FA2DAF-97EF-3E94-9B73-1CFC998A0DD3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

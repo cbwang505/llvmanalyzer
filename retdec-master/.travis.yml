@@ -1,0 +1,64 @@
+language: cpp
+
+cache: ccache
+
+matrix:
+  fast_finish: true
+  include:
+    - os: linux
+      dist: bionic
+      addons:
+        apt:
+          packages:
+            - build-essential
+            - gcc-multilib
+            - autoconf
+            - automake
+            - libtool
+            - pkg-config
+            - m4
+            - zlib1g-dev
+            - openssl
+      env:
+        - MATRIX_EVAL="NPROC=$(nproc)"
+        # We need this so that ccache does not cause compilation errors.
+        # e.g. retdec/tests/utils/string_tests.cpp:276:2: error: stray '\' in program
+        - CCACHE_CPP2=true
+
+before_script:
+  - eval "${MATRIX_EVAL}"
+
+script:
+  - mkdir build && cd build
+  # We use "-O0" to speed up the build.
+  # "-O0" causes segfaults in LLVM if we do not use "-DNDEBUG" as well.
+  - cmake -DCMAKE_CXX_FLAGS_RELEASE="-O0 -DNDEBUG" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$(pwd)/install" -DRETDEC_COMPILE_YARA=OFF ..
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then cmake -DCMAKE_LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/ .. ; fi
+  - time make install -j $NPROC
+  # Check that install is movable and that it does not need the build directory.
+  - mv install ../retdec-install
+  - cd ..
+  - rm -rf build
+  # Run the decompilation script.
+  - retdec-install/bin/retdec-decompiler --help
+  # Run a simple decompilation.
+  - echo -e '#include <stdio.h>\n#include <stdlib.h>\nint main()\n{\n  printf("hello world\\n");\n  return 0;\n}\n' > hello-orig.c
+  - cat hello-orig.c
+  - gcc -o hello hello-orig.c
+  - ./hello
+  - retdec-install/bin/retdec-decompiler hello
+  - cat hello.c
+  - grep "int main(int argc, char \*\* argv)" hello.c
+
+branches:
+  only:
+    # Pushes and PRs to the master branch.
+    - master
+    # Version tags.
+    - /^v?\d+\.\d+.*$/
+    # Temporarily enable build of this branch.
+    - issue-650
+
+notifications:
+  email:
+    on_success: never

@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://github.com/VirusTotal/yara/archive/v4.0.1.zip'
+tag='SHA256=4dcc6907b8537b67b52a61aa76f01196a4cc8e8e9f5fb6e4dd835692c2370e83'

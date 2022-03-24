@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{CFEC25AB-5F8F-4788-93B7-4444B3B13DED}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LLVMSymbolicExecution</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;WINDOWS;ENABLE_Z3;HAVE_Z3_GET_ERROR_MSG_NEEDS_CONTEXT;DONT_GET_PLUGIN_LOADER_OPTION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master-build\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master-build\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master-build\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;E:\git\WindowsResearch\toollib\z3-4.8.14-x64-win\include;$(ProjectDir)\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\retdec-master\external\src\llvm-project\lib\Linker\IRMover.cpp" />
+    <ClCompile Include="..\..\retdec-master\external\src\llvm-project\lib\Linker\LinkModules.cpp" />
+    <ClCompile Include="lib\Basic\KTest.cpp" />
+    <ClCompile Include="lib\Basic\Statistics.cpp" />
+    <ClCompile Include="lib\Core\AddressSpace.cpp" />
+    <ClCompile Include="lib\Core\CallPathManager.cpp" />
+    <ClCompile Include="lib\Core\Context.cpp" />
+    <ClCompile Include="lib\Core\CoreStats.cpp" />
+    <ClCompile Include="lib\Core\ExecutionState.cpp" />
+    <ClCompile Include="lib\Core\Executor.cpp" />
+    <ClCompile Include="lib\Core\ExecutorUtil.cpp" />
+    <ClCompile Include="lib\Core\ExternalDispatcher.cpp" />
+    <ClCompile Include="lib\Core\ImpliedValue.cpp" />
+    <ClCompile Include="lib\Core\Memory.cpp" />
+    <ClCompile Include="lib\Core\MemoryManager.cpp" />
+    <ClCompile Include="lib\Core\MergeHandler.cpp" />
+    <ClCompile Include="lib\Core\PTree.cpp" />
+    <ClCompile Include="lib\Core\Searcher.cpp" />
+    <ClCompile Include="lib\Core\SeedInfo.cpp" />
+    <ClCompile Include="lib\Core\SpecialFunctionHandler.cpp" />
+    <ClCompile Include="lib\Core\StatsTracker.cpp" />
+    <ClCompile Include="lib\Core\SymbolicTypeReconstructor.cpp" />
+    <ClCompile Include="lib\Core\TimingSolver.cpp" />
+    <ClCompile Include="lib\Core\UserSearcher.cpp" />
+    <ClCompile Include="lib\Expr\ArrayCache.cpp" />
+    <ClCompile Include="lib\Expr\ArrayExprOptimizer.cpp" />
+    <ClCompile Include="lib\Expr\ArrayExprRewriter.cpp" />
+    <ClCompile Include="lib\Expr\ArrayExprVisitor.cpp" />
+    <ClCompile Include="lib\Expr\Assignment.cpp" />
+    <ClCompile Include="lib\Expr\AssignmentGenerator.cpp" />
+    <ClCompile Include="lib\Expr\Constraints.cpp" />
+    <ClCompile Include="lib\Expr\Expr.cpp" />
+    <ClCompile Include="lib\Expr\ExprBuilder.cpp" />
+    <ClCompile Include="lib\Expr\ExprEvaluator.cpp" />
+    <ClCompile Include="lib\Expr\ExprPPrinter.cpp" />
+    <ClCompile Include="lib\Expr\ExprSMTLIBPrinter.cpp" />
+    <ClCompile Include="lib\Expr\ExprUtil.cpp" />
+    <ClCompile Include="lib\Expr\ExprVisitor.cpp" />
+    <ClCompile Include="lib\Expr\Lexer.cpp" />
+    <ClCompile Include="lib\Expr\Parser.cpp" />
+    <ClCompile Include="lib\Expr\Updates.cpp" />
+    <ClCompile Include="lib\Module\Checks.cpp" />
+    <ClCompile Include="lib\Module\FunctionAlias.cpp" />
+    <ClCompile Include="lib\Module\InstructionInfoTable.cpp" />
+    <ClCompile Include="lib\Module\InstructionOperandTypeCheckPass.cpp" />
+    <ClCompile Include="lib\Module\IntrinsicCleaner.cpp" />
+    <ClCompile Include="lib\Module\KInstruction.cpp" />
+    <ClCompile Include="lib\Module\KModule.cpp" />
+    <ClCompile Include="lib\Module\LowerSwitch.cpp" />
+    <ClCompile Include="lib\Module\ModuleUtil.cpp" />
+    <ClCompile Include="lib\Module\Optimize.cpp" />
+    <ClCompile Include="lib\Module\OptNone.cpp" />
+    <ClCompile Include="lib\Module\PhiCleaner.cpp" />
+    <ClCompile Include="lib\Module\RaiseAsm.cpp" />
+    <ClCompile Include="lib\Solver\AssignmentValidatingSolver.cpp" />
+    <ClCompile Include="lib\Solver\CachingSolver.cpp" />
+    <ClCompile Include="lib\Solver\CexCachingSolver.cpp" />
+    <ClCompile Include="lib\Solver\ConstantDivision.cpp" />
+    <ClCompile Include="lib\Solver\ConstructSolverChain.cpp" />
+    <ClCompile Include="lib\Solver\CoreSolver.cpp" />
+    <ClCompile Include="lib\Solver\DummySolver.cpp" />
+    <ClCompile Include="lib\Solver\FastCexSolver.cpp" />
+    <ClCompile Include="lib\Solver\IncompleteSolver.cpp" />
+    <ClCompile Include="lib\Solver\IndependentSolver.cpp" />
+    <ClCompile Include="lib\Solver\KQueryLoggingSolver.cpp" />
+    <ClCompile Include="lib\Solver\MetaSMTSolver.cpp" />
+    <ClCompile Include="lib\Solver\QueryLoggingSolver.cpp" />
+    <ClCompile Include="lib\Solver\SMTLIBLoggingSolver.cpp" />
+    <ClCompile Include="lib\Solver\Solver.cpp" />
+    <ClCompile Include="lib\Solver\SolverCmdLine.cpp" />
+    <ClCompile Include="lib\Solver\SolverImpl.cpp" />
+    <ClCompile Include="lib\Solver\SolverStats.cpp" />
+    <ClCompile Include="lib\Solver\STPBuilder.cpp" />
+    <ClCompile Include="lib\Solver\STPSolver.cpp" />
+    <ClCompile Include="lib\Solver\ValidatingSolver.cpp" />
+    <ClCompile Include="lib\Solver\Z3Builder.cpp" />
+    <ClCompile Include="lib\Solver\Z3Solver.cpp" />
+    <ClCompile Include="lib\Support\CompressionStream.cpp" />
+    <ClCompile Include="lib\Support\ErrorHandling.cpp" />
+    <ClCompile Include="lib\Support\FileHandling.cpp" />
+    <ClCompile Include="lib\Support\MemoryUsage.cpp" />
+    <ClCompile Include="lib\Support\PrintVersion.cpp" />
+    <ClCompile Include="lib\Support\RetdecInterpreterHandler.cpp" />
+    <ClCompile Include="lib\Support\RNG.cpp" />
+    <ClCompile Include="lib\Support\Time.cpp" />
+    <ClCompile Include="lib\Support\Timer.cpp" />
+    <ClCompile Include="lib\Support\TreeStream.cpp" />
+    <ClCompile Include="LLVMSymbolicExecution.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\klee\ADT\BitArray.h" />
+    <ClInclude Include="include\klee\ADT\Bits.h" />
+    <ClInclude Include="include\klee\ADT\DiscretePDF.h" />
+    <ClInclude Include="include\klee\ADT\ImmutableMap.h" />
+    <ClInclude Include="include\klee\ADT\ImmutableSet.h" />
+    <ClInclude Include="include\klee\ADT\ImmutableTree.h" />
+    <ClInclude Include="include\klee\ADT\KTest.h" />
+    <ClInclude Include="include\klee\ADT\MapOfSets.h" />
+    <ClInclude Include="include\klee\ADT\Ref.h" />
+    <ClInclude Include="include\klee\ADT\RNG.h" />
+    <ClInclude Include="include\klee\ADT\TreeStream.h" />
+    <ClInclude Include="include\klee\Config\config.h" />
+    <ClInclude Include="include\klee\Config\Version.h" />
+    <ClInclude Include="include\klee\Core\BranchTypes.h" />
+    <ClInclude Include="include\klee\Core\Interpreter.h" />
+    <ClInclude Include="include\klee\Core\TerminationTypes.h" />
+    <ClInclude Include="include\klee\Expr\ArrayCache.h" />
+    <ClInclude Include="include\klee\Expr\ArrayExprHash.h" />
+    <ClInclude Include="include\klee\Expr\ArrayExprOptimizer.h" />
+    <ClInclude Include="include\klee\Expr\ArrayExprRewriter.h" />
+    <ClInclude Include="include\klee\Expr\ArrayExprVisitor.h" />
+    <ClInclude Include="include\klee\Expr\Assignment.h" />
+    <ClInclude Include="include\klee\Expr\AssignmentGenerator.h" />
+    <ClInclude Include="include\klee\Expr\Constraints.h" />
+    <ClInclude Include="include\klee\Expr\Expr.h" />
+    <ClInclude Include="include\klee\Expr\ExprBuilder.h" />
+    <ClInclude Include="include\klee\Expr\ExprEvaluator.h" />
+    <ClInclude Include="include\klee\Expr\ExprHashMap.h" />
+    <ClInclude Include="include\klee\Expr\ExprPPrinter.h" />
+    <ClInclude Include="include\klee\Expr\ExprRangeEvaluator.h" />
+    <ClInclude Include="include\klee\Expr\ExprSMTLIBPrinter.h" />
+    <ClInclude Include="include\klee\Expr\ExprUtil.h" />
+    <ClInclude Include="include\klee\Expr\ExprVisitor.h" />
+    <ClInclude Include="include\klee\Expr\Parser\Lexer.h" />
+    <ClInclude Include="include\klee\Expr\Parser\Parser.h" />
+    <ClInclude Include="include\klee\klee.h" />
+    <ClInclude Include="include\klee\Module\Cell.h" />
+    <ClInclude Include="include\klee\Module\InstructionInfoTable.h" />
+    <ClInclude Include="include\klee\Module\KInstIterator.h" />
+    <ClInclude Include="include\klee\Module\KInstruction.h" />
+    <ClInclude Include="include\klee\Module\KModule.h" />
+    <ClInclude Include="include\klee\Solver\Common.h" />
+    <ClInclude Include="include\klee\Solver\IncompleteSolver.h" />
+    <ClInclude Include="include\klee\Solver\Solver.h" />
+    <ClInclude Include="include\klee\Solver\SolverCmdLine.h" />
+    <ClInclude Include="include\klee\Solver\SolverImpl.h" />
+    <ClInclude Include="include\klee\Solver\SolverStats.h" />
+    <ClInclude Include="include\klee\Statistics\Statistic.h" />
+    <ClInclude Include="include\klee\Statistics\Statistics.h" />
+    <ClInclude Include="include\klee\Statistics\TimerStatIncrementer.h" />
+    <ClInclude Include="include\klee\Support\Casting.h" />
+    <ClInclude Include="include\klee\Support\CompressionStream.h" />
+    <ClInclude Include="include\klee\Support\Debug.h" />
+    <ClInclude Include="include\klee\Support\ErrorHandling.h" />
+    <ClInclude Include="include\klee\Support\FileHandling.h" />
+    <ClInclude Include="include\klee\Support\FloatEvaluation.h" />
+    <ClInclude Include="include\klee\Support\IntEvaluation.h" />
+    <ClInclude Include="include\klee\Support\ModuleUtil.h" />
+    <ClInclude Include="include\klee\Support\OptionCategories.h" />
+    <ClInclude Include="include\klee\Support\PrintContext.h" />
+    <ClInclude Include="include\klee\Support\PrintVersion.h" />
+    <ClInclude Include="include\klee\Support\Timer.h" />
+    <ClInclude Include="include\klee\System\MemoryUsage.h" />
+    <ClInclude Include="include\klee\System\Time.h" />
+    <ClInclude Include="lib\Core\AddressSpace.h" />
+    <ClInclude Include="lib\Core\CallPathManager.h" />
+    <ClInclude Include="lib\Core\Context.h" />
+    <ClInclude Include="lib\Core\CoreStats.h" />
+    <ClInclude Include="lib\Core\ExecutionState.h" />
+    <ClInclude Include="lib\Core\Executor.h" />
+    <ClInclude Include="lib\Core\ExternalDispatcher.h" />
+    <ClInclude Include="lib\Core\GetElementPtrTypeIterator.h" />
+    <ClInclude Include="lib\Core\ImpliedValue.h" />
+    <ClInclude Include="lib\Core\Memory.h" />
+    <ClInclude Include="lib\Core\MemoryManager.h" />
+    <ClInclude Include="lib\Core\MergeHandler.h" />
+    <ClInclude Include="lib\Core\PTree.h" />
+    <ClInclude Include="lib\Core\Searcher.h" />
+    <ClInclude Include="lib\Core\SeedInfo.h" />
+    <ClInclude Include="lib\Core\SpecialFunctionHandler.h" />
+    <ClInclude Include="lib\Core\StatsTracker.h" />
+    <ClInclude Include="lib\Core\SymbolicTypeReconstructor.h" />
+    <ClInclude Include="lib\Core\TimingSolver.h" />
+    <ClInclude Include="lib\Core\UserSearcher.h" />
+    <ClInclude Include="lib\Module\KLEEIRMetaData.h" />
+    <ClInclude Include="lib\Module\Passes.h" />
+    <ClInclude Include="lib\Solver\ConstantDivision.h" />
+    <ClInclude Include="lib\Solver\MetaSMTBuilder.h" />
+    <ClInclude Include="lib\Solver\MetaSMTSolver.h" />
+    <ClInclude Include="lib\Solver\QueryLoggingSolver.h" />
+    <ClInclude Include="lib\Solver\STPBuilder.h" />
+    <ClInclude Include="lib\Solver\STPSolver.h" />
+    <ClInclude Include="lib\Solver\Z3Builder.h" />
+    <ClInclude Include="lib\Solver\Z3Solver.h" />
+    <ClInclude Include="lib\Support\RetdecInterpreterHandler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\klee\Config\CompileTimeInfo.h.cmin" />
+    <None Include="include\klee\Config\config.h.cmin" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\LLVMVisualizers\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\LLVMVisualizers\llvm.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\CMakeFiles\b36924170c7c6a6e49a6b630f0cdc7c7\yara-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\CMakeFiles\b36924170c7c6a6e49a6b630f0cdc7c7\yara-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\CMakeFiles\b36924170c7c6a6e49a6b630f0cdc7c7\yara-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\CMakeFiles\b36924170c7c6a6e49a6b630f0cdc7c7\yara-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\CMakeFiles\b36924170c7c6a6e49a6b630f0cdc7c7\yara-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\CMakeFiles\b36924170c7c6a6e49a6b630f0cdc7c7\yara-configure-msvc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\CMakeFiles\b36924170c7c6a6e49a6b630f0cdc7c7\yara-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\CMakeFiles\b36924170c7c6a6e49a6b630f0cdc7c7\yara-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\CMakeFiles\b36924170c7c6a6e49a6b630f0cdc7c7\yara-move-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\CMakeFiles\d7e66bdef5511f5bccfa76c49ecf711b\yara-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\CMakeFiles\b5237d7e48400f341512af1ab9402a63\yara.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\yara\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\git\WindowsResearch\retdec-master-build\deps\yara\CMakeFiles\yara" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9CC0A98B-E9C1-30C4-9A8F-89F347160CE5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

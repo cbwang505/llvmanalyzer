@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://github.com/google/googletest/archive/dc1ca9ae4c206434e450ed4ff535ca7c20c79e3c.zip'
+tag='SHA256=d8376d6283e15ffd317646052233c88e2044cd61453619315e6fc139dc1b5d76'

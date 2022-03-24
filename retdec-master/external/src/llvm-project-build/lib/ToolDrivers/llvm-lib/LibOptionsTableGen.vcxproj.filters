@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\2b9bc2ed57add29bf1b4feb574bc12dd\Options.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\480c6a5b6b08205a1147b677fa324567\LibOptionsTableGen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\ToolDrivers\llvm-lib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\ToolDrivers\llvm-lib\CMakeFiles\LibOptionsTableGen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{26567867-2137-3340-AA8C-8CBCC0F5F017}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

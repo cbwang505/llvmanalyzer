@@ -1,0 +1,9 @@
+prefix=E:/git/WindowsResearch/retdec-master-build/deps/install/yaramod
+libdir=E:/git/WindowsResearch/retdec-master-build/deps/install/yaramod/lib
+includedir=E:/git/WindowsResearch/retdec-master-build/deps/install/yaramod/include
+
+Name: pog
+Description: Parser generator library.
+Version: 0.5.2
+Libs: -L${libdir} -lpog_re2 -lpthread -lpog_fmt
+Cflags: -I${includedir}

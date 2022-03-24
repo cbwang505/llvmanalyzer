@@ -1,0 +1,14 @@
+E:/git/WindowsResearch/retdec-master/deps/install/capstone/include/capstone/arm64.h
+E:/git/WindowsResearch/retdec-master/deps/install/capstone/include/capstone/arm.h
+E:/git/WindowsResearch/retdec-master/deps/install/capstone/include/capstone/capstone.h
+E:/git/WindowsResearch/retdec-master/deps/install/capstone/include/capstone/mips.h
+E:/git/WindowsResearch/retdec-master/deps/install/capstone/include/capstone/ppc.h
+E:/git/WindowsResearch/retdec-master/deps/install/capstone/include/capstone/x86.h
+E:/git/WindowsResearch/retdec-master/deps/install/capstone/include/capstone/sparc.h
+E:/git/WindowsResearch/retdec-master/deps/install/capstone/include/capstone/systemz.h
+E:/git/WindowsResearch/retdec-master/deps/install/capstone/include/capstone/xcore.h
+E:/git/WindowsResearch/retdec-master/deps/install/capstone/include/capstone/m68k.h
+E:/git/WindowsResearch/retdec-master/deps/install/capstone/include/capstone/tms320c64x.h
+E:/git/WindowsResearch/retdec-master/deps/install/capstone/include/capstone/m680x.h
+E:/git/WindowsResearch/retdec-master/deps/install/capstone/include/capstone/platform.h
+E:/git/WindowsResearch/retdec-master/deps/install/capstone/lib/capstone.lib

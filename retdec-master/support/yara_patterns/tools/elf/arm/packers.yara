@@ -1,0 +1,477 @@
+/*
+ * YARA rules for ARM ELF packer detection.
+ * Copyright (c) 2017 Avast Software, licensed under the MIT license
+ */
+
+import "elf"
+
+rule upx_391_lzma
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.91 [LZMA]"
+		source = "Made by Retdec Team"
+		pattern = "00000000F04F2DE930D04DE200308DE50030D0E50250D0E501E0D0E500C09DE514308DE55C309DE50040A0E300408CE5004083E514C09DE50130D0E503308CE0"
+		start = 380
+	strings:
+		$1 = { 00 00 00 00 F0 4F 2D E9 30 D0 4D E2 00 30 8D E5 00 30 D0 E5 02 50 D0 E5 01 E0 D0 E5 00 C0 9D E5 14 30 8D E5 5C 30 9D E5 00 40 A0 E3 00 40 8C E5 00 40 83 E5 14 C0 9D E5 01 30 D0 E5 03 30 8C E0 }
+	condition:
+		$1 at elf.entry_point + 380
+}
+
+rule upx_391_nrv2b
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.91 [NRV2B]"
+		source = "Made by Retdec Team"
+		pattern = "044094E00EF0A0110140D0E40440A4E0044CB0E10EF0A0E10110A0E30EC0A0E1F6FFFFEB0110B1E0F4FFFFEBFBFFFF3A"
+		start = 276
+	strings:
+		$1 = { 04 40 94 E0 0E F0 A0 11 01 40 D0 E4 04 40 A4 E0 04 4C B0 E1 0E F0 A0 E1 01 10 A0 E3 0E C0 A0 E1 F6 FF FF EB 01 10 B1 E0 F4 FF FF EB FB FF FF 3A }
+	condition:
+		$1 at elf.entry_point + 276
+}
+
+rule upx_391_nrv2d
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.91 [NRV2D]"
+		source = "Made by Retdec Team"
+		pattern = "0140D0E40440A4E0044CB0E10EF0A0E10130D0E40130C2E4044094E0F7FFFF0BFAFFFF2A0110A0E3030000EA011041E2044094E0F1FFFF0B0110B1E0"
+		start = 276
+	strings:
+		$1 = { 01 40 D0 E4 04 40 A4 E0 04 4C B0 E1 0E F0 A0 E1 01 30 D0 E4 01 30 C2 E4 04 40 94 E0 F7 FF FF 0B FA FF FF 2A 01 10 A0 E3 03 00 00 EA 01 10 41 E2 04 40 94 E0 F1 FF FF 0B 01 10 B1 E0 }
+	condition:
+		$1 at elf.entry_point + 276
+}
+
+rule upx_391_nrv2e
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.91 [NRV2E]"
+		source = "Made by Retdec Team"
+		pattern = "0140D0E40440A4E0044CB0E10EF0A0E10130D0E40130C2E4044094E0F7FFFF0BFAFFFF2A0110A0E3030000EA011041E2044094E0F1FFFF0B0110A1E0"
+		start = 276
+	strings:
+		$1 = { 01 40 D0 E4 04 40 A4 E0 04 4C B0 E1 0E F0 A0 E1 01 30 D0 E4 01 30 C2 E4 04 40 94 E0 F7 FF FF 0B FA FF FF 2A 01 10 A0 E3 03 00 00 EA 01 10 41 E2 04 40 94 E0 F1 FF FF 0B 01 10 A1 E0 }
+	condition:
+		$1 at elf.entry_point + 276
+}
+
+rule upx_392_393_lzma
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.92, 3.93 [LZMA]"
+		source = "Made by Retdec Team"
+		pattern = "1CC04FE2064C9CE80CB08BE00CA08AE000309BE501904CE0031081E00200A0E1011A81E20030A0E30F402DE90720A0E310309CE50050A0E30040E0E3103083E3C070A0E3000000EF010A70E39B02002AFE01B9E80A0059E1FE01A0E8FBFFFF3A094040E0"
+	strings:
+		$1 = { 1C C0 4F E2 06 4C 9C E8 0C B0 8B E0 0C A0 8A E0 00 30 9B E5 01 90 4C E0 03 10 81 E0 02 00 A0 E1 01 1A 81 E2 00 30 A0 E3 0F 40 2D E9 07 20 A0 E3 10 30 9C E5 00 50 A0 E3 00 40 E0 E3 10 30 83 E3 C0 70 A0 E3 00 00 00 EF 01 0A 70 E3 9B 02 00 2A FE 01 B9 E8 0A 00 59 E1 FE 01 A0 E8 FB FF FF 3A 09 40 40 E0 }
+	condition:
+		$1 at elf.entry_point
+}
+
+rule upx_392_393_nrv2b
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.92, 3.93 [NRV2B]"
+		source = "Made by Retdec Team"
+		pattern = "1CC04FE2064C9CE80CB08BE00CA08AE000309BE501904CE0031081E00200A0E1011A81E20030A0E30F402DE90720A0E310309CE50050A0E30040E0E3103083E3C070A0E3000000EF010A70E35900002AFE01B9E80A0059E1FE01A0E8FBFFFF3A094040E0"
+	strings:
+		$1 = { 1C C0 4F E2 06 4C 9C E8 0C B0 8B E0 0C A0 8A E0 00 30 9B E5 01 90 4C E0 03 10 81 E0 02 00 A0 E1 01 1A 81 E2 00 30 A0 E3 0F 40 2D E9 07 20 A0 E3 10 30 9C E5 00 50 A0 E3 00 40 E0 E3 10 30 83 E3 C0 70 A0 E3 00 00 00 EF 01 0A 70 E3 59 00 00 2A FE 01 B9 E8 0A 00 59 E1 FE 01 A0 E8 FB FF FF 3A 09 40 40 E0 }
+	condition:
+		$1 at elf.entry_point
+}
+
+rule upx_392_393_nrv2d
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.92, 3.93 [NRV2D]"
+		source = "Made by Retdec Team"
+		pattern = "1CC04FE2064C9CE80CB08BE00CA08AE000309BE501904CE0031081E00200A0E1011A81E20030A0E30F402DE90720A0E310309CE50050A0E30040E0E3103083E3C070A0E3000000EF010A70E36800002AFE01B9E80A0059E1FE01A0E8FBFFFF3A094040E0"
+	strings:
+		$1 = { 1C C0 4F E2 06 4C 9C E8 0C B0 8B E0 0C A0 8A E0 00 30 9B E5 01 90 4C E0 03 10 81 E0 02 00 A0 E1 01 1A 81 E2 00 30 A0 E3 0F 40 2D E9 07 20 A0 E3 10 30 9C E5 00 50 A0 E3 00 40 E0 E3 10 30 83 E3 C0 70 A0 E3 00 00 00 EF 01 0A 70 E3 68 00 00 2A FE 01 B9 E8 0A 00 59 E1 FE 01 A0 E8 FB FF FF 3A 09 40 40 E0 }
+	condition:
+		$1 at elf.entry_point
+}
+
+rule upx_392_393_nrv2e
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.92, 3.93 [NRV2E]"
+		source = "Made by Retdec Team"
+		pattern = "1CC04FE2064C9CE80CB08BE00CA08AE000309BE501904CE0031081E00200A0E1011A81E20030A0E30F402DE90720A0E310309CE50050A0E30040E0E3103083E3C070A0E3000000EF010A70E36800002AFE01B9E80A0059E1FE01A0E8FBFFFF3A094040E0"
+	strings:
+		$1 = { 1C C0 4F E2 06 4C 9C E8 0C B0 8B E0 0C A0 8A E0 00 30 9B E5 01 90 4C E0 03 10 81 E0 02 00 A0 E1 01 1A 81 E2 00 30 A0 E3 0F 40 2D E9 07 20 A0 E3 10 30 9C E5 00 50 A0 E3 00 40 E0 E3 10 30 83 E3 C0 70 A0 E3 00 00 00 EF 01 0A 70 E3 6D 00 00 2A FE 01 B9 E8 0A 00 59 E1 FE 01 A0 E8 FB FF FF 3A 09 40 40 E0 }
+	condition:
+		$1 at elf.entry_point
+}
+
+rule upx_394_lzma
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.94 [LZMA]"
+		source = "Made by Retdec Team"
+		pattern = "1CC04FE2064C9CE80200A0E10CB08BE00CA08AE000309BE501904CE00120A0E1031081E0011A81E20030A0E30F402DE90720A0E310309CE509C0A0E10050A0E30040E0E3103083E3C070A0E3000000EF010A70E39E02002AFE01B9E80A0059E1FE01A0E8"
+	strings:
+		$1 = { 1C C0 4F E2 06 4C 9C E8 02 00 A0 E1 0C B0 8B E0 0C A0 8A E0 00 30 9B E5 01 90 4C E0 01 20 A0 E1 03 10 81 E0 01 1A 81 E2 00 30 A0 E3 0F 40 2D E9 07 20 A0 E3 10 30 9C E5 09 C0 A0 E1 00 50 A0 E3 00 40 E0 E3 10 30 83 E3 C0 70 A0 E3 00 00 00 EF 01 0A 70 E3 9E 02 00 2A FE 01 B9 E8 0A 00 59 E1 FE 01 A0 E8 }
+	condition:
+		$1 at elf.entry_point
+}
+
+rule upx_394_nrv2b
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.94 [NRV2B]"
+		source = "Made by Retdec Team"
+		pattern = "1CC04FE2064C9CE80200A0E10CB08BE00CA08AE000309BE501904CE00120A0E1031081E0011A81E20030A0E30F402DE90720A0E310309CE509C0A0E10050A0E30040E0E3103083E3C070A0E3000000EF010A70E35D00002AFE01B9E80A0059E1FE01A0E8"
+	strings:
+		$1 = { 1C C0 4F E2 06 4C 9C E8 02 00 A0 E1 0C B0 8B E0 0C A0 8A E0 00 30 9B E5 01 90 4C E0 01 20 A0 E1 03 10 81 E0 01 1A 81 E2 00 30 A0 E3 0F 40 2D E9 07 20 A0 E3 10 30 9C E5 09 C0 A0 E1 00 50 A0 E3 00 40 E0 E3 10 30 83 E3 C0 70 A0 E3 00 00 00 EF 01 0A 70 E3 5D 00 00 2A FE 01 B9 E8 0A 00 59 E1 FE 01 A0 E8 }
+	condition:
+		$1 at elf.entry_point
+}
+
+rule upx_394_nrv2d
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.94 [NRV2D]"
+		source = "Made by Retdec Team"
+		pattern = "1CC04FE2064C9CE80200A0E10CB08BE00CA08AE000309BE501904CE00120A0E1031081E0011A81E20030A0E30F402DE90720A0E310309CE509C0A0E10050A0E30040E0E3103083E3C070A0E3000000EF010A70E36C00002AFE01B9E80A0059E1FE01A0E8"
+	strings:
+		$1 = { 1C C0 4F E2 06 4C 9C E8 02 00 A0 E1 0C B0 8B E0 0C A0 8A E0 00 30 9B E5 01 90 4C E0 01 20 A0 E1 03 10 81 E0 01 1A 81 E2 00 30 A0 E3 0F 40 2D E9 07 20 A0 E3 10 30 9C E5 09 C0 A0 E1 00 50 A0 E3 00 40 E0 E3 10 30 83 E3 C0 70 A0 E3 00 00 00 EF 01 0A 70 E3 6C 00 00 2A FE 01 B9 E8 0A 00 59 E1 FE 01 A0 E8 }
+	condition:
+		$1 at elf.entry_point
+}
+
+rule upx_394_nrv2e
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.94 [NRV2E]"
+		source = "Made by Retdec Team"
+		pattern = "1CC04FE2064C9CE80200A0E10CB08BE00CA08AE000309BE501904CE00120A0E1031081E0011A81E20030A0E30F402DE90720A0E310309CE509C0A0E10050A0E30040E0E3103083E3C070A0E3000000EF010A70E37100002AFE01B9E80A0059E1FE01A0E8"
+	strings:
+		$1 = { 1C C0 4F E2 06 4C 9C E8 02 00 A0 E1 0C B0 8B E0 0C A0 8A E0 00 30 9B E5 01 90 4C E0 01 20 A0 E1 03 10 81 E0 01 1A 81 E2 00 30 A0 E3 0F 40 2D E9 07 20 A0 E3 10 30 9C E5 09 C0 A0 E1 00 50 A0 E3 00 40 E0 E3 10 30 83 E3 C0 70 A0 E3 00 00 00 EF 01 0A 70 E3 71 00 00 2A FE 01 B9 E8 0A 00 59 E1 FE 01 A0 E8 }
+	condition:
+		$1 at elf.entry_point
+}
+rule arm_v393
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.93"
+		source = "Made by Jan Neduchal"
+		pattern = "1CC04FE2064C9CE80CB08BE00CA08AE0????9?E5????4?E0????8?E0????A?E1????8?E2????A?E3????2?E9????A?E3??"
+	strings:
+		$h00 = { 1C C0 4F E2 06 4C 9C E8 0C B0 8B E0 0C A0 8A E0 ?? ?? 9? E5 ?? ?? 4? E0 ?? ?? 8? E0 ?? ?? A? E1 ?? ?? 8? E2 ?? ?? A? E3 ?? ?? 2? E9 ?? ?? A? E3 ?? }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule armBe_v393
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.93"
+		source = "Made by Jan Neduchal"
+		pattern = "E24FC01CE89C4C06E08BB00CE08AA00CE59?????E04?????E08?????E1A?????E28?????E3A?????E92?????E3A?????E5"
+	strings:
+		$h00 = { E2 4F C0 1C E8 9C 4C 06 E0 8B B0 0C E0 8A A0 0C E5 9? ?? ?? E0 4? ?? ?? E0 8? ?? ?? E1 A? ?? ?? E2 8? ?? ?? E3 A? ?? ?? E9 2? ?? ?? E3 A? ?? ?? E5 }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule arm_v394
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.94"
+		source = "Made by Jan Neduchal"
+		pattern = "1CC04FE2064C9CE80200A0E10CB08BE00CA08AE0????9?E5????4?E0????A?E1????8?E0????8?E2????A?E3????2?E9??"
+	strings:
+		$h00 = { 1C C0 4F E2 06 4C 9C E8 02 00 A0 E1 0C B0 8B E0 0C A0 8A E0 ?? ?? 9? E5 ?? ?? 4? E0 ?? ?? A? E1 ?? ?? 8? E0 ?? ?? 8? E2 ?? ?? A? E3 ?? ?? 2? E9 ?? }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule armBe_v394
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.94"
+		source = "Made by Jan Neduchal"
+		pattern = "E24FC01CE89C4C06E1A00002E08BB00CE08AA00CE59?????E04?????E1A?????E08?????E28?????E3A?????E92?????E3"
+	strings:
+		$h00 = { E2 4F C0 1C E8 9C 4C 06 E1 A0 00 02 E0 8B B0 0C E0 8A A0 0C E5 9? ?? ?? E0 4? ?? ?? E1 A? ?? ?? E0 8? ?? ?? E2 8? ?? ?? E3 A? ?? ?? E9 2? ?? ?? E3 }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule arm_lzma_v395
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.95 [LZMA]"
+		source = "Made by Jan Neduchal"
+		pattern = "18D04DE2DF0200EB00C0DDE50E005CE37802001A0C482DE900B0D0E506CCA0E3ABB1A0E11CCBA0E10DB0A0E13ACD8CE20C"
+	strings:
+		$h00 = { 18 D0 4D E2 DF 02 00 EB 00 C0 DD E5 0E 00 5C E3 78 02 00 1A 0C 48 2D E9 00 B0 D0 E5 06 CC A0 E3 AB B1 A0 E1 1C CB A0 E1 0D B0 A0 E1 3A CD 8C E2 0C }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule arm_nrv2b_v395
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.95 [NRV2B]"
+		source = "Made by Jan Neduchal"
+		pattern = "18D04DE29E0000EB001081E03E402DE90050E0E30241A0E31D0000EA"
+	strings:
+		$h00 = { 18 D0 4D E2 9E 00 00 EB 00 10 81 E0 3E 40 2D E9 00 50 E0 E3 02 41 A0 E3 1D 00 00 EA  }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule arm_nrv2d_v395
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.95 [NRV2D]"
+		source = "Made by Jan Neduchal"
+		pattern = "18D04DE2AD0000EBFC402DE9007081E00050E0E30241A0E3140000EA1800BDE8070040E0032042E0002084E50040A0E103"
+	strings:
+		$h00 = { 18 D0 4D E2 AD 00 00 EB FC 40 2D E9 00 70 81 E0 00 50 E0 E3 02 41 A0 E3 14 00 00 EA 18 00 BD E8 07 00 40 E0 03 20 42 E0 00 20 84 E5 00 40 A0 E1 03 }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule arm_nrv2e_v395
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.95 [NRV2E]"
+		source = "Made by Jan Neduchal"
+		pattern = "18D04DE2B20000EBFC402DE9007081E00050E0E30241A0E3140000EA1800BDE8070040E0032042E0002084E50040A0E103"
+	strings:
+		$h00 = { 18 D0 4D E2 B2 00 00 EB FC 40 2D E9 00 70 81 E0 00 50 E0 E3 02 41 A0 E3 14 00 00 EA 18 00 BD E8 07 00 40 E0 03 20 42 E0 00 20 84 E5 00 40 A0 E1 03 }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule armBe_lzma_v395
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.95 [LZMA]"
+		source = "Made by Jan Neduchal"
+		pattern = "E24DD018EB0002D8E5DDC000E35C000E1A000274E92D480CE5D0B000E3A0CC06E1A0B1ABE1A0CB1CE1A0B00DE28CCD3AE0"
+	strings:
+		$h00 = { E2 4D D0 18 EB 00 02 D8 E5 DD C0 00 E3 5C 00 0E 1A 00 02 74 E9 2D 48 0C E5 D0 B0 00 E3 A0 CC 06 E1 A0 B1 AB E1 A0 CB 1C E1 A0 B0 0D E2 8C CD 3A E0 }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule armBe_nrv2b_v395
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.95 [NRV2B]"
+		source = "Made by Jan Neduchal"
+		pattern = "E24DD018EB000097E0811000E92D403EE3E05000E3A04102EA000019"
+	strings:
+		$h00 = { E2 4D D0 18 EB 00 00 97 E0 81 10 00 E9 2D 40 3E E3 E0 50 00 E3 A0 41 02 EA 00 00 19  }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule armBe_nrv2d_v395
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.95 [NRV2D]"
+		source = "Made by Jan Neduchal"
+		pattern = "E24DD018EB0000A6E92D40FCE0817000E3E05000E3A04102EA000010E8BD0018E0400007E0422003E5842000E1A04000E1"
+	strings:
+		$h00 = { E2 4D D0 18 EB 00 00 A6 E9 2D 40 FC E0 81 70 00 E3 E0 50 00 E3 A0 41 02 EA 00 00 10 E8 BD 00 18 E0 40 00 07 E0 42 20 03 E5 84 20 00 E1 A0 40 00 E1 }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule armBe_nrv2e_v395
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.95 [NRV2E]"
+		source = "Made by Jan Neduchal"
+		pattern = "E24DD018EB0000ABE92D40FCE0817000E3E05000E3A04102EA000010E8BD0018E0400007E0422003E5842000E1A04000E1"
+	strings:
+		$h00 = { E2 4D D0 18 EB 00 00 AB E9 2D 40 FC E0 81 70 00 E3 E0 50 00 E3 A0 41 02 EA 00 00 10 E8 BD 00 18 E0 40 00 07 E0 42 20 03 E5 84 20 00 E1 A0 40 00 E1 }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule arm_lzma_v396
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.96 [LZMA]"
+		source = "Made by Jan Neduchal"
+		pattern = "18D04DE2E60200EB00C0DDE50E005CE37802001A0C482DE900B0D0E506CCA0E3ABB1A0E11CCBA0E10DB0A0E13ACD8CE20C"
+	strings:
+		$h00 = { 18 D0 4D E2 E6 02 00 EB 00 C0 DD E5 0E 00 5C E3 78 02 00 1A 0C 48 2D E9 00 B0 D0 E5 06 CC A0 E3 AB B1 A0 E1 1C CB A0 E1 0D B0 A0 E1 3A CD 8C E2 0C }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule arm_nrv2b_v396
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.96 [NRV2B]"
+		source = "Made by Jan Neduchal"
+		pattern = "18D04DE2A50000EB001081E03E402DE90050E0E30241A0E31D0000EA"
+	strings:
+		$h00 = { 18 D0 4D E2 A5 00 00 EB 00 10 81 E0 3E 40 2D E9 00 50 E0 E3 02 41 A0 E3 1D 00 00 EA  }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule arm_nrv2d_v396
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.96 [NRV2D]"
+		source = "Made by Jan Neduchal"
+		pattern = "18D04DE2B40000EBFC402DE9007081E00050E0E30241A0E3140000EA1800BDE8070040E0032042E0002084E50040A0E103"
+	strings:
+		$h00 = { 18 D0 4D E2 B4 00 00 EB FC 40 2D E9 00 70 81 E0 00 50 E0 E3 02 41 A0 E3 14 00 00 EA 18 00 BD E8 07 00 40 E0 03 20 42 E0 00 20 84 E5 00 40 A0 E1 03 }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule arm_nrv2e_v396
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.96 [NRV2E]"
+		source = "Made by Jan Neduchal"
+		pattern = "18D04DE2B90000EBFC402DE9007081E00050E0E30241A0E3140000EA1800BDE8070040E0032042E0002084E50040A0E103"
+	strings:
+		$h00 = { 18 D0 4D E2 B9 00 00 EB FC 40 2D E9 00 70 81 E0 00 50 E0 E3 02 41 A0 E3 14 00 00 EA 18 00 BD E8 07 00 40 E0 03 20 42 E0 00 20 84 E5 00 40 A0 E1 03 }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule armBe_lzma_v396
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.96 [LZMA]"
+		source = "Made by Jan Neduchal"
+		pattern = "E24DD018EB0002DDE5DDC000E35C000E1A000274E92D480CE5D0B000E3A0CC06E1A0B1ABE1A0CB1CE1A0B00DE28CCD3AE0"
+	strings:
+		$h00 = { E2 4D D0 18 EB 00 02 DD E5 DD C0 00 E3 5C 00 0E 1A 00 02 74 E9 2D 48 0C E5 D0 B0 00 E3 A0 CC 06 E1 A0 B1 AB E1 A0 CB 1C E1 A0 B0 0D E2 8C CD 3A E0 }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule armBe_nrv2b_v396
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.96 [NRV2B]"
+		source = "Made by Jan Neduchal"
+		pattern = "E24DD018EB00009CE0811000E92D403EE3E05000E3A04102EA000019"
+	strings:
+		$h00 = { E2 4D D0 18 EB 00 00 9C E0 81 10 00 E9 2D 40 3E E3 E0 50 00 E3 A0 41 02 EA 00 00 19  }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule armBe_nrv2d_v396
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.96 [NRV2D]"
+		source = "Made by Jan Neduchal"
+		pattern = "E24DD018EB0000ABE92D40FCE0817000E3E05000E3A04102EA000010E8BD0018E0400007E0422003E5842000E1A04000E1"
+	strings:
+		$h00 = { E2 4D D0 18 EB 00 00 AB E9 2D 40 FC E0 81 70 00 E3 E0 50 00 E3 A0 41 02 EA 00 00 10 E8 BD 00 18 E0 40 00 07 E0 42 20 03 E5 84 20 00 E1 A0 40 00 E1 }
+	condition:
+		$h00 at elf.entry_point
+}
+
+
+rule armBe_nrv2e_v396
+{
+	meta:
+		tool = "P"
+		name = "UPX"
+		version = "3.96 [NRV2E]"
+		source = "Made by Jan Neduchal"
+		pattern = "E24DD018EB0000B0E92D40FCE0817000E3E05000E3A04102EA000010E8BD0018E0400007E0422003E5842000E1A04000E1"
+	strings:
+		$h00 = { E2 4D D0 18 EB 00 00 B0 E9 2D 40 FC E0 81 70 00 E3 E0 50 00 E3 A0 41 02 EA 00 00 10 E8 BD 00 18 E0 40 00 07 E0 42 20 03 E5 84 20 00 E1 A0 40 00 E1 }
+	condition:
+		$h00 at elf.entry_point
+}
+

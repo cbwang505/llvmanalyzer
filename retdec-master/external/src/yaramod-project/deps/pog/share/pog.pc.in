@@ -1,0 +1,9 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+libdir=@POG_INSTALL_LIB_DIR@
+includedir=@POG_INSTALL_INCLUDE_DIR@
+
+Name: pog
+Description: Parser generator library.
+Version: @PROJECT_VERSION@
+@POG_PC_REQUIREMENT@
+Cflags: -I${includedir}

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\7fa24287ae23ddcf3b160f2c154db349\llvm-project-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\7fa24287ae23ddcf3b160f2c154db349\llvm-project-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\7fa24287ae23ddcf3b160f2c154db349\llvm-project-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\7fa24287ae23ddcf3b160f2c154db349\llvm-project-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\7fa24287ae23ddcf3b160f2c154db349\llvm-project-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\7fa24287ae23ddcf3b160f2c154db349\llvm-project-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\7fa24287ae23ddcf3b160f2c154db349\llvm-project-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\b9dfe466c4d332a601ae8a5f1893d9ab\llvm-project-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\CMakeFiles\8688f6c75c4960a187e9b6d9af107834\llvm-project.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\git\WindowsResearch\retdec-master\deps\llvm\CMakeFiles\llvm-project" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{90FA2DAF-97EF-3E94-9B73-1CFC998A0DD3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

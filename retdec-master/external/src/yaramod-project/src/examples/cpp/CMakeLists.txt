@@ -1,0 +1,2 @@
+add_subdirectory(dump_rules_ast)
+add_subdirectory(simplify_bools)

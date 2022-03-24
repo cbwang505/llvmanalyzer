@@ -1,0 +1,31 @@
+@PACKAGE_INIT@
+
+set(POG_BUNDLED_RE2 @POG_BUNDLED_RE2@)
+set(POG_BUNDLED_FMT @POG_BUNDLED_FMT@)
+
+if(POG_BUNDLED_RE2)
+	find_package(Threads REQUIRED)
+	add_library(re2::re2 STATIC IMPORTED)
+	set_target_properties(re2::re2 PROPERTIES
+		INTERFACE_INCLUDE_DIRECTORIES @PACKAGE_RE2_INCLUDE_DIR@
+		IMPORTED_LOCATION @PACKAGE_RE2_LIBRARY@
+	)
+	target_link_libraries(re2::re2 INTERFACE Threads::Threads)
+else()
+	list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}")
+	find_package(re2 REQUIRED)
+endif()
+
+if(POG_BUNDLED_FMT)
+	add_library(fmt::fmt STATIC IMPORTED)
+	set_target_properties(fmt::fmt PROPERTIES
+		INTERFACE_INCLUDE_DIRECTORIES @PACKAGE_FMT_INCLUDE_DIR@
+		IMPORTED_LOCATION @PACKAGE_FMT_LIBRARY@
+	)
+else()
+	list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}")
+	find_package(fmt REQUIRED)
+endif()
+
+include(${CMAKE_CURRENT_LIST_DIR}/pog-targets.cmake)
+check_required_components(pog)

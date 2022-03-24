@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\TableGen\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\AsmMatcherEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\AsmWriterEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\AsmWriterInst.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\Attributes.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\CallingConvEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\CodeEmitterGen.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\CodeGenDAGPatterns.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\CodeGenHwModes.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\CodeGenInstruction.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\CodeGenMapTable.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\CodeGenRegisters.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\CodeGenSchedule.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\CodeGenTarget.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\DAGISelEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\DAGISelMatcherEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\DAGISelMatcherGen.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\DAGISelMatcherOpt.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\DAGISelMatcher.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\DFAPacketizerEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\DisassemblerEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\ExegesisEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\FastISelEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\FixedLenDecoderEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\GlobalISelEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\InfoByHwMode.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\InstrInfoEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\InstrDocsEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\IntrinsicEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\OptParserEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\PredicateExpander.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\PseudoLoweringEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\RISCVCompressInstEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\RegisterBankEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\RegisterInfoEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\SDNodeProperties.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\SearchableTableEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\SubtargetEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\SubtargetFeatureInfo.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\TableGen.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\Types.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\X86DisassemblerTables.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\X86EVEX2VEXTablesEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\X86FoldTablesEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\X86ModRMFilters.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\X86RecognizableInstr.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\WebAssemblyDisassemblerEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\utils\TableGen\obj.llvm-tblgen.dir\$(Configuration)\CTagsEmitter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\resources\windows_version_resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{97BA655E-2688-3C69-A4AD-69DBA1089BBC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{43E5AFFB-F815-37A9-A11A-597A7AB9E091}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

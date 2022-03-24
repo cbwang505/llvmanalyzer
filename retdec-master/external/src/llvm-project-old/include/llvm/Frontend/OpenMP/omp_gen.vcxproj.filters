@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\cff304096bea9489d84da24ee5c1acb4\OMP.h.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\cff304096bea9489d84da24ee5c1acb4\OMP.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\CMakeFiles\0e7812728cdb95a365ca34aaad183458\omp_gen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\git\WindowsResearch\retdec-master\deps\llvm-project-main\llvm\include\llvm\Frontend\OpenMP\CMakeFiles\omp_gen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9E40D7EC-AA7F-33C0-B948-6A5944F02939}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

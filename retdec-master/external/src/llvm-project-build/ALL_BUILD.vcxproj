@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{47205280-C106-3658-8D14-97EEC7598591}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build;E:\git\WindowsResearch\retdec-master\external\src\llvm-project;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build;E:\git\WindowsResearch\retdec-master\external\src\llvm-project;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build;E:\git\WindowsResearch\retdec-master\external\src\llvm-project;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build;E:\git\WindowsResearch\retdec-master\external\src\llvm-project;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\AddFileDependencies.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindBacktrace.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.17\Templates\CPackConfig.cmake.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeASMCompiler.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeCCompiler.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeCXXCompiler.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeRCCompiler.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeSystem.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\LLVMBuild.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\config-ix.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\AddLLVM.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\AddOCaml.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\CheckAtomic.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\CheckCompilerVersion.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\CheckLinkerFlag.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\ChooseMSVCCRT.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\DetermineGCCCompatible.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\FindLibpfm.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\FindOCaml.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\GetHostTriple.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\HandleLLVMOptions.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\HandleLLVMStdlib.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\LLVM-Config.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\LLVMExternalProjectUtils.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\LLVMProcessSources.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\TableGen.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\VersionFromVCS.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\AsmParsers.def.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\AsmPrinters.def.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\Disassemblers.def.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\Targets.def.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\abi-breaking.h.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\config.h.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\llvm-config.h.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\AsmParser\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\BinaryFormat\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Bitcode\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Bitcode\Reader\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Bitcode\Writer\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\CodeView\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\DWARF\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\MSF\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\Symbolize\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Demangle\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\IR\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\IRReader\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\MC\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\MC\MCParser\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Object\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Passes\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Support\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\TableGen\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Target\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Target\X86\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\AggressiveInstCombine\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\IPO\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\InstCombine\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Utils\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\llvm.spec.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\llvm-build\llvmbuild\__init__.py;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\llvm-build\llvmbuild\componentinfo.py;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\llvm-build\llvmbuild\main.py;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\llvm-build\llvmbuild\util.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\AddFileDependencies.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindBacktrace.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.17\Templates\CPackConfig.cmake.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeASMCompiler.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeCCompiler.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeCXXCompiler.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeRCCompiler.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeSystem.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\LLVMBuild.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\config-ix.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\AddLLVM.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\AddOCaml.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\CheckAtomic.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\CheckCompilerVersion.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\CheckLinkerFlag.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\ChooseMSVCCRT.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\DetermineGCCCompatible.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\FindLibpfm.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\FindOCaml.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\GetHostTriple.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\HandleLLVMOptions.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\HandleLLVMStdlib.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\LLVM-Config.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\LLVMExternalProjectUtils.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\LLVMProcessSources.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\TableGen.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\VersionFromVCS.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\AsmParsers.def.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\AsmPrinters.def.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\Disassemblers.def.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\Targets.def.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\abi-breaking.h.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\config.h.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\llvm-config.h.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\AsmParser\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\BinaryFormat\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Bitcode\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Bitcode\Reader\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Bitcode\Writer\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\CodeView\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\DWARF\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\MSF\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\Symbolize\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Demangle\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\IR\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\IRReader\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\MC\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\MC\MCParser\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Object\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Passes\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Support\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\TableGen\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Target\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Target\X86\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\AggressiveInstCombine\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\IPO\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\InstCombine\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Utils\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\llvm.spec.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\llvm-build\llvmbuild\__init__.py;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\llvm-build\llvmbuild\componentinfo.py;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\llvm-build\llvmbuild\main.py;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\llvm-build\llvmbuild\util.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\AddFileDependencies.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindBacktrace.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.17\Templates\CPackConfig.cmake.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeASMCompiler.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeCCompiler.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeCXXCompiler.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeRCCompiler.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeSystem.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\LLVMBuild.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\config-ix.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\AddLLVM.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\AddOCaml.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\CheckAtomic.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\CheckCompilerVersion.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\CheckLinkerFlag.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\ChooseMSVCCRT.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\DetermineGCCCompatible.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\FindLibpfm.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\FindOCaml.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\GetHostTriple.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\HandleLLVMOptions.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\HandleLLVMStdlib.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\LLVM-Config.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\LLVMExternalProjectUtils.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\LLVMProcessSources.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\TableGen.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\VersionFromVCS.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\AsmParsers.def.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\AsmPrinters.def.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\Disassemblers.def.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\Targets.def.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\abi-breaking.h.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\config.h.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\llvm-config.h.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\AsmParser\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\BinaryFormat\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Bitcode\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Bitcode\Reader\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Bitcode\Writer\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\CodeView\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\DWARF\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\MSF\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\Symbolize\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Demangle\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\IR\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\IRReader\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\MC\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\MC\MCParser\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Object\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Passes\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Support\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\TableGen\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Target\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Target\X86\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\AggressiveInstCombine\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\IPO\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\InstCombine\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Utils\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\llvm.spec.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\llvm-build\llvmbuild\__init__.py;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\llvm-build\llvmbuild\componentinfo.py;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\llvm-build\llvmbuild\main.py;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\llvm-build\llvmbuild\util.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master/external/src/llvm-project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master/external/src/llvm-project -BE:/git/WindowsResearch/retdec-master/external/src/llvm-project-build --check-stamp-file E:/git/WindowsResearch/retdec-master/external/src/llvm-project-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\AddFileDependencies.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindBacktrace.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.17\Templates\CPackConfig.cmake.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeASMCompiler.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeCCompiler.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeCXXCompiler.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeRCCompiler.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\3.17.2\CMakeSystem.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\LLVMBuild.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\config-ix.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\AddLLVM.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\AddOCaml.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\CheckAtomic.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\CheckCompilerVersion.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\CheckLinkerFlag.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\ChooseMSVCCRT.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\DetermineGCCCompatible.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\FindLibpfm.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\FindOCaml.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\GetHostTriple.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\HandleLLVMOptions.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\HandleLLVMStdlib.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\LLVM-Config.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\LLVMExternalProjectUtils.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\LLVMProcessSources.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\TableGen.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\cmake\modules\VersionFromVCS.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\AsmParsers.def.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\AsmPrinters.def.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\Disassemblers.def.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\Targets.def.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\abi-breaking.h.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\config.h.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include\llvm\Config\llvm-config.h.cmake;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Analysis\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\AsmParser\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\BinaryFormat\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Bitcode\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Bitcode\Reader\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Bitcode\Writer\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\CodeGen\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\CodeView\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\DWARF\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\MSF\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\PDB\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\DebugInfo\Symbolize\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Demangle\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\IR\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\IRReader\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\MC\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\MC\MCParser\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Object\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Passes\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Support\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\TableGen\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Target\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Target\X86\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\AggressiveInstCombine\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\IPO\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\InstCombine\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Scalar\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\Transforms\Utils\LLVMBuild.txt;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\llvm.spec.in;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\llvm-build\llvmbuild\__init__.py;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\llvm-build\llvmbuild\componentinfo.py;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\llvm-build\llvmbuild\main.py;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\utils\llvm-build\llvmbuild\util.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\ZERO_CHECK.vcxproj">
+      <Project>{F54A6DCD-7DD0-3E66-A1E0-084C36271102}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\Support\DynamicLibrary\DynamicLibraryLib.vcxproj">
+      <Project>{4537F8E2-B2BD-335C-BBB1-433B484F3FA8}</Project>
+      <Name>DynamicLibraryLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\utils\FileCheck\FileCheck.vcxproj">
+      <Project>{B942E3E4-9E9D-358D-A0D4-71EC644B97D9}</Project>
+      <Name>FileCheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\utils\KillTheDoctor\KillTheDoctor.vcxproj">
+      <Project>{C5B1A687-9C36-323B-BCA5-759B8AC6BC83}</Project>
+      <Name>KillTheDoctor</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Transforms\AggressiveInstCombine\LLVMAggressiveInstCombine.vcxproj">
+      <Project>{8F095AC9-400D-383F-8A82-E670519B2ED3}</Project>
+      <Name>LLVMAggressiveInstCombine</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Analysis\LLVMAnalysis.vcxproj">
+      <Project>{77013137-789C-324B-97CD-D0701DA5CC8E}</Project>
+      <Name>LLVMAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\AsmParser\LLVMAsmParser.vcxproj">
+      <Project>{3EF77417-8030-3EC3-962F-E66EFC54EB83}</Project>
+      <Name>LLVMAsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\CodeGen\AsmPrinter\LLVMAsmPrinter.vcxproj">
+      <Project>{0BEFBB31-9C1E-35DD-9082-5D34D68AA0B6}</Project>
+      <Name>LLVMAsmPrinter</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\BinaryFormat\LLVMBinaryFormat.vcxproj">
+      <Project>{D937895F-C83D-38D5-AE96-0E4D9F580174}</Project>
+      <Name>LLVMBinaryFormat</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Bitcode\Reader\LLVMBitReader.vcxproj">
+      <Project>{E9643E1E-C0DE-3348-A830-A27F4C059E6E}</Project>
+      <Name>LLVMBitReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Bitcode\Writer\LLVMBitWriter.vcxproj">
+      <Project>{F13CC68F-4AED-3F20-964C-0228A9003646}</Project>
+      <Name>LLVMBitWriter</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\CodeGen\LLVMCodeGen.vcxproj">
+      <Project>{C5BFA91D-4CF8-3FB3-BA84-8451B48728E2}</Project>
+      <Name>LLVMCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\IR\LLVMCore.vcxproj">
+      <Project>{9403A0B3-F5BF-30C7-8F5C-D12517DE127D}</Project>
+      <Name>LLVMCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Transforms\Coroutines\LLVMCoroutines.vcxproj">
+      <Project>{953D3C21-A9C4-37CC-9DEA-38FFBBF477D3}</Project>
+      <Name>LLVMCoroutines</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\ProfileData\Coverage\LLVMCoverage.vcxproj">
+      <Project>{0B0E7C95-16A4-3C79-B653-89CF3B919959}</Project>
+      <Name>LLVMCoverage</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\DebugInfo\CodeView\LLVMDebugInfoCodeView.vcxproj">
+      <Project>{FF4EB20A-4D5F-3E3C-BD0E-6E40206EC6D6}</Project>
+      <Name>LLVMDebugInfoCodeView</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\DebugInfo\DWARF\LLVMDebugInfoDWARF.vcxproj">
+      <Project>{25835E6F-6B3B-3830-928D-2A30D28C4BF6}</Project>
+      <Name>LLVMDebugInfoDWARF</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\DebugInfo\MSF\LLVMDebugInfoMSF.vcxproj">
+      <Project>{D7790D19-5B1C-39B9-BCEC-E8951C85B1C5}</Project>
+      <Name>LLVMDebugInfoMSF</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\DebugInfo\PDB\LLVMDebugInfoPDB.vcxproj">
+      <Project>{520907D7-3A4E-3C0F-82AE-5BAF376C9B68}</Project>
+      <Name>LLVMDebugInfoPDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Demangle\LLVMDemangle.vcxproj">
+      <Project>{DA33797B-05B0-3538-B732-3844DE2D163F}</Project>
+      <Name>LLVMDemangle</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\ToolDrivers\llvm-dlltool\LLVMDlltoolDriver.vcxproj">
+      <Project>{389CCEEC-1B89-3D34-B8E8-C3856D5FA7ED}</Project>
+      <Name>LLVMDlltoolDriver</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\CodeGen\GlobalISel\LLVMGlobalISel.vcxproj">
+      <Project>{AAC6A04D-F9AF-3A16-B64A-087F0CDCA065}</Project>
+      <Name>LLVMGlobalISel</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\IRReader\LLVMIRReader.vcxproj">
+      <Project>{F6628C77-3113-35F1-91BE-04AB0F7DD079}</Project>
+      <Name>LLVMIRReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Transforms\InstCombine\LLVMInstCombine.vcxproj">
+      <Project>{7E14AC23-0104-32A5-BBA0-1EEFED7B0F88}</Project>
+      <Name>LLVMInstCombine</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Transforms\Instrumentation\LLVMInstrumentation.vcxproj">
+      <Project>{8677B129-8A4B-3FDD-810F-C871DEAAB8C9}</Project>
+      <Name>LLVMInstrumentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\ToolDrivers\llvm-lib\LLVMLibDriver.vcxproj">
+      <Project>{C4A3C159-FE0F-3FFE-A83B-E8403B676CF6}</Project>
+      <Name>LLVMLibDriver</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\MC\LLVMMC.vcxproj">
+      <Project>{34C55F2E-5A16-3D59-B7D5-E6C143FDAC23}</Project>
+      <Name>LLVMMC</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\MC\MCDisassembler\LLVMMCDisassembler.vcxproj">
+      <Project>{680982F8-B66D-3B20-B4D0-78A6D5AF6013}</Project>
+      <Name>LLVMMCDisassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\MC\MCParser\LLVMMCParser.vcxproj">
+      <Project>{EF0C5A9B-9520-3EF6-8AE0-560274DA9EBE}</Project>
+      <Name>LLVMMCParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\CodeGen\MIRParser\LLVMMIRParser.vcxproj">
+      <Project>{00AB9965-36C2-32F3-89E8-2F99F6822AEF}</Project>
+      <Name>LLVMMIRParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Transforms\ObjCARC\LLVMObjCARCOpts.vcxproj">
+      <Project>{17C7C71E-2F21-3CB1-BAEB-F579D465C102}</Project>
+      <Name>LLVMObjCARCOpts</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Object\LLVMObject.vcxproj">
+      <Project>{A231B82B-217F-304F-BF53-74E9CFE07E16}</Project>
+      <Name>LLVMObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Option\LLVMOption.vcxproj">
+      <Project>{5FE4AD9C-D3F7-38B5-AFB3-E022CFADD13F}</Project>
+      <Name>LLVMOption</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Passes\LLVMPasses.vcxproj">
+      <Project>{07FC7758-5CD3-32E6-9BE7-ED98B092080B}</Project>
+      <Name>LLVMPasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\ProfileData\LLVMProfileData.vcxproj">
+      <Project>{6418219F-B7E4-3AF1-A82F-9DC11C176573}</Project>
+      <Name>LLVMProfileData</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Transforms\Scalar\LLVMScalarOpts.vcxproj">
+      <Project>{BEEBC119-5FAD-3124-9EFE-69D64FEACA42}</Project>
+      <Name>LLVMScalarOpts</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\CodeGen\SelectionDAG\LLVMSelectionDAG.vcxproj">
+      <Project>{C8F2F5F6-0960-3A9F-A516-8A4762593251}</Project>
+      <Name>LLVMSelectionDAG</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Support\LLVMSupport.vcxproj">
+      <Project>{F1958D1A-488E-3211-9604-219FFE34D99D}</Project>
+      <Name>LLVMSupport</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\DebugInfo\Symbolize\LLVMSymbolize.vcxproj">
+      <Project>{2C04883A-B994-3EF4-BC73-CF969B3189E5}</Project>
+      <Name>LLVMSymbolize</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\TableGen\LLVMTableGen.vcxproj">
+      <Project>{342C4523-DE54-3ED6-938C-04512A21AC93}</Project>
+      <Name>LLVMTableGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Target\LLVMTarget.vcxproj">
+      <Project>{CF5B9E64-E1C5-3BE6-86A0-270F6423367D}</Project>
+      <Name>LLVMTarget</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Transforms\Utils\LLVMTransformUtils.vcxproj">
+      <Project>{5511617E-C53D-3FB9-8004-D4D30AA709A7}</Project>
+      <Name>LLVMTransformUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Transforms\Vectorize\LLVMVectorize.vcxproj">
+      <Project>{CE9AC67D-83E0-306E-AFC3-B0DDDE86E612}</Project>
+      <Name>LLVMVectorize</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\WindowsManifest\LLVMWindowsManifest.vcxproj">
+      <Project>{7C6F597E-674C-354E-8B4E-1168E0F1C39B}</Project>
+      <Name>LLVMWindowsManifest</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Target\X86\AsmParser\LLVMX86AsmParser.vcxproj">
+      <Project>{5A2F8948-A480-3F4D-BD1B-5D4EA8AFF187}</Project>
+      <Name>LLVMX86AsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Target\X86\InstPrinter\LLVMX86AsmPrinter.vcxproj">
+      <Project>{45E7D13F-ABF8-34C9-8D30-58BA41FCE165}</Project>
+      <Name>LLVMX86AsmPrinter</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Target\X86\LLVMX86CodeGen.vcxproj">
+      <Project>{CF9B6776-A19B-3EF9-8AB5-7C7389F562EC}</Project>
+      <Name>LLVMX86CodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Target\X86\MCTargetDesc\LLVMX86Desc.vcxproj">
+      <Project>{8DBB00A2-D38A-3D91-99EB-AF7A00F1CCEA}</Project>
+      <Name>LLVMX86Desc</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Target\X86\Disassembler\LLVMX86Disassembler.vcxproj">
+      <Project>{D68E5ABE-E89F-302A-85E0-46D249BBB8DC}</Project>
+      <Name>LLVMX86Disassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Target\X86\TargetInfo\LLVMX86Info.vcxproj">
+      <Project>{65FC88F0-CF6F-320B-91BE-C83D5F2F8A35}</Project>
+      <Name>LLVMX86Info</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Target\X86\Utils\LLVMX86Utils.vcxproj">
+      <Project>{6EF44E70-3BB5-3CA8-93D1-A108080DC622}</Project>
+      <Name>LLVMX86Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\lib\Transforms\IPO\LLVMipo.vcxproj">
+      <Project>{D05D9752-D667-35C4-8D8F-05D0DBA8B0CA}</Project>
+      <Name>LLVMipo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\Support\DynamicLibrary\PipSqueak.vcxproj">
+      <Project>{22F5C22C-6960-3B7B-BCF8-464A84E5E5DF}</Project>
+      <Name>PipSqueak</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\unittests\Support\DynamicLibrary\SecondLib.vcxproj">
+      <Project>{FFA3B681-3F9C-31C4-8D4A-D75BB5CF0C0B}</Project>
+      <Name>SecondLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\utils\count\count.vcxproj">
+      <Project>{30ADC0C3-6F5C-3F2A-8F1C-178B097256C7}</Project>
+      <Name>count</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\utils\unittest\gtest.vcxproj">
+      <Project>{A9944DD5-D020-3766-8C37-F605A0FEEFD3}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\utils\unittest\UnitTestMain\gtest_main.vcxproj">
+      <Project>{44BF8266-E3A1-3CA0-8848-4AEBDF47A3CA}</Project>
+      <Name>gtest_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\tools\llc\llc.vcxproj">
+      <Project>{B8BB4FDC-7745-3D0D-8736-F18B91252D12}</Project>
+      <Name>llc</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\utils\PerfectShuffle\llvm-PerfectShuffle.vcxproj">
+      <Project>{7392C65F-E233-3CA4-82B2-E75D4F21ABB7}</Project>
+      <Name>llvm-PerfectShuffle</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\utils\TableGen\llvm-tblgen.vcxproj">
+      <Project>{C25F24E9-52B6-3D81-B126-1061BA11D69F}</Project>
+      <Name>llvm-tblgen</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\utils\not\not.vcxproj">
+      <Project>{A943D134-446A-3199-BFAF-FFC756D66713}</Project>
+      <Name>not</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project-build\utils\yaml-bench\yaml-bench.vcxproj">
+      <Project>{224B2E73-E1CE-3514-81E8-734F94246225}</Project>
+      <Name>yaml-bench</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

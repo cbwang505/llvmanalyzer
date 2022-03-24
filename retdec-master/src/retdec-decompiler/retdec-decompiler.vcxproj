@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3D270BFF-7346-35DE-BD8A-6D0284908C65}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>retdec-decompiler</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\src\retdec-decompiler\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">retdec-decompiler.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">retdec-decompiler</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\src\retdec-decompiler\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">retdec-decompiler.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">retdec-decompiler</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\src\retdec-decompiler\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">retdec-decompiler.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">retdec-decompiler</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\src\retdec-decompiler\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">retdec-decompiler.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">retdec-decompiler</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;RAPIDJSON_HAS_STDSTRING=1;RAPIDJSON_HAS_CXX11_RVALUE_REFS=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;RAPIDJSON_HAS_STDSTRING=1;RAPIDJSON_HAS_CXX11_RVALUE_REFS=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\ar-extractor\Debug\retdec-ar-extractor.lib;..\macho-extractor\Debug\retdec-macho-extractor.lib;..\unpackertool\Debug\retdec-unpackertool.lib;..\retdec\Debug\retdec-retdec.lib;..\bin2llvmir\Debug\retdec-bin2llvmir.lib;-WHOLEARCHIVE:retdec-bin2llvmir.lib;..\llvmir2hll\Debug\retdec-llvmir2hll.lib;-WHOLEARCHIVE:retdec-llvmir2hll.lib;..\unpacker\Debug\retdec-unpacker.lib;..\cpdetect\Debug\retdec-cpdetect.lib;..\..\deps\tinyxml2\Debug\retdec-tinyxml2.lib;..\rtti-finder\Debug\retdec-rtti-finder.lib;..\capstone2llvmir\Debug\retdec-capstone2llvmir.lib;..\debugformat\Debug\retdec-debugformat.lib;..\pdbparser\Debug\retdec-pdbparser.lib;..\demangler\Debug\retdec-demangler.lib;..\stacofin\Debug\retdec-stacofin.lib;..\loader\Debug\retdec-loader.lib;..\yaracpp\Debug\retdec-yaracpp.lib;..\..\deps\install\yara\lib\libyara32.lib;..\fileformat\Debug\retdec-fileformat.lib;..\pelib\Debug\retdec-pelib.lib;C:\openssl\lib\libeay32.lib;Crypt32.lib;ws2_32.lib;..\ctypesparser\Debug\retdec-ctypesparser.lib;..\ctypes\Debug\retdec-ctypes.lib;..\..\deps\install\llvm\lib\LLVMDebugInfoDWARF.lib;..\..\deps\install\llvm\lib\LLVMBitWriter.lib;..\..\deps\install\llvm\lib\LLVMIRReader.lib;..\..\deps\install\llvm\lib\LLVMObject.lib;..\..\deps\install\llvm\lib\LLVMBinaryFormat.lib;..\..\deps\install\llvm\lib\LLVMInstCombine.lib;..\..\deps\install\llvm\lib\LLVMSupport.lib;..\..\deps\install\llvm\lib\LLVMDemangle.lib;..\..\deps\install\llvm\lib\LLVMipo.lib;..\..\deps\install\llvm\lib\LLVMAsmParser.lib;..\..\deps\install\llvm\lib\LLVMBitReader.lib;..\..\deps\install\llvm\lib\LLVMMCParser.lib;..\..\deps\install\llvm\lib\LLVMCodeGen.lib;..\..\deps\install\llvm\lib\LLVMScalarOpts.lib;..\..\deps\install\llvm\lib\LLVMTransformUtils.lib;..\..\deps\install\llvm\lib\LLVMAnalysis.lib;..\..\deps\install\llvm\lib\LLVMTarget.lib;..\..\deps\install\llvm\lib\LLVMCore.lib;..\..\deps\install\llvm\lib\LLVMMC.lib;..\..\deps\install\llvm\lib\LLVMPasses.lib;..\..\deps\install\llvm\lib\LLVMX86CodeGen.lib;..\..\deps\install\llvm\lib\LLVMX86AsmParser.lib;..\..\deps\install\llvm\lib\LLVMX86AsmPrinter.lib;..\..\deps\install\llvm\lib\LLVMX86Desc.lib;..\..\deps\install\llvm\lib\LLVMX86Disassembler.lib;..\..\deps\install\llvm\lib\LLVMX86Info.lib;..\..\deps\install\llvm\lib\LLVMX86Utils.lib;..\..\deps\install\llvm\lib\LLVMAsmPrinter.lib;..\..\deps\install\llvm\lib\LLVMGlobalISel.lib;..\..\deps\install\llvm\lib\LLVMDebugInfoCodeView.lib;..\..\deps\install\llvm\lib\LLVMMCDisassembler.lib;..\..\deps\install\llvm\lib\LLVMInstrumentation.lib;..\..\deps\install\llvm\lib\LLVMProfileData.lib;..\..\deps\install\llvm\lib\LLVMSelectionDAG.lib;..\..\deps\install\llvm\lib\LLVMVectorize.lib;..\..\deps\install\capstone\lib\capstone.lib;..\config\Debug\retdec-config.lib;..\serdes\Debug\retdec-serdes.lib;..\common\Debug\retdec-common.lib;..\utils\Debug\retdec-utils.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/git/WindowsResearch/retdec-master/src/retdec-decompiler/Debug/retdec-decompiler.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/git/WindowsResearch/retdec-master/src/retdec-decompiler/Debug/retdec-decompiler.pdb</ProgramDataBaseFile>
+      <StackReserveSize>16777216</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;RAPIDJSON_HAS_STDSTRING=1;RAPIDJSON_HAS_CXX11_RVALUE_REFS=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;RAPIDJSON_HAS_STDSTRING=1;RAPIDJSON_HAS_CXX11_RVALUE_REFS=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\ar-extractor\Release\retdec-ar-extractor.lib;..\macho-extractor\Release\retdec-macho-extractor.lib;..\unpackertool\Release\retdec-unpackertool.lib;..\retdec\Release\retdec-retdec.lib;..\bin2llvmir\Release\retdec-bin2llvmir.lib;-WHOLEARCHIVE:retdec-bin2llvmir.lib;..\llvmir2hll\Release\retdec-llvmir2hll.lib;-WHOLEARCHIVE:retdec-llvmir2hll.lib;..\unpacker\Release\retdec-unpacker.lib;..\cpdetect\Release\retdec-cpdetect.lib;..\..\deps\tinyxml2\Release\retdec-tinyxml2.lib;..\rtti-finder\Release\retdec-rtti-finder.lib;..\capstone2llvmir\Release\retdec-capstone2llvmir.lib;..\debugformat\Release\retdec-debugformat.lib;..\pdbparser\Release\retdec-pdbparser.lib;..\demangler\Release\retdec-demangler.lib;..\stacofin\Release\retdec-stacofin.lib;..\loader\Release\retdec-loader.lib;..\yaracpp\Release\retdec-yaracpp.lib;..\..\deps\install\yara\lib\libyara32.lib;..\fileformat\Release\retdec-fileformat.lib;..\pelib\Release\retdec-pelib.lib;C:\openssl\lib\libeay32.lib;Crypt32.lib;ws2_32.lib;..\ctypesparser\Release\retdec-ctypesparser.lib;..\ctypes\Release\retdec-ctypes.lib;..\..\deps\install\llvm\lib\LLVMDebugInfoDWARF.lib;..\..\deps\install\llvm\lib\LLVMBitWriter.lib;..\..\deps\install\llvm\lib\LLVMIRReader.lib;..\..\deps\install\llvm\lib\LLVMObject.lib;..\..\deps\install\llvm\lib\LLVMBinaryFormat.lib;..\..\deps\install\llvm\lib\LLVMInstCombine.lib;..\..\deps\install\llvm\lib\LLVMSupport.lib;..\..\deps\install\llvm\lib\LLVMDemangle.lib;..\..\deps\install\llvm\lib\LLVMipo.lib;..\..\deps\install\llvm\lib\LLVMAsmParser.lib;..\..\deps\install\llvm\lib\LLVMBitReader.lib;..\..\deps\install\llvm\lib\LLVMMCParser.lib;..\..\deps\install\llvm\lib\LLVMCodeGen.lib;..\..\deps\install\llvm\lib\LLVMScalarOpts.lib;..\..\deps\install\llvm\lib\LLVMTransformUtils.lib;..\..\deps\install\llvm\lib\LLVMAnalysis.lib;..\..\deps\install\llvm\lib\LLVMTarget.lib;..\..\deps\install\llvm\lib\LLVMCore.lib;..\..\deps\install\llvm\lib\LLVMMC.lib;..\..\deps\install\llvm\lib\LLVMObject.lib;..\..\deps\install\llvm\lib\LLVMBinaryFormat.lib;..\..\deps\install\llvm\lib\LLVMInstCombine.lib;..\..\deps\install\llvm\lib\LLVMSupport.lib;..\..\deps\install\llvm\lib\LLVMDemangle.lib;..\..\deps\install\llvm\lib\LLVMipo.lib;..\..\deps\install\llvm\lib\LLVMAsmParser.lib;..\..\deps\install\llvm\lib\LLVMBitReader.lib;..\..\deps\install\llvm\lib\LLVMMCParser.lib;..\..\deps\install\llvm\lib\LLVMCodeGen.lib;..\..\deps\install\llvm\lib\LLVMScalarOpts.lib;..\..\deps\install\llvm\lib\LLVMTransformUtils.lib;..\..\deps\install\llvm\lib\LLVMAnalysis.lib;..\..\deps\install\llvm\lib\LLVMTarget.lib;..\..\deps\install\llvm\lib\LLVMCore.lib;..\..\deps\install\llvm\lib\LLVMMC.lib;..\..\deps\install\llvm\lib\LLVMPasses.lib;..\..\deps\install\capstone\lib\capstone.lib;..\config\Release\retdec-config.lib;..\serdes\Release\retdec-serdes.lib;..\common\Release\retdec-common.lib;..\utils\Release\retdec-utils.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/git/WindowsResearch/retdec-master/src/retdec-decompiler/Release/retdec-decompiler.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/git/WindowsResearch/retdec-master/src/retdec-decompiler/Release/retdec-decompiler.pdb</ProgramDataBaseFile>
+      <StackReserveSize>16777216</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;RAPIDJSON_HAS_STDSTRING=1;RAPIDJSON_HAS_CXX11_RVALUE_REFS=1;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;RAPIDJSON_HAS_STDSTRING=1;RAPIDJSON_HAS_CXX11_RVALUE_REFS=1;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\ar-extractor\MinSizeRel\retdec-ar-extractor.lib;..\macho-extractor\MinSizeRel\retdec-macho-extractor.lib;..\unpackertool\MinSizeRel\retdec-unpackertool.lib;..\retdec\MinSizeRel\retdec-retdec.lib;..\bin2llvmir\MinSizeRel\retdec-bin2llvmir.lib;-WHOLEARCHIVE:retdec-bin2llvmir.lib;..\llvmir2hll\MinSizeRel\retdec-llvmir2hll.lib;-WHOLEARCHIVE:retdec-llvmir2hll.lib;..\unpacker\MinSizeRel\retdec-unpacker.lib;..\cpdetect\MinSizeRel\retdec-cpdetect.lib;..\..\deps\tinyxml2\MinSizeRel\retdec-tinyxml2.lib;..\rtti-finder\MinSizeRel\retdec-rtti-finder.lib;..\capstone2llvmir\MinSizeRel\retdec-capstone2llvmir.lib;..\debugformat\MinSizeRel\retdec-debugformat.lib;..\pdbparser\MinSizeRel\retdec-pdbparser.lib;..\demangler\MinSizeRel\retdec-demangler.lib;..\stacofin\MinSizeRel\retdec-stacofin.lib;..\loader\MinSizeRel\retdec-loader.lib;..\yaracpp\MinSizeRel\retdec-yaracpp.lib;..\..\deps\install\yara\lib\libyara32.lib;..\fileformat\MinSizeRel\retdec-fileformat.lib;..\pelib\MinSizeRel\retdec-pelib.lib;C:\openssl\lib\libeay32.lib;Crypt32.lib;ws2_32.lib;..\ctypesparser\MinSizeRel\retdec-ctypesparser.lib;..\ctypes\MinSizeRel\retdec-ctypes.lib;..\..\deps\install\llvm\lib\LLVMDebugInfoDWARF.lib;..\..\deps\install\llvm\lib\LLVMBitWriter.lib;..\..\deps\install\llvm\lib\LLVMIRReader.lib;..\..\deps\install\llvm\lib\LLVMObject.lib;..\..\deps\install\llvm\lib\LLVMBinaryFormat.lib;..\..\deps\install\llvm\lib\LLVMInstCombine.lib;..\..\deps\install\llvm\lib\LLVMSupport.lib;..\..\deps\install\llvm\lib\LLVMDemangle.lib;..\..\deps\install\llvm\lib\LLVMipo.lib;..\..\deps\install\llvm\lib\LLVMAsmParser.lib;..\..\deps\install\llvm\lib\LLVMBitReader.lib;..\..\deps\install\llvm\lib\LLVMMCParser.lib;..\..\deps\install\llvm\lib\LLVMCodeGen.lib;..\..\deps\install\llvm\lib\LLVMScalarOpts.lib;..\..\deps\install\llvm\lib\LLVMTransformUtils.lib;..\..\deps\install\llvm\lib\LLVMAnalysis.lib;..\..\deps\install\llvm\lib\LLVMTarget.lib;..\..\deps\install\llvm\lib\LLVMCore.lib;..\..\deps\install\llvm\lib\LLVMMC.lib;..\..\deps\install\llvm\lib\LLVMObject.lib;..\..\deps\install\llvm\lib\LLVMBinaryFormat.lib;..\..\deps\install\llvm\lib\LLVMInstCombine.lib;..\..\deps\install\llvm\lib\LLVMSupport.lib;..\..\deps\install\llvm\lib\LLVMDemangle.lib;..\..\deps\install\llvm\lib\LLVMipo.lib;..\..\deps\install\llvm\lib\LLVMAsmParser.lib;..\..\deps\install\llvm\lib\LLVMBitReader.lib;..\..\deps\install\llvm\lib\LLVMMCParser.lib;..\..\deps\install\llvm\lib\LLVMCodeGen.lib;..\..\deps\install\llvm\lib\LLVMScalarOpts.lib;..\..\deps\install\llvm\lib\LLVMTransformUtils.lib;..\..\deps\install\llvm\lib\LLVMAnalysis.lib;..\..\deps\install\llvm\lib\LLVMTarget.lib;..\..\deps\install\llvm\lib\LLVMCore.lib;..\..\deps\install\llvm\lib\LLVMMC.lib;..\..\deps\install\llvm\lib\LLVMPasses.lib;..\..\deps\install\capstone\lib\capstone.lib;..\config\MinSizeRel\retdec-config.lib;..\serdes\MinSizeRel\retdec-serdes.lib;..\common\MinSizeRel\retdec-common.lib;..\utils\MinSizeRel\retdec-utils.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/git/WindowsResearch/retdec-master/src/retdec-decompiler/MinSizeRel/retdec-decompiler.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/git/WindowsResearch/retdec-master/src/retdec-decompiler/MinSizeRel/retdec-decompiler.pdb</ProgramDataBaseFile>
+      <StackReserveSize>16777216</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;RAPIDJSON_HAS_STDSTRING=1;RAPIDJSON_HAS_CXX11_RVALUE_REFS=1;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;NOMINMAX;RAPIDJSON_HAS_STDSTRING=1;RAPIDJSON_HAS_CXX11_RVALUE_REFS=1;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master\include;E:\git\WindowsResearch\retdec-master\external\src\llvm-project\include;E:\git\WindowsResearch\retdec-master\deps\install\llvm\include;E:\git\WindowsResearch\retdec-master\deps\elfio\include;E:\git\WindowsResearch\retdec-master\external\src\capstone-project\arch;E:\git\WindowsResearch\retdec-master\deps\install\capstone\include;E:\git\WindowsResearch\retdec-master\deps\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\ar-extractor\RelWithDebInfo\retdec-ar-extractor.lib;..\macho-extractor\RelWithDebInfo\retdec-macho-extractor.lib;..\unpackertool\RelWithDebInfo\retdec-unpackertool.lib;..\retdec\RelWithDebInfo\retdec-retdec.lib;..\bin2llvmir\RelWithDebInfo\retdec-bin2llvmir.lib;-WHOLEARCHIVE:retdec-bin2llvmir.lib;..\llvmir2hll\RelWithDebInfo\retdec-llvmir2hll.lib;-WHOLEARCHIVE:retdec-llvmir2hll.lib;..\unpacker\RelWithDebInfo\retdec-unpacker.lib;..\cpdetect\RelWithDebInfo\retdec-cpdetect.lib;..\..\deps\tinyxml2\RelWithDebInfo\retdec-tinyxml2.lib;..\rtti-finder\RelWithDebInfo\retdec-rtti-finder.lib;..\capstone2llvmir\RelWithDebInfo\retdec-capstone2llvmir.lib;..\debugformat\RelWithDebInfo\retdec-debugformat.lib;..\pdbparser\RelWithDebInfo\retdec-pdbparser.lib;..\demangler\RelWithDebInfo\retdec-demangler.lib;..\stacofin\RelWithDebInfo\retdec-stacofin.lib;..\loader\RelWithDebInfo\retdec-loader.lib;..\yaracpp\RelWithDebInfo\retdec-yaracpp.lib;..\..\deps\install\yara\lib\libyara32.lib;..\fileformat\RelWithDebInfo\retdec-fileformat.lib;..\pelib\RelWithDebInfo\retdec-pelib.lib;C:\openssl\lib\libeay32.lib;Crypt32.lib;ws2_32.lib;..\ctypesparser\RelWithDebInfo\retdec-ctypesparser.lib;..\ctypes\RelWithDebInfo\retdec-ctypes.lib;..\..\deps\install\llvm\lib\LLVMDebugInfoDWARF.lib;..\..\deps\install\llvm\lib\LLVMBitWriter.lib;..\..\deps\install\llvm\lib\LLVMIRReader.lib;..\..\deps\install\llvm\lib\LLVMObject.lib;..\..\deps\install\llvm\lib\LLVMBinaryFormat.lib;..\..\deps\install\llvm\lib\LLVMInstCombine.lib;..\..\deps\install\llvm\lib\LLVMSupport.lib;..\..\deps\install\llvm\lib\LLVMDemangle.lib;..\..\deps\install\llvm\lib\LLVMipo.lib;..\..\deps\install\llvm\lib\LLVMAsmParser.lib;..\..\deps\install\llvm\lib\LLVMBitReader.lib;..\..\deps\install\llvm\lib\LLVMMCParser.lib;..\..\deps\install\llvm\lib\LLVMCodeGen.lib;..\..\deps\install\llvm\lib\LLVMScalarOpts.lib;..\..\deps\install\llvm\lib\LLVMTransformUtils.lib;..\..\deps\install\llvm\lib\LLVMAnalysis.lib;..\..\deps\install\llvm\lib\LLVMTarget.lib;..\..\deps\install\llvm\lib\LLVMCore.lib;..\..\deps\install\llvm\lib\LLVMMC.lib;..\..\deps\install\llvm\lib\LLVMObject.lib;..\..\deps\install\llvm\lib\LLVMBinaryFormat.lib;..\..\deps\install\llvm\lib\LLVMInstCombine.lib;..\..\deps\install\llvm\lib\LLVMSupport.lib;..\..\deps\install\llvm\lib\LLVMDemangle.lib;..\..\deps\install\llvm\lib\LLVMipo.lib;..\..\deps\install\llvm\lib\LLVMAsmParser.lib;..\..\deps\install\llvm\lib\LLVMBitReader.lib;..\..\deps\install\llvm\lib\LLVMMCParser.lib;..\..\deps\install\llvm\lib\LLVMCodeGen.lib;..\..\deps\install\llvm\lib\LLVMScalarOpts.lib;..\..\deps\install\llvm\lib\LLVMTransformUtils.lib;..\..\deps\install\llvm\lib\LLVMAnalysis.lib;..\..\deps\install\llvm\lib\LLVMTarget.lib;..\..\deps\install\llvm\lib\LLVMCore.lib;..\..\deps\install\llvm\lib\LLVMMC.lib;..\..\deps\install\llvm\lib\LLVMPasses.lib;..\..\deps\install\capstone\lib\capstone.lib;..\config\RelWithDebInfo\retdec-config.lib;..\serdes\RelWithDebInfo\retdec-serdes.lib;..\common\RelWithDebInfo\retdec-common.lib;..\utils\RelWithDebInfo\retdec-utils.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/git/WindowsResearch/retdec-master/src/retdec-decompiler/RelWithDebInfo/retdec-decompiler.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/git/WindowsResearch/retdec-master/src/retdec-decompiler/RelWithDebInfo/retdec-decompiler.pdb</ProgramDataBaseFile>
+      <StackReserveSize>16777216</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\src\retdec-decompiler\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/git/WindowsResearch/retdec-master/src/retdec-decompiler/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master -BE:/git/WindowsResearch/retdec-master --check-stamp-file E:/git/WindowsResearch/retdec-master/src/retdec-decompiler/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\git\WindowsResearch\retdec-master\src\retdec-decompiler\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/git/WindowsResearch/retdec-master/src/retdec-decompiler/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master -BE:/git/WindowsResearch/retdec-master --check-stamp-file E:/git/WindowsResearch/retdec-master/src/retdec-decompiler/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\git\WindowsResearch\retdec-master\src\retdec-decompiler\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/git/WindowsResearch/retdec-master/src/retdec-decompiler/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master -BE:/git/WindowsResearch/retdec-master --check-stamp-file E:/git/WindowsResearch/retdec-master/src/retdec-decompiler/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\git\WindowsResearch\retdec-master\src\retdec-decompiler\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/git/WindowsResearch/retdec-master/src/retdec-decompiler/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master -BE:/git/WindowsResearch/retdec-master --check-stamp-file E:/git/WindowsResearch/retdec-master/src/retdec-decompiler/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\git\WindowsResearch\retdec-master\src\retdec-decompiler\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master\src\retdec-decompiler\retdec-decompiler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\ZERO_CHECK.vcxproj">
+      <Project>{A27EA167-967B-3C21-BA4F-D980144A06E8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\ar-extractor\ar-extractor.vcxproj">
+      <Project>{9A72A9F8-B246-3FDE-B2FB-E5A784839C5C}</Project>
+      <Name>ar-extractor</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\bin2llvmir\bin2llvmir.vcxproj">
+      <Project>{19F7DE3E-91A9-3603-9897-C4F4D753B978}</Project>
+      <Name>bin2llvmir</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\deps\capstone\capstone-project.vcxproj">
+      <Project>{4894C394-7F6A-331B-9FE5-B6C492108026}</Project>
+      <Name>capstone-project</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\capstone2llvmir\capstone2llvmir.vcxproj">
+      <Project>{A1109517-4249-3F90-B60B-957D64E7F1C9}</Project>
+      <Name>capstone2llvmir</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\common\common.vcxproj">
+      <Project>{9756CF53-9811-3C46-A819-C73C0828D8CB}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\config\config.vcxproj">
+      <Project>{EDDD3071-51C1-3951-83CB-8CD9F06FB4AE}</Project>
+      <Name>config</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\cpdetect\cpdetect.vcxproj">
+      <Project>{C61F0D48-6C1E-3543-8D2F-AF192832ADC8}</Project>
+      <Name>cpdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\ctypes\ctypes.vcxproj">
+      <Project>{08EF913D-15BE-39A0-BEC2-0A2483282804}</Project>
+      <Name>ctypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\ctypesparser\ctypesparser.vcxproj">
+      <Project>{6F12A8AE-CC5B-363D-826D-E306A00F18AD}</Project>
+      <Name>ctypesparser</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\debugformat\debugformat.vcxproj">
+      <Project>{92F85DBE-0E8D-3216-8030-E2A759DD5062}</Project>
+      <Name>debugformat</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\demangler\demangler.vcxproj">
+      <Project>{0355920B-04F5-3DF8-8F5D-170608E85BDE}</Project>
+      <Name>demangler</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\fileformat\fileformat.vcxproj">
+      <Project>{8694C0BC-DC4A-330B-A5C4-C2BEF0E86170}</Project>
+      <Name>fileformat</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\deps\llvm\llvm-project.vcxproj">
+      <Project>{099FD53E-73C2-3254-9A9B-B58BE2D91612}</Project>
+      <Name>llvm-project</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\llvmir2hll\llvmir2hll.vcxproj">
+      <Project>{EF77AAB8-C054-3C7B-893E-7694D87BDA65}</Project>
+      <Name>llvmir2hll</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\loader\loader.vcxproj">
+      <Project>{314FFD0F-586B-3556-A3E5-E5B18B7C339A}</Project>
+      <Name>loader</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\macho-extractor\macho-extractor.vcxproj">
+      <Project>{2BD975C3-AD0E-312C-8B9A-836EDCE97C7C}</Project>
+      <Name>macho-extractor</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\pdbparser\pdbparser.vcxproj">
+      <Project>{BB711F0B-39FB-378E-8C73-A87190B3873E}</Project>
+      <Name>pdbparser</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\pelib\pelib.vcxproj">
+      <Project>{7D29A11A-682F-3B3C-9938-EFA5E73083E3}</Project>
+      <Name>pelib</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\retdec\retdec.vcxproj">
+      <Project>{5AE95F8C-ABF1-333D-8EEA-A59481DD4EC3}</Project>
+      <Name>retdec</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\rtti-finder\rtti-finder.vcxproj">
+      <Project>{A04BDE66-64DF-3AED-AC62-83FDBBF0DD8F}</Project>
+      <Name>rtti-finder</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\serdes\serdes.vcxproj">
+      <Project>{A30B59DD-3F88-3B2D-8F09-B6EFEDFFAE93}</Project>
+      <Name>serdes</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\stacofin\stacofin.vcxproj">
+      <Project>{24C54EBA-EA28-31FE-A10E-32D06DC1AFC1}</Project>
+      <Name>stacofin</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\deps\tinyxml2\tinyxml2.vcxproj">
+      <Project>{730F680C-B605-334C-A3F3-B14927FF6DC3}</Project>
+      <Name>tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\unpacker\unpacker.vcxproj">
+      <Project>{8165AA94-05C2-38A0-A7DB-A25F6F001C92}</Project>
+      <Name>unpacker</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\unpackertool\unpackertool.vcxproj">
+      <Project>{F60981BC-04A3-3883-B374-96D4DE6B5827}</Project>
+      <Name>unpackertool</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\utils\utils.vcxproj">
+      <Project>{39311356-8795-31CF-8593-194E12110CE6}</Project>
+      <Name>utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\deps\yara\yara.vcxproj">
+      <Project>{A5E5E001-032A-3CB2-AEC8-D99D8C81B77C}</Project>
+      <Name>yara</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master\src\yaracpp\yaracpp.vcxproj">
+      <Project>{2E1D4352-5FE3-3BDD-A141-7F293AB89DF7}</Project>
+      <Name>yaracpp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1E8D4F85-4FEE-3A48-9D28-40A068E0C2F2}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>keystone</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">keystone.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">keystone</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">keystone.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">keystone</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">keystone.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">keystone</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">keystone.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">keystone</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\..\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\AArch64;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\ARM;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Hexagon;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Mips;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\PowerPC;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Sparc;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\SystemZ;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\X86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -w14062 /Zc:strictStrings /Zc:sizedDealloc-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;LLVM_ENABLE_ARCH_AArch64;LLVM_ENABLE_ARCH_ARM;LLVM_ENABLE_ARCH_Hexagon;LLVM_ENABLE_ARCH_Mips;LLVM_ENABLE_ARCH_PowerPC;LLVM_ENABLE_ARCH_Sparc;LLVM_ENABLE_ARCH_SystemZ;LLVM_ENABLE_ARCH_X86;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;LLVM_ENABLE_ARCH_AArch64;LLVM_ENABLE_ARCH_ARM;LLVM_ENABLE_ARCH_Hexagon;LLVM_ENABLE_ARCH_Mips;LLVM_ENABLE_ARCH_PowerPC;LLVM_ENABLE_ARCH_Sparc;LLVM_ENABLE_ARCH_SystemZ;LLVM_ENABLE_ARCH_X86;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\..\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\AArch64;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\ARM;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Hexagon;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Mips;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\PowerPC;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Sparc;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\SystemZ;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\X86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\..\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\AArch64;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\ARM;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Hexagon;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Mips;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\PowerPC;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Sparc;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\SystemZ;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\X86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\..\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\AArch64;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\ARM;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Hexagon;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Mips;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\PowerPC;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Sparc;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\SystemZ;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\X86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -w14062 /Zc:strictStrings /Zc:sizedDealloc-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;LLVM_ENABLE_ARCH_AArch64;LLVM_ENABLE_ARCH_ARM;LLVM_ENABLE_ARCH_Hexagon;LLVM_ENABLE_ARCH_Mips;LLVM_ENABLE_ARCH_PowerPC;LLVM_ENABLE_ARCH_Sparc;LLVM_ENABLE_ARCH_SystemZ;LLVM_ENABLE_ARCH_X86;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;LLVM_ENABLE_ARCH_AArch64;LLVM_ENABLE_ARCH_ARM;LLVM_ENABLE_ARCH_Hexagon;LLVM_ENABLE_ARCH_Mips;LLVM_ENABLE_ARCH_PowerPC;LLVM_ENABLE_ARCH_Sparc;LLVM_ENABLE_ARCH_SystemZ;LLVM_ENABLE_ARCH_X86;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\..\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\AArch64;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\ARM;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Hexagon;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Mips;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\PowerPC;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Sparc;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\SystemZ;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\X86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\..\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\AArch64;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\ARM;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Hexagon;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Mips;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\PowerPC;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Sparc;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\SystemZ;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\X86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\..\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\AArch64;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\ARM;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Hexagon;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Mips;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\PowerPC;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Sparc;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\SystemZ;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\X86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -w14062 /Zc:strictStrings /Zc:sizedDealloc-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;LLVM_ENABLE_ARCH_AArch64;LLVM_ENABLE_ARCH_ARM;LLVM_ENABLE_ARCH_Hexagon;LLVM_ENABLE_ARCH_Mips;LLVM_ENABLE_ARCH_PowerPC;LLVM_ENABLE_ARCH_Sparc;LLVM_ENABLE_ARCH_SystemZ;LLVM_ENABLE_ARCH_X86;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;LLVM_ENABLE_ARCH_AArch64;LLVM_ENABLE_ARCH_ARM;LLVM_ENABLE_ARCH_Hexagon;LLVM_ENABLE_ARCH_Mips;LLVM_ENABLE_ARCH_PowerPC;LLVM_ENABLE_ARCH_Sparc;LLVM_ENABLE_ARCH_SystemZ;LLVM_ENABLE_ARCH_X86;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\..\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\AArch64;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\ARM;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Hexagon;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Mips;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\PowerPC;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Sparc;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\SystemZ;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\X86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\..\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\AArch64;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\ARM;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Hexagon;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Mips;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\PowerPC;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Sparc;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\SystemZ;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\X86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\..\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\AArch64;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\ARM;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Hexagon;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Mips;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\PowerPC;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Sparc;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\SystemZ;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\X86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -w14062 /Zc:strictStrings /Zc:sizedDealloc-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;LLVM_ENABLE_ARCH_AArch64;LLVM_ENABLE_ARCH_ARM;LLVM_ENABLE_ARCH_Hexagon;LLVM_ENABLE_ARCH_Mips;LLVM_ENABLE_ARCH_PowerPC;LLVM_ENABLE_ARCH_Sparc;LLVM_ENABLE_ARCH_SystemZ;LLVM_ENABLE_ARCH_X86;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;LLVM_ENABLE_ARCH_AArch64;LLVM_ENABLE_ARCH_ARM;LLVM_ENABLE_ARCH_Hexagon;LLVM_ENABLE_ARCH_Mips;LLVM_ENABLE_ARCH_PowerPC;LLVM_ENABLE_ARCH_Sparc;LLVM_ENABLE_ARCH_SystemZ;LLVM_ENABLE_ARCH_X86;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\..\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\AArch64;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\ARM;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Hexagon;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Mips;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\PowerPC;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Sparc;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\SystemZ;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\X86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\..\include;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\AArch64;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\ARM;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Hexagon;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Mips;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\PowerPC;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\Sparc;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\SystemZ;E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\..\lib\Target\X86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/keystone/llvm/keystone/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/keystone -BE:/git/WindowsResearch/retdec-master-build/external/src/keystone --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/keystone/llvm/keystone/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/keystone/llvm/keystone/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/keystone -BE:/git/WindowsResearch/retdec-master-build/external/src/keystone --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/keystone/llvm/keystone/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/keystone/llvm/keystone/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/keystone -BE:/git/WindowsResearch/retdec-master-build/external/src/keystone --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/keystone/llvm/keystone/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/git/WindowsResearch/retdec-master-build/external/src/keystone/llvm/keystone/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/git/WindowsResearch/retdec-master-build/external/src/keystone -BE:/git/WindowsResearch/retdec-master-build/external/src/keystone --check-stamp-file E:/git/WindowsResearch/retdec-master-build/external/src/keystone/llvm/keystone/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\ConstantPools.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\ELFObjectWriter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCAsmBackend.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCAsmInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCAsmInfoCOFF.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCAsmInfoDarwin.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCAsmInfoELF.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCAssembler.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCCodeEmitter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCContext.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCELFObjectTargetWriter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCELFStreamer.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCExpr.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCFragment.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCInst.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCInstrDesc.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCLabel.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCObjectFileInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCObjectStreamer.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCObjectWriter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\AsmLexer.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\AsmParser.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\COFFAsmParser.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\DarwinAsmParser.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\ELFAsmParser.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\MCAsmLexer.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\MCAsmParser.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\MCAsmParserExtension.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCParser\MCTargetAsmParser.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCRegisterInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCSection.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCSectionCOFF.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCSectionELF.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCSectionMachO.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCStreamer.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCSubtargetInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCSymbol.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCSymbolELF.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCTargetOptions.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\MCValue.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\StringTableBuilder.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\MC\SubtargetFeature.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\APFloat.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\APInt.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\APSInt.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\ARMBuildAttrs.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\ErrorHandling.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\Hashing.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\IntEqClasses.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\LEB128.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\Memory.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\MemoryBuffer.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\Path.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\Regex.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\ScaledNumber.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\SmallPtrSet.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\SmallVector.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\SourceMgr.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\StringExtras.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\StringMap.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\StringPool.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\StringRef.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\StringSaver.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\TargetParser.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\TargetRegistry.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\Triple.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\Twine.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\raw_ostream.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\regcomp.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\regerror.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\regexec.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\regfree.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Support\regstrlcpy.c" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\AsmParser\AArch64AsmParser.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\MCTargetDesc\AArch64AsmBackend.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\MCTargetDesc\AArch64ELFObjectWriter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\MCTargetDesc\AArch64MCAsmInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\MCTargetDesc\AArch64MCCodeEmitter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\MCTargetDesc\AArch64MCExpr.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\MCTargetDesc\AArch64MCTargetDesc.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\MCTargetDesc\AArch64TargetStreamer.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\TargetInfo\AArch64TargetInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\AArch64\Utils\AArch64BaseInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\AsmParser\ARMAsmParser.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\MCTargetDesc\ARMAsmBackend.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\MCTargetDesc\ARMELFObjectWriter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\MCTargetDesc\ARMMCAsmInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\MCTargetDesc\ARMMCCodeEmitter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\MCTargetDesc\ARMMCExpr.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\MCTargetDesc\ARMMCTargetDesc.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\MCTargetDesc\ARMTargetStreamer.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\ARM\TargetInfo\ARMTargetInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\AsmParser\HexagonAsmParser.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonAsmBackend.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonELFObjectWriter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCAsmInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCChecker.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCCodeEmitter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCCompound.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCDuplexInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCExpr.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCInstrInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCShuffler.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonMCTargetDesc.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\MCTargetDesc\HexagonShuffler.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Hexagon\TargetInfo\HexagonTargetInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\AsmParser\MipsAsmParser.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\MCTargetDesc\MipsABIInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\MCTargetDesc\MipsAsmBackend.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\MCTargetDesc\MipsELFObjectWriter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\MCTargetDesc\MipsMCAsmInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\MCTargetDesc\MipsMCCodeEmitter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\MCTargetDesc\MipsMCExpr.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\MCTargetDesc\MipsMCTargetDesc.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Mips\TargetInfo\MipsTargetInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\AsmParser\PPCAsmParser.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\MCTargetDesc\PPCAsmBackend.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\MCTargetDesc\PPCELFObjectWriter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\MCTargetDesc\PPCMCAsmInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\MCTargetDesc\PPCMCCodeEmitter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\MCTargetDesc\PPCMCExpr.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\MCTargetDesc\PPCMCTargetDesc.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\MCTargetDesc\PPCPredicates.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\PowerPC\TargetInfo\PowerPCTargetInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\AsmParser\SparcAsmParser.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\MCTargetDesc\SparcAsmBackend.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\MCTargetDesc\SparcELFObjectWriter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\MCTargetDesc\SparcMCAsmInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\MCTargetDesc\SparcMCCodeEmitter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\MCTargetDesc\SparcMCExpr.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\MCTargetDesc\SparcMCTargetDesc.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\Sparc\TargetInfo\SparcTargetInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\AsmParser\SystemZAsmParser.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\MCTargetDesc\SystemZMCAsmBackend.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\MCTargetDesc\SystemZMCAsmInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\MCTargetDesc\SystemZMCCodeEmitter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\MCTargetDesc\SystemZMCObjectWriter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\MCTargetDesc\SystemZMCTargetDesc.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\SystemZ\TargetInfo\SystemZTargetInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\AsmParser\X86AsmInstrumentation.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\AsmParser\X86AsmParser.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\MCTargetDesc\X86AsmBackend.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\MCTargetDesc\X86ELFObjectWriter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\MCTargetDesc\X86MCAsmInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\MCTargetDesc\X86MCCodeEmitter.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\MCTargetDesc\X86MCTargetDesc.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\lib\Target\X86\TargetInfo\X86TargetInfo.cpp" />
+    <ClCompile Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\llvm\keystone\ks.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\git\WindowsResearch\retdec-master-build\external\src\keystone\ZERO_CHECK.vcxproj">
+      <Project>{99032B01-40A0-38FA-80BF-69D2C108E712}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

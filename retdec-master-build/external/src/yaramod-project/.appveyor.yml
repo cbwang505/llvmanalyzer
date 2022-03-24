@@ -1,0 +1,79 @@
+version: '{build}'
+
+environment:
+  PYPI_USERNAME: yaramod
+  PYPI_PASSWORD:
+    secure: rqIEDKQDpYkovDQpxHABjjAXnULbrLiwEWa1mwYWKis=
+  matrix:
+    - PYTHON: "C:\\Python38-x64"
+      CMAKE_GENERATOR: Visual Studio 16 2019
+      APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
+      DEPLOY_TO_PYPI: true
+    - PYTHON: "C:\\Python37-x64"
+      CMAKE_GENERATOR: Visual Studio 16 2019
+      APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
+      DEPLOY_TO_PYPI: true
+    - PYTHON: "C:\\Python38"
+      CMAKE_GENERATOR: Visual Studio 16 2019
+      APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
+      DEPLOY_TO_PYPI: true
+    - PYTHON: "C:\\Python37"
+      CMAKE_GENERATOR: Visual Studio 16 2019
+      APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
+      DEPLOY_TO_PYPI: true
+    - PYTHON: "C:\\Python38-x64"
+      CMAKE_GENERATOR: Visual Studio 15 2017 Win64
+      APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+
+configuration:
+  - Release
+  - Debug
+
+matrix:
+  fast_finish: true
+
+install:
+  - set Path=%PYTHON%\Scripts;%Path%
+
+before_build:
+  - cmd: '%PYTHON%\Scripts\pip install -r requirements.txt'
+
+build_script:
+  - cmd: '%PYTHON%\python setup.py build --with-unit-tests'
+  - cmd: '%PYTHON%\python setup.py install'
+
+test_script:
+  - cmd: build\tests\cpp\%configuration%\yaramod_tests.exe
+  - cmd: '%PYTHON%\Scripts\pytest -v tests\python'
+
+after_test:
+  - cmd: '%PYTHON%\python setup.py bdist_wheel'
+
+deploy_script:
+  - cmd: echo [distutils]               > "%USERPROFILE%\\.pypirc"
+  - cmd: echo index-servers =          >> "%USERPROFILE%\\.pypirc"
+  - cmd: echo     pypi                 >> "%USERPROFILE%\\.pypirc"
+  - cmd: echo [pypi]                   >> "%USERPROFILE%\\.pypirc"
+  - cmd: echo username=%PYPI_USERNAME% >> "%USERPROFILE%\\.pypirc"
+  - cmd: echo password=%PYPI_PASSWORD% >> "%USERPROFILE%\\.pypirc"
+  - cmd: '%PYTHON%\Scripts\pip install twine'
+  - ps: If ($env:DEPLOY_TO_PYPI -eq "true" -And $env:CONFIGURATION -eq "Release" -And $env:APPVEYOR_REPO_TAG -eq "true") { Invoke-Expression "twine upload --skip-existing dist/*.whl" } Else { Write-Output "Not deploying because no git tag was created or configuration is not for distribution." }
+
+branches:
+  only:
+    # Pushes and PRs to the master branch.
+    - master
+    # Version tags.
+    - /^v?\d+\.\d+.*$/
+
+notifications:
+  - provider: Email
+    to:
+      - '{{commitAuthorEmail}}'
+    on_build_success: false
+    on_build_failure: true
+    on_build_status_changed: true
+
+artifacts:
+    - path: dist/*.whl
+      name: python binary wheel

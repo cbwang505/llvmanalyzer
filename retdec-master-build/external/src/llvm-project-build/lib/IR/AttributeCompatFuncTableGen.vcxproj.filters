@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\CMakeFiles\64c82c01ab0ed563d6fe4c03d2c8f7b8\AttributesCompatFunc.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\CMakeFiles\164ccb9c324fac7b2374194f4cd8a78e\AttributeCompatFuncTableGen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\git\WindowsResearch\retdec-master\external\src\llvm-project\lib\IR\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\git\WindowsResearch\retdec-master-build\external\src\llvm-project-build\lib\IR\CMakeFiles\AttributeCompatFuncTableGen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4AC9F983-A4F9-3C0B-BD31-856E8379A2E2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
