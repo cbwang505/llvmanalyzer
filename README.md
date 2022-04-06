@@ -20,9 +20,9 @@ LLVM 命名最早源自于底层虚拟机（Low Level Virtual Machine）的缩�
 [retdec](https://github.com/avast/retdec)是一款基于LLVM编译器架构的支持多种机器码环境的跨平台反编译工具,输入为任意支持的二进制可执行文件,目标输出为一个可以再次编译的C语言的源码文件.
 
 克隆git仓库后使用[Cmake GUI](https://cmake.org/download/)工具使用如下图配置将源工程及LLVM依赖工程转为Visual Studio 2017工程,笔者提供的工程已经是转换后的vs工程,可以直接在vs中打开编译.
-![图1](https://s3.bmp.ovh/imgs/2022/03/7cb5661293359271.png)
-![图2](https://s3.bmp.ovh/imgs/2022/03/60e5b130e79e5155.png)
-![图3](https://s3.bmp.ovh/imgs/2022/03/ce3e1aa1126e031b.png)
+![图1](img/1.png)
+![图2](img/2.png)
+![图3](img/3.png)
 笔者的工程包含2个主要项目,一个是retdec-decompiler用于反编译输入二进制文件至c语言的源码输出文件,另外一个是IDA自动结构体识别插件,这2个都是依赖于llvm的独立项目.
 x86指令集的[__thiscall](https://docs.microsoft.com/zh-cn/previous-versions/visualstudio/visual-studio-2012/ek8tkfbw(v=vs.110))调用约定不同于[__stdcall](https://docs.microsoft.com/zh-cn/previous-versions/visualstudio/visual-studio-2012/zxk0tw93(v=vs.110))参数从右向左被推入堆栈,而this指针由寄存器rcx传递而不是堆栈,也就是说rcx指向this结构体指针,一般是在类构造函数中申请的类结构体指针的地址,申请大小固定后不会改变.这个结构体由从派生类到基类的顺序叠加在一起,每个类的指针首地址指向一个vftable虚表函数结构体包含了当前类所有的包括重写虚函数在内的类成员函数数组,而这个vftable的地址减去一个sizeof(void*)大小后指向一个RTTICompleteObjectLocator结构体,它的相关结构体描述了这个类C++的所有多态性（运行时）相关信息,具体可以参考[dynamic_cast实现原理](https://blog.csdn.net/passion_wu128/article/details/38511957?depth_1-)相关文章,相关结构体如下,retdec原有代码分析x64的rtti结构体有问题,主要出在偏移量为int32类型是基于模块基址的偏移而不是绝对地址,这个问题笔者已修复.
 ```
@@ -870,15 +870,15 @@ QT环境版本5.6.0及vs插件
 
 ### 分析之前 ### 
 
-![分析之前](https://s3.bmp.ovh/imgs/2022/03/83f4446c018231cc.png)
+![分析之前](img/4.png)
 
 ### 分析之后 ### 
 
-![分析之后](https://s3.bmp.ovh/imgs/2022/03/76b5a4d080a126f1.png)
+![分析之后](img/5.png)
 
 ### 完整流程 ### 
 
-![查看大图](https://s1.ax1x.com/2022/03/26/qU2LUx.gif)
+![查看大图](img/6.gif)
 
 ##  相关引用 ##
 
