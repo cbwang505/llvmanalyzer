@@ -902,7 +902,7 @@ QT环境版本5.6.0及vs插件
 
 [笔者工具仓库git](https://gitee.com/cbwang505/llvmanalyzer)
 
-[Releas发布](https://gitee.com/cbwang505/llvmanalyzer/blob/master/Release.7z)
+[Release发布](https://gitee.com/cbwang505/llvmanalyzer/blob/master/Release.7z)
 
 ## 参与贡献 ##
 
