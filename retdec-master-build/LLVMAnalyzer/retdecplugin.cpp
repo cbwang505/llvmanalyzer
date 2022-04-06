@@ -59,6 +59,11 @@ namespace retdec {
 			static const char* funcVtable_ah_actionLabel = "Add virtual table to Analyze";
 			static const char* funcVtable_ah_actionHotkey = "Ctrl+Shift+T";
 
+
+			static const char* funcMsg_ah_actionName = "retdec:AFXMSGMAPENTRYSelect";
+			static const char* funcMsg_ah_actionLabel = "Add windows message entry to Analyze";
+			static const char* funcMsg_ah_actionHotkey = "Ctrl+Shift+M";
+
 			static const char* renameGlobalObj_ah_actionName = "retdec:RenameGlobalObj";
 			static const char* renameGlobalObj_ah_actionLabel = "Rename global object";
 			static const char* renameGlobalObj_ah_actionHotkey = "R";
@@ -273,6 +278,15 @@ namespace retdec {
 					nullptr,
 					37
 				);
+				static funcAfxMsgMapEntry_ah_t  funcMsg_ah(*this);
+				static const action_desc_t  funcMsg_ah_desc = ACTION_DESC_LITERAL(
+					funcMsg_ah_actionName,
+					funcMsg_ah_actionLabel,
+					&funcMsg_ah,
+					funcMsg_ah_actionHotkey,
+					nullptr,
+					37
+				);
 
 				static 	renameGlobalObj_ah_t renameGlobalObj_ah(*this);
 				static const action_desc_t renameGlobalObj_ah_desc = ACTION_DESC_LITERAL(
@@ -388,6 +402,7 @@ namespace retdec {
 				register_action(funcComment_ah_desc);
 				register_action(funcSelect_ah_desc);
 				register_action(funcVtable_ah_desc);
+				register_action(funcMsg_ah_desc);
 				register_action(renameGlobalObj_ah_desc);
 				register_action(openCalls_ah_desc);
 				register_action(openXrefs_ah_desc);
@@ -430,6 +445,7 @@ namespace retdec {
 					unregister_action(funcComment_ah_actionName);
 					unregister_action(funcSelect_ah_actionName);
 					unregister_action(funcVtable_ah_actionName);
+					unregister_action(funcMsg_ah_actionName);
 					unregister_action(renameGlobalObj_ah_actionName);
 					unregister_action(openCalls_ah_actionName);
 					unregister_action(openXrefs_ah_actionName);

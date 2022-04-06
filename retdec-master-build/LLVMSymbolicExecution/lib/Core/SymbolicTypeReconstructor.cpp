@@ -161,6 +161,23 @@ namespace retdec {
 			}
 			return common::Address(0);
 		}
+		void SymbolicTypeReconstructor::AnalyzeFunctionByAddress(common::Address compareAddrFunc, llvm::SmallVector<retdec::common::Address, 256> &paddrs)
+		{
+			llvm::Function* f = _config->getLlvmFunction(compareAddrFunc);
+			llvm::Instruction& checkAsmProgramCounter = f->getEntryBlock().front();
+			common::Address  pairAddr = GetPairFunctionAddress(&checkAsmProgramCounter);
+			if (pairAddr.isDefined() && pairAddr != 0)
+			{
+
+				paddrs.emplace_back(pairAddr);
+
+			}
+			else
+			{
+				paddrs.emplace_back(compareAddrFunc);
+			}
+		}
+
 		void SymbolicTypeReconstructor::PrepareInitialization(llvm::Module* M)
 		{
 			FileImage* image;
@@ -206,21 +223,19 @@ namespace retdec {
 				for (auto& item : vt.items)
 				{
 					common::Address compareAddrFunc = item.getTargetFunctionAddress();
-					llvm::Function* f= _config->getLlvmFunction(compareAddrFunc);
-					Instruction& checkAsmProgramCounter = f->getEntryBlock().front();
-					common::Address  pairAddr = GetPairFunctionAddress(&checkAsmProgramCounter);
-					if (pairAddr.isDefined() && pairAddr != 0)
-					{			
-						
-						paddrs.emplace_back(pairAddr);
-						
-					}else
-					{
-						paddrs.emplace_back(compareAddrFunc);
-					}
+					AnalyzeFunctionByAddress(compareAddrFunc, paddrs);				
 
-					
+				}
+				vtbl2addrs.emplace(vtaddr, paddrs);
+			}
 
+			for(std::pair<const common::Address, std::vector<common::Address>> p : _config->getConfig().vtbl2func)
+			{
+				llvmir2hll::Address vtaddr =p.first;
+				llvm::SmallVector<retdec::common::Address, 256> paddrs;
+				for (common::Address compareAddrFunc : p.second)
+				{					
+					AnalyzeFunctionByAddress(compareAddrFunc, paddrs);
 				}
 				vtbl2addrs.emplace(vtaddr, paddrs);
 			}

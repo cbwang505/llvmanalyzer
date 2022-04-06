@@ -162,20 +162,43 @@ namespace retdec {
 				{
 					ea_t AddrFunc = item.getTargetFunctionAddress().getValue();
 					retdec::plugin::addvtbl2fns(vtaddr, AddrFunc);
-					auto func = _config->getLlvmFunction(AddrFunc);
-
-					llvm::Instruction& checkAsmProgramCounter = func->getEntryBlock().front();
-					ea_t AddrFunc2 = GetPairFunctionAddress(&checkAsmProgramCounter);
-					if (AddrFunc2)
+					llvm::Function* func = _config->getLlvmFunction(AddrFunc);
+					if (func)
 					{
-						retdec::plugin::addvtbl2fns(vtaddr, AddrFunc2);
+						llvm::Instruction& checkAsmProgramCounter = func->getEntryBlock().front();
+						ea_t AddrFunc2 = GetPairFunctionAddress(&checkAsmProgramCounter);
+						if (AddrFunc2)
+						{
+							retdec::plugin::addvtbl2fns(vtaddr, AddrFunc2);
+						}
 					}
 				}
 
 				retdec::plugin::addvtbl2fns2seg(vtaddr);
 			}
 
+			for (std::pair<const common::Address, std::vector<common::Address>> p : _config->getConfig().vtbl2func)
+			{
 
+				llvmir2hll::Address vtaddr = p.first;
+				llvm::SmallVector<retdec::common::Address, 256> paddrs;
+				for (common::Address compareAddrFunc : p.second)
+				{
+					ea_t AddrFunc = compareAddrFunc.getValue();
+					retdec::plugin::addvtbl2fns(vtaddr, AddrFunc);
+					llvm::Function* func = _config->getLlvmFunction(AddrFunc);
+					if (func)
+					{
+						llvm::Instruction& checkAsmProgramCounter = func->getEntryBlock().front();
+						ea_t AddrFunc2 = GetPairFunctionAddress(&checkAsmProgramCounter);
+						if (AddrFunc2)
+						{
+							retdec::plugin::addvtbl2fns(vtaddr, AddrFunc2);
+						}
+					}
+				}
+				retdec::plugin::addvtbl2fns2seg(vtaddr);
+			}
 			ShPtr<UsedTypes> usedTypes(UsedTypesVisitor::getUsedTypes(module));
 			StructTypeVector usedStructTypes(StructTypesSorter::sort(
 				usedTypes->getStructTypes()));
@@ -261,10 +284,17 @@ namespace retdec {
 				if (strucval != BADADDR)
 				{
 					struc_t* sptr = get_struc(strucval);
-					del_struc(sptr);
-				}
 
-				strucval = add_struc(BADADDR, rawname.c_str());
+					ea_t sz = get_struc_size(sptr);
+					if (sz > 0)
+					{
+						del_struc_members(sptr, 0, sz);
+					} 
+				//	del_struc(sptr);
+				}else
+				{
+					strucval = add_struc(BADADDR, rawname.c_str());
+				}				
 				Address field_offset = 0;
 				const StructType::ElementTypes& elements = structType->getElementTypes();
 				for (StructType::ElementTypes::size_type i = 0; i < elements.size(); ++i) {

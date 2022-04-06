@@ -12,7 +12,7 @@ namespace klee {
 	class MemoryObject;
 
 	RetdecInterpreterHandler::RetdecInterpreterHandler(llvm::Module* m)
-	{	
+	{
 		_module = m;
 		_config = retdec::bin2llvmir::ConfigProvider::getConfig(_module);
 		m_infoFile = openOutputFile("info.dump");
@@ -24,7 +24,7 @@ namespace klee {
 	}
 
 	std::string RetdecInterpreterHandler::getOutputFilename(const std::string& filename)
-	{		
+	{
 		fs::path filePathInput = _config->getConfig().parameters.getOutputFile();
 		fs::path parent_path = filePathInput.parent_path();
 		parent_path.append(filename);
@@ -34,7 +34,7 @@ namespace klee {
 	std::unique_ptr<llvm::raw_fd_ostream> RetdecInterpreterHandler::openOutputFile(const std::string& filename)
 	{
 		std::string Error;
-		std::string filePath = getOutputFilename(filename);		
+		std::string filePath = getOutputFilename(filename);
 		return 	klee::klee_open_output_file(filePath, Error);
 	}
 
@@ -146,12 +146,21 @@ namespace klee {
 			}
 			if (minoffset > 0)
 			{
-				if(minoffset>100)
+				if (minoffset > 0x1000)
 				{
 					return false;
 				}
 				uint64_t ptrwidth = Context::get().getPointerWidth();
-				if (minoffset > ptrwidth)
+				if (minoffset <= ptrwidth)
+				{
+					llvm::Type* tp = llvm::Type::getIntNTy(_module->getContext(), minoffset);
+					POverlappedEmulatedType typeEmu = new OverlappedEmulatedType{
+			0,minoffset,tp
+					};
+					NoOverlappedStructFinal.emplace_back(typeEmu);
+
+				}
+				else if (minoffset > ptrwidth)
 				{
 					uint64_t minpadlen = ptrwidth;
 					llvm::Type* tp = llvm::Type::getIntNTy(_module->getContext(), minpadlen);
@@ -469,23 +478,39 @@ namespace klee {
 					}
 				}
 				std::sort(NoOverlappedStructFinalRet.begin(), NoOverlappedStructFinalRet.end(), SortNoOverlappedStruct);
-				for (auto& hasType : NoOverlappedStructFinalRet)
+				if (NoOverlappedStructFinalRet.size())
 				{
-					NoOverlappedStructFinalRetProcess.emplace_back(hasType);
-					for (auto& kv : arrToFix)
+					for (auto& hasType : NoOverlappedStructFinalRet)
 					{
-						if (kv.first->offset == hasType->offset + hasType->length)
+						NoOverlappedStructFinalRetProcess.emplace_back(hasType);
+						for (auto& kv : arrToFix)
 						{
-							llvm::Type* tpArr = llvm::ArrayType::get(kv.first->typefield, kv.second);
-							uint64_t tpArrLen = kv.first->length*kv.second;
-							POverlappedEmulatedType typeEmu = new OverlappedEmulatedType{
-								 kv.first->offset,tpArrLen,tpArr
-							};
-							NoOverlappedStructFinalRetProcess.emplace_back(typeEmu);
+							if (kv.first->offset == hasType->offset + hasType->length)
+							{
+								llvm::Type* tpArr = llvm::ArrayType::get(kv.first->typefield, kv.second);
+								uint64_t tpArrLen = kv.first->length*kv.second;
+								POverlappedEmulatedType typeEmu = new OverlappedEmulatedType{
+									 kv.first->offset,tpArrLen,tpArr
+								};
+								NoOverlappedStructFinalRetProcess.emplace_back(typeEmu);
+							}
 						}
 					}
 				}
-				
+				else
+				{
+					for (auto& kv : arrToFix)
+					{
+
+						llvm::Type* tpArr = llvm::ArrayType::get(kv.first->typefield, kv.second);
+						uint64_t tpArrLen = kv.first->length*kv.second;
+						POverlappedEmulatedType typeEmu = new OverlappedEmulatedType{
+							 kv.first->offset,tpArrLen,tpArr
+						};
+						NoOverlappedStructFinalRetProcess.emplace_back(typeEmu);
+					}
+				}
+
 				if (NoOverlappedStructFinalRetProcess.size())
 				{
 					std::sort(NoOverlappedStructFinalRetProcess.begin(), NoOverlappedStructFinalRetProcess.end(), SortNoOverlappedStruct);

@@ -11,6 +11,7 @@ namespace retdec {
 	namespace plugin {
 		static const char* funcSelect_ah_actionName = "retdec:ActionFunctionSelect";
 		static const char* funcVtable_ah_actionName = "retdec:ActionVtableSelect";
+		static const char* funcMsg_ah_actionName = "retdec:AFXMSGMAPENTRYSelect";
 		std::shared_ptr<retdec::config::Config> getGlobalConfing();
 		//
 		//==============================================================================
@@ -162,13 +163,13 @@ namespace retdec {
 
 
 
-		void addfunctiontoanalyze(func_t* func, RetDec& plg)
+		void addfunctiontoanalyze(func_t* func, RetDec& plg, ea_t fakevtbl = 0)
 		{
 			if (func)
 			{
 				insn_t inst;
-				int ret=decode_insn(&inst,func->start_ea);
-				if (ret>0)
+				int ret = decode_insn(&inst, func->start_ea);
+				if (ret > 0)
 				{
 					op_t addrop = inst.ops[0];
 					if (addrop.addr)
@@ -176,8 +177,9 @@ namespace retdec {
 						flags_t fg = get_flags(addrop.addr);
 						if (is_func(fg))
 						{
+
 							func_t* func1 = get_func(addrop.addr);
-							addfunctiontoanalyze(func1, plg);
+							addfunctiontoanalyze(func1, plg, fakevtbl);
 						}
 					}
 				}
@@ -206,6 +208,10 @@ namespace retdec {
 				auto* findfunc = plg.decfuncs.getFunctionByStartAddress(func->start_ea);
 				if (!findfunc)
 				{
+					if (fakevtbl)
+					{
+						addvtbl2fnsanalyze(fakevtbl, func->start_ea);
+					}
 					qstring finmsg;
 					finmsg.sprnt("Add Function :=> %s To Analyze\n", qFncName.c_str());
 					INFO_MSG(finmsg.c_str());
@@ -296,7 +302,7 @@ namespace retdec {
 			return AST_DISABLE_FOR_WIDGET;
 		}
 
-	
+
 		//---------------------------------------------------------------------------
 // VTBL code parsing
 //---------------------------------------------------------------------------
@@ -350,7 +356,7 @@ namespace retdec {
 				}
 
 				if (is_move_xref) {
-					memset(&vtbl_info,0, sizeof(VTBL_info_t));
+					memset(&vtbl_info, 0, sizeof(VTBL_info_t));
 
 					get_ea_name(&vtbl_info.vtbl_name, ea_address);
 
@@ -406,22 +412,23 @@ namespace retdec {
 			{
 				ea_sect = vftable_info_t.ea_end;
 
-				if (vftable_info_t.methods > 1) {
-					for(ea_t ea_start = vftable_info_t.ea_begin; ea_start< vftable_info_t.ea_end ; ea_start += sizeof(ea_t))
+				if (vftable_info_t.methods >= 1) {
+					for (ea_t ea_start = vftable_info_t.ea_begin; ea_start < vftable_info_t.ea_end; ea_start += sizeof(ea_t))
 					{
-						ea_t ea_func= getEa(ea_start);
+						ea_t ea_func = getEa(ea_start);
 						flags_t fg = get_flags(ea_func);
 						if (is_func(fg))
 						{
-							func_t* func  = get_func(ea_func);
-							
+							func_t* func = get_func(ea_func);
+
 							addfunctiontoanalyze(func, plg);
 						}
 					}
 					INFO_MSG("Found Vtable Methods Count :=> " << vftable_info_t.methods << " To Analyze\n");
 					ea_sect = vftable_info_t.ea_end;
 					return;
-				}else
+				}
+				else
 				{
 					INFO_MSG("No Vtable Methods To Analyze\n");
 				}
@@ -429,8 +436,8 @@ namespace retdec {
 			else
 			{
 				INFO_MSG("No Vtable Methods To Analyze\n");
-			}		
-			
+			}
+
 			return;
 		}
 
@@ -444,8 +451,8 @@ namespace retdec {
 			twidget_type_t viewtype = ctx->widget_type;
 			if (viewtype == BWN_DISASM)
 			{
-				func_t* func = nullptr;
-				flags_t fg = get_flags(ctx->cur_ea);
+
+
 				process_vtbl(ctx->cur_ea, plg);
 			}
 			return false;
@@ -453,8 +460,126 @@ namespace retdec {
 
 		action_state_t funcVtable_ah_t::update(action_update_ctx_t* ctx)
 		{
-			switch (ctx->widget_type) {			
-			case BWN_DISASM:		
+			switch (ctx->widget_type) {
+			case BWN_DISASM:
+			{
+				return AST_ENABLE_FOR_WIDGET;
+			}
+			default:
+				return AST_DISABLE_FOR_WIDGET;
+			}
+			return AST_DISABLE_FOR_WIDGET;
+		}
+
+		funcAfxMsgMapEntry_ah_t::funcAfxMsgMapEntry_ah_t(RetDec& p) : plg(p)
+		{
+		}
+
+
+		tid_t CreateAfxMsgMapEntryStruct()
+		{
+			qstring rawname = "AFX_MSGMAP_ENTRY";
+			tid_t strucval = get_struc_id(rawname.c_str());
+			if (strucval != BADADDR)
+			{
+				return strucval;
+			}
+			else
+			{
+				strucval = add_struc(BADADDR, rawname.c_str());
+				struc_t* sptr = get_struc(strucval);
+				flags_t flag = dword_flag();
+
+#ifdef __EA64__
+				flags_t flag2 = qword_flag();
+#else // __EA64__
+				flags_t flag2 = dword_flag();
+#endif // __EA64__
+
+				add_struc_member(sptr, "nMessage", BADADDR, flag, nullptr, 4);
+				add_struc_member(sptr, "nCode", BADADDR, flag, nullptr, 4);
+				add_struc_member(sptr, "nID", BADADDR, flag, nullptr, 4);
+				add_struc_member(sptr, "nLastID", BADADDR, flag, nullptr, 4);
+				add_struc_member(sptr, "nSig", BADADDR, flag, nullptr, 4);
+				add_struc_member(sptr, "pfn", BADADDR, flag2, nullptr, sizeof(ea_t));
+				return strucval;
+			}
+		}
+		
+
+		int funcAfxMsgMapEntry_ah_t::activate(action_activation_ctx_t* ctx)
+		{
+			twidget_type_t viewtype = ctx->widget_type;
+			if (viewtype == BWN_DISASM)
+			{
+
+				tid_t strucval = CreateAfxMsgMapEntryStruct();
+				std::size_t sctheadlen = 20;
+				std::size_t sctlen = sctheadlen + sizeof(ea_t);
+				for (ea_t start = ctx->cur_ea; start < BADADDR; start += sctlen)
+				{
+					ea_t ea_func = getEa(start + sctheadlen);
+					flags_t fgsct = get_flags(start);
+					flags_t fg = get_flags(ea_func);
+					if (is_struct(fgsct))
+					{
+						opinfo_t opi;
+						bool ok = get_opinfo(&opi, start, 0, fgsct);
+						if (ok)
+						{
+							if (opi.tid == strucval)
+							{
+								if (is_func(fg))
+								{
+									func_t* func = get_func(ea_func);
+									addfunctiontoanalyze(func, plg, ctx->cur_ea);
+									continue;
+								}
+								else
+								{
+									break;
+								}
+
+							}
+							else
+							{
+								break;
+							}
+						}
+						else
+						{
+							break;
+						}
+					}
+					else {
+						if (is_func(fg))
+						{
+							func_t* func = get_func(ea_func);
+							addfunctiontoanalyze(func, plg, ctx->cur_ea);
+							if (!create_struct(start, sctlen, strucval))
+							{
+								break;
+							}
+						}
+						else
+						{
+							if (ea_func == 0 & start != ctx->cur_ea)
+							{
+								create_struct(start, sctlen, strucval);
+
+							}
+							break;
+						}
+					}
+				}
+			}
+			return false;
+		}
+
+		action_state_t funcAfxMsgMapEntry_ah_t::update(action_update_ctx_t* ctx)
+		{
+			switch (ctx->widget_type) {
+			case BWN_DISASM:
 			{
 				return AST_ENABLE_FOR_WIDGET;
 			}
@@ -719,7 +844,24 @@ namespace retdec {
 		// on_event
 		//==============================================================================
 		//
+		bool isAfxMsgMapEntryStruct(ea_t start)
+		{
+			std::size_t sctheadlen = 20;
+			ea_t ea_code = getEa(start);
+			flags_t fg_code = get_flags(ea_code);
+			if (has_xref(fg_code)|| is_func(fg_code))
+			{
+				return false;
+			}
+			ea_t ea_func = getEa(start + sctheadlen);
+			flags_t fg = get_flags(ea_func);
+			if (is_func(fg))
+			{
+				return true;
+			}
 
+			return false;
+		}
 		/**
 		 * User interface hook.
 		 */
@@ -776,8 +918,27 @@ namespace retdec {
 					twidget_type_t viewtype = get_widget_type(view);
 					if (viewtype == BWN_DISASM)
 					{
-						attach_action_to_popup(view, popup, funcSelect_ah_actionName);
-						attach_action_to_popup(view, popup, funcVtable_ah_actionName);
+						ea_t ea_address = get_screen_ea();
+						ea_t ea_func = getEa(ea_address);
+						flags_t fg = get_flags(ea_address);
+						flags_t fg1 = get_flags(ea_func);
+						if (is_func(fg)| is_func(fg1))
+						{
+							attach_action_to_popup(view, popup, funcSelect_ah_actionName);
+						}					
+						
+						VTBL_info_t vftable_info_t;
+						if (get_vtbl_info(ea_address, vftable_info_t))
+						{
+							if (vftable_info_t.methods >= 1) {
+								attach_action_to_popup(view, popup, funcVtable_ah_actionName);
+							}
+						}
+					
+						if (isAfxMsgMapEntryStruct(ea_address))
+						{
+							attach_action_to_popup(view, popup, funcMsg_ah_actionName);
+						}
 						return false;
 					}
 				}

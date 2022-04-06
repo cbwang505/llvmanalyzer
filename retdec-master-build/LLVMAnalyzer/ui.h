@@ -89,6 +89,14 @@ namespace retdec {
 				virtual int idaapi activate(action_activation_ctx_t*) override;
 				virtual action_state_t idaapi update(action_update_ctx_t*) override;
 			};
+		    struct ida_dll_data funcAfxMsgMapEntry_ah_t : public action_handler_t
+			{
+
+				RetDec& plg;
+				funcAfxMsgMapEntry_ah_t(RetDec& p);
+				virtual int idaapi activate(action_activation_ctx_t*) override;
+				virtual action_state_t idaapi update(action_update_ctx_t*) override;
+			};
 
 			struct ida_dll_data renameGlobalObj_ah_t : public action_handler_t
 			{

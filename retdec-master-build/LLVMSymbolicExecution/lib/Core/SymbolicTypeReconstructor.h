@@ -39,6 +39,8 @@ namespace retdec {
 			bool SkipAsmProgramCounter(llvm::Instruction* i);
 			common::Address GetPairFunctionAddress(llvm::Instruction* insert_before);
 			void PrepareInitialization(llvm::Module* M);
+			void AnalyzeFunctionByAddress(common::Address compareAddrFunc, llvm::SmallVector<retdec::common::Address, 256> &paddrs);	
+
 			bool run_on_module_custom(
 				llvm::Module& m,
 				Config* c,

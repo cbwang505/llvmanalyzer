@@ -4094,9 +4094,15 @@ void Executor::callExternalFunction(ExecutionState &state,
 
 	bool success = externalDispatcher->executeCall(function, target->inst, args);
 	if (!success) {
-		//klee_warning("failed external call: %s ,try to skip" , function->getName().str().c_str());
-		terminateStateOnError(state, "failed external call: " + function->getName(),
-			StateTerminationType::External);
+		klee_warning("failed external call: %s ,try to skip" , function->getName().str().c_str());
+		/*terminateStateOnError(state, "failed external call: " + function->getName(),
+			StateTerminationType::External);*/
+		Type *resultType = target->inst->getType();
+		if (resultType != Type::getVoidTy(function->getContext())) {
+			ref<Expr> e = ConstantExpr::create(0,
+				getWidthForLLVMType(resultType));
+			bindLocal(target, state, e);
+		}
 		return;
 	}
 

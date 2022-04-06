@@ -20,6 +20,7 @@ namespace retdec {
 
 		static std::shared_ptr<RetDec> InstanceObject = nullptr;
 		static std::map<ea_t, std::vector<ea_t>> vtbl2fns;
+		static std::map<ea_t, std::vector<ea_t>> vtbl2fnsAnalyze;
 		ida_dll_data  const std::string pluginName = "LLVMAnalyzer";
 		ida_dll_data  const std::string pluginVersion = "1.0";
 		RetDec::RetDec()
@@ -42,24 +43,52 @@ namespace retdec {
 			}
 			else
 			{
+				for (auto addr : kv->second)
+				{
+					if (addr == fn)
+					{
+						return;
+					}
+				}
+				kv->second.push_back(fn);
+			}
+		}
+		ida_dll_data void addvtbl2fnsanalyze(ea_t vtbl, ea_t fn)
+		{
+			auto kv = vtbl2fnsAnalyze.find(vtbl);
+			if (kv == vtbl2fnsAnalyze.end())
+			{
+				std::vector<ea_t> fns = { fn };
+				vtbl2fnsAnalyze.emplace(vtbl, fns);
+			}
+			else
+			{
+				for (auto addr : kv->second)
+				{
+					if (addr == fn)
+					{
+						return;
+					}
+				}
 				kv->second.push_back(fn);
 			}
 		}
 		ida_dll_data void addvtbl2fns2seg(ea_t vtbl)
 		{
-			
+
 			auto kv = vtbl2fns.find(vtbl);
 			if (kv != vtbl2fns.end())
 			{
-				if(kv->second.size()==0)
+				if (kv->second.size() == 0)
 				{
 					return;
 				}
-			}else
+			}
+			else
 			{
 				return;
 			}
-			const char* llvmseg = "_llvm";			
+			const char* llvmseg = "_llvm";
 			segment_t* seg = get_segm_by_name(llvmseg);
 			assert(seg);
 			if (seg)
@@ -79,8 +108,8 @@ namespace retdec {
 					{
 						vtblstart->ea_vtbl = vtbl;
 						ea_t funcstart = seg->start_ea + LLVMDataTableRoutineReserveSize + (vtbldata->vtbl_count*LLVMDataTableItemReserveSize);
-						vtblstart->func_vtbl= funcstart;
-						
+						vtblstart->func_vtbl = funcstart;
+
 						if (kv != vtbl2fns.end())
 						{
 							for (int j = 0; j < kv->second.size(); j++)
@@ -94,7 +123,7 @@ namespace retdec {
 					}
 					if (vtbl == vtbllookup)
 					{
-						ea_t funcstart = vtblstart->func_vtbl;					
+						ea_t funcstart = vtblstart->func_vtbl;
 						if (kv != vtbl2fns.end())
 						{
 							for (int j = 0; j < kv->second.size(); j++)
@@ -135,7 +164,7 @@ namespace retdec {
 #else // __EA64__
 						rawname.sprnt("Class_vtable_%x_type", vtaddrreal);
 #endif // __EA64__
-						
+
 						tid_t strucval = get_struc_id(rawname.c_str());
 						if (strucval)
 						{
@@ -292,7 +321,7 @@ namespace retdec {
 
 					LLVMFunctionTable* tbl(reinterpret_cast<LLVMFunctionTable*>(malloc(LLVMFunctionTableReserveSize)));
 					memset(tbl, 0, LLVMFunctionTableReserveSize);
-					get_bytes(tbl, LLVMFunctionTableReserveSize, seg->start_ea+ LLVMDataTableReserveSize);
+					get_bytes(tbl, LLVMFunctionTableReserveSize, seg->start_ea + LLVMDataTableReserveSize);
 					//int num_func=get_dword(seg->start_ea);
 					if (tbl->num_func == 0)
 					{
@@ -519,13 +548,37 @@ namespace retdec {
 			{
 				return false;
 			}
-
+			config->vtbl2func.clear();
+			for (const common::Function& func : functionslist)
+			{
+				for (std::pair<ea_t, std::vector<ea_t>> kv : vtbl2fnsAnalyze)
+				{
+					for (ea_t addr : kv.second)
+					{
+						if (addr == func.getStart())
+						{
+							retdec::common::Address vtbl(kv.first);
+							if (!config->vtbl2func.count(vtbl))
+							{
+								std::vector<retdec::common::Address> fns;
+								for (ea_t fn : kv.second)
+								{
+									retdec::common::Address fnaddr(fn);
+									fns.push_back(fnaddr);
+								}
+								config->vtbl2func.emplace(vtbl, fns);
+							}
+						}
+					}
+				}
+			}
 			std::set<ea_t> selectedFncs;
 
 			//config->parameters.setOutputFormat("json");
 			config->parameters.setOutputFormat("c");
 			for (auto& func : functionslist)
 			{
+
 				retdec::common::AddressRange r(func.getStart(), func.getEnd());
 				config->parameters.selectedRanges.insert(r);
 				config->parameters.selectedFunctions.insert(func.getName());

@@ -560,7 +560,10 @@ bool decompile_ida(retdec::config::Config& config, std::tuple<std::unique_ptr<re
 	// The -disable-simplify-libcalls flag actually disables all builtin optzns.
 	TLII.disableAllFunctions();
 	pm.add(new TargetLibraryInfoWrapperPass(TLII));
-
+	if (segaddr != 0)
+	{
+		config.parameters.llvmPasses.emplace_back("retdec-write-bin");
+	}
 	for (auto& p : config.parameters.llvmPasses)
 	{
 		if (auto* info = passRegistry.getPassInfo(p))

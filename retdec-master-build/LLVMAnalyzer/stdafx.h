@@ -20,6 +20,7 @@ namespace retdec {
 		void idaapi term();
 		bool idaapi run_plugin(size_t arg);
 		ida_dll_data void addvtbl2fns(ea_t vtbl, ea_t fn);
+		ida_dll_data void addvtbl2fnsanalyze(ea_t vtbl, ea_t fn);
 		ida_dll_data void addvtbl2fns2seg(ea_t vtbl);
 
 	}

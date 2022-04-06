@@ -28,6 +28,7 @@ namespace config {
  */
 class Config
 {
+	using VtableFunctionContainer = std::map<retdec::common::Address, std::vector<retdec::common::Address>>;
 	public:
 		/// @name Config named constructors.
 		/// @{
@@ -57,6 +58,7 @@ class Config
 		common::VtableContainer vtables;
 		common::ClassContainer classes;
 		common::PatternContainer patterns;
+		VtableFunctionContainer vtbl2func;
 };
 
 } // namespace config
