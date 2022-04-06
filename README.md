@@ -863,7 +863,7 @@ QT环境版本5.6.0及vs插件
 
 由于cmake生成缓存的原因,先生成下项目再还原代码再次生成就可以重新编译
 
-若发现缺少文件则从llvmanalyzer.7z备份文件中还原丢失文件
+若发现缺少文件则从[llvmanalyzer.7z](https://gitee.com/cbwang505/llvmanalyzer/releases/%E5%AE%8C%E6%95%B4%E5%B7%A5%E7%A8%8B%E8%BD%AC%E5%82%A8%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD)备份文件中还原丢失文件
 
 
 ## 工具使用效果 ## 
