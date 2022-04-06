@@ -880,6 +880,9 @@ QT环境版本5.6.0及vs插件
 
 ![查看大图](img/6.gif)
 
+
+[![视频介绍](https://res.cloudinary.com/marcomontalbano/image/upload/v1609310170/video_to_markdown/images/youtube--_zumplegXT8-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=MZ7sONP-Dp0 "LLVM")
+
 ##  相关引用 ##
 
 [klee源码分析](https://www.anquanke.com/post/id/240038)
